@@ -1,0 +1,328 @@
+body{
+
+	width:100% 				;
+	margin 0 auto 			;
+}
+
+/* la boite contient ts les imgs*/
+.fond-mer
+{
+	width			: 	43.75rem 				; 
+	height			: 	23.875rem 				;
+	margin 			: 	5% auto 				;
+	border-radius	: 	0.5rem 					;
+	background		: 	rgba(169,234,254,1)		;	
+	position		: 	relative 				;	
+}
+
+img{
+
+	width			: 	100% 			;
+	position		: 	absolute 		;
+}
+
+/* la boite contient la baleine et l'oiseau*/
+.baleine-oiseau
+{
+	width			: 45% 				; /* vraie largeur de la baleine ~ 45% du fond de mer */
+	height			: 17.0625rem 		; /* hauteur de la baleine */
+	top				: 2rem 				;
+	left			: 35% 				;
+	position		: relative 			;	
+/*	border 			: solid 0.1rem red  ; juste pr voir où se situe la boite, faut suppr à la fin */
+/*	border-radius 	: 0.5rem 			; juste pr voir où se situe  la boite,faut suppr à la fin */
+	animation		: translateY-vagueOrange 3s linear  infinite alternate ;
+	-webkit-animation: translateY-vagueOrange 3s linear  infinite alternate ;
+}
+
+/* la boite contient l'aile' et le coprs de l'oiseau*/
+.oiseau
+{
+	width			: 	2.1875rem		; /*  w = w du corps        */
+	height			: 	2rem			; /*  h ~ h(corps)+ h(aile) */
+	position		: 	absolute 		;
+}
+
+.aile
+{
+	width			: 0.875rem 			; 
+	height			: 1.375rem 			;	
+	top				: -0.6rem 			;
+	left			: 0.9rem 			;
+	position		: absolute 			;
+	transform-origin: bottom center 								;
+	animation		: rotateAile 0.1s linear infinite alternate 	;
+	-webkit-animation: rotateAile 0.1s linear infinite alternate 	;
+}
+
+.corps
+{
+	width			: 2.1875rem 		;
+	height			: 1.3125rem 		;	
+}
+
+.baleine
+{
+	width			: 19.5rem 			;
+	height			: 17.0625rem 		;	
+}
+
+.vague-blanche
+{
+	top				: 22.5rem			;
+	left			: -1rem 			;
+	animation		: translateX-vagueBlanche 1.6s linear infinite alternate ;
+	-webkit-animation: translateX-vagueBlanche 1.6s linear infinite alternate ;
+}
+
+.vague-orange
+{
+	top				: 22.65rem			;
+	animation		: translateY-vagueOrange 1.6s linear  infinite alternate ;
+	-webkit-animation: translateY-vagueOrange 1.6s linear  infinite alternate ;
+}
+
+
+/*oiseau gauche =3,5,7,8 , par default il tourne vers la gauche */
+#oiseau3
+{
+	left			:  7.15rem 			;
+}
+#oiseau5
+{
+	top				:  2.1rem 			;
+	left			:  11rem 			;
+}
+#oiseau7
+{
+	top				:  1.4rem 			;
+	left			:  15.5rem 			;
+}
+#oiseau8
+{
+
+	top				:  8.3rem			;
+	left			:  14.3rem 			;
+}
+
+
+/*oiseau droite =1,2,4,6 */
+.oiseau-droite
+{
+	transform 		: rotate3d(0,1,0,180deg)	; /* pour tourner l'oiseau default vers l'autre sens */
+}
+#oiseau1
+{
+	top				: 1rem 				;
+}
+#oiseau2
+{
+	top				: -0.7rem			;
+	left			: 2.8rem 			;
+}
+#oiseau4
+{
+	top				: 3.5rem 			;
+	left			: 7.3rem 			;	
+}
+#oiseau6
+{
+	top				: 5.5rem			;
+	left			: 10.2rem 			;
+}
+
+.parent-music
+{
+	width: 1.5rem;
+	height: 1.8rem;
+}
+
+.music1,.music2,.music3,.music4,.music5
+{
+	
+	font-size 		: 1.8rem 			;
+	top 			: 16rem 			;	
+	left 			: 15rem 			;	
+	position 		: absolute 			;
+	opacity			: 0 				;
+	animation 		: show-music 5s linear infinite    ,
+					  danse-music 5s linear infinite   ;
+
+	-webkit-animation: show-music 5s linear infinite    ,
+					   danse-music 5s linear infinite   ;
+}
+
+.music1
+{
+	color 			: rgba(244,0,161,1)		;
+}
+.music2
+{
+	color 			: rgba(20,148,20,1)		;
+}
+.music3
+{
+	color 			: rgba(121,28,248,1)	;
+}
+.music4
+{
+	color 			: rgba(255,127,0,1)		;
+}
+.music5
+{
+	color 			: rgba(237,0,0,1)		;
+}
+
+
+.music1
+{
+	animation-delay   		:  0s  ;
+	-webkit-animation-delay :  0s  ;
+}
+.music2
+{
+	animation-delay   		 :  1s  ;
+	-webkit-animation-delay  :  1s  ;
+}
+.music3
+{
+	animation-delay   		 :  2s  ;
+	-webkit-animation-delay  :  2s  ;
+}
+.music4
+{
+	animation-delay   		 :  3s  ;	
+	-webkit-animation-delay  :  3s  ;
+}
+.music5
+{
+	animation-delay   		 :  4s  ;	
+	-webkit-animation-delay  :  4s  ;
+}
+
+.cloche
+{
+	font-size: 3rem;
+	color: red;
+	top :2rem;
+	right: 3rem;
+	position: absolute;
+	animation 		: rotate-heart 1s linear infinite    ,
+	
+}
+/* partie animation */
+
+@keyframes translateY-vagueOrange
+{
+	0%		{ 	transform : translateY(0) 			; 	}
+	100%	{ 	transform : translateY(0.3rem) 		; 	}
+}
+
+-webkit-@keyframes translateY-vagueOrange
+{
+	0%		{ 	transform : translateY(0) 			; 	}
+	100%	{ 	transform : translateY(0.3rem) 		; 	}
+}
+
+
+
+@keyframes translateX-vagueBlanche
+{
+	0%		{ 	transform : translateX(-1rem) 		; 	}
+	100%	{ 	transform : translateX(0.5rem) 		; 	}
+}
+
+-webkit-@keyframes translateX-vagueBlanche
+{
+	0%		{ 	transform : translateX(-1rem) 		; 	}
+	100%	{ 	transform : translateX(0.5rem) 		; 	}
+}
+
+
+
+@keyframes rotateAile
+{
+	0%		{ 	transform : rotate(-6deg) 			; 	}
+	100%	{ 	transform : rotate(6deg)			; 	}
+}
+
+-webkit-@keyframes rotateAile
+{
+	0%		{ 	transform : rotate(-6deg) 			; 	}
+	100%	{ 	transform : rotate(6deg)			; 	}
+}
+
+
+
+@keyframes show-music
+{
+	0%			
+	{	opacity 	:	0 	; }
+
+	6% , 100%	
+	{	
+		opacity 	: 	1 	;
+		transform 	: 	translateY(-2.5rem)	;
+	}																						
+}
+
+
+
+-webkit-@keyframes show-music
+{
+	0%			
+	{	opacity 	:	0 	; }
+
+	10% , 100%	
+	{	
+		opacity 	: 	1 	;
+		transform 	: 	translateY(-2.5rem)	;
+	}																						
+}
+	
+
+
+@keyframes danse-music
+{
+	0%			
+	{	opacity 	:	0 	; 	}
+
+	30% , 31%	
+	{	
+		transform 	: 	translate3d(-5rem, -5rem, -10rem)	;
+		opacity 	:	1 	;
+	}
+
+	100%
+	{
+		opacity 	:	1 	;
+		transform 	: 	translateX(-15rem)	;
+	}																		
+}
+
+-webkit-@keyframes danse-music
+{
+	0%			
+	{	opacity 	:	0 	; 	}
+
+	30% , 31%	
+	{	
+		transform 	: 	translate3d(-5rem, -5rem, -10rem)	;
+		opacity 	:	1 	;
+	}
+
+	100%
+	{
+		opacity 	:	1 	;
+		transform 	: 	translateX(-15rem)	;
+	}
+
+	@keyframes rotate-heart
+	{
+		0% { transform : rotate3d(0,1,0,360deg);
+		100% { transform : rotate3d(0,1,0,360deg);
+}
+	}
+
+
+}

@@ -1,0 +1,8 @@
+Exercice SQL 2 : comprendre les requêtes
+Dans cet exercice, nous voulons comprendre les requêtes suivantes :
+
+select avg(population) from city
+Note : avg = average.
+select sum(population) / sum(surface) from city
+select * from city where population between 100 000 and 200 000
+Modifié le: mardi 3 juin 2014, 11:55

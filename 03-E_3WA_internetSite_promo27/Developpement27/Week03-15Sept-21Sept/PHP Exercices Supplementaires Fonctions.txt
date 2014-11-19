@@ -1,0 +1,42 @@
+
+PHP exercices supplémentaires : fonctions
+Créer les fonctions suivantes :
+
+Si applicable, les fonctions doivent retourner false si elle ne sont pas en mesure d'accomplir leur mission
+
+Testez chacune des fonctions après les avoir créées
+
+fonction affichant "Hello world"
+aucun paramètre
+
+
+fonction affichant "Hello " suivi d'un prénom
+1 paramètre pour le prénom
+
+fonction convertissant la première lettre en majuscule, et le reste en minuscule (pour un prénom par exemple)
+peu importe la casse du paramètre
+1 paramètre pour le nom ou le prénom
+
+fonction additionnant deux chiffres
+deux paramètres pour les deux chiffres
+retourne le résultat
+
+fonction additionnant jusqu'à 5 chiffres
+2 paramètres obligatoires, les 3 autres optionnels
+retourne le résutlat
+
+fonction affichant l'heure actuelle en format 24h
+aucun paramètre
+
+fonction affichant le contenu d'un array (print_r) à l'intérieur de balises HTML "<pre>"
+1 paramètre : l'array à afficher
+
+fonction affichant chacune des clefs et des valeurs d'un array associatif
+afficher dans un format definition list <dl>
+1 paramètre : l'array associatif
+
+fonction affichant OU retournant la date au format français
+(comprenant le nom du jour de la semaine en toutes lettres)
+par défaut, elle doit afficher la date, et non la retourner
+1 paramètre booléen : false == affiche, true == retourne
+Modifié le: mardi 3 juin 2014, 11:37

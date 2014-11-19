@@ -1,0 +1,349 @@
+
+/**************************** Fixed elements ***************************/
+
+.fleche{
+	transform:rotate(90deg);
+	position: fixed;
+	bottom: 2rem;
+	left: 47%;
+}
+.menu>a{
+	display: block;
+	width: 15rem;
+	text-align: right;
+	font-size: 0.9rem;
+	padding-right: 1.5rem;
+	line-height: 1.1rem;
+}
+.menu>a::before{
+	position: absolute;
+	content:"■";
+	right:0;	
+	font-size: 1.2rem;
+}
+
+/************************** Common properties *************************/
+
+.slide{
+	position: relative;
+}
+.bold{
+	font-family: caviar_dreamsbold;
+}
+.arrow{
+	width: 2rem;
+	height: 3.1rem;
+	overflow: hidden;
+}
+.textAbsolute{
+	position: absolute;
+	width: 30%;
+	
+}
+.textRight{right: 10%;}
+
+.textLeft{left: 5%;}
+
+.textDown{bottom: 10%;}
+
+.textMid{top:45%;}
+
+.textUp{top:20%;}
+
+.video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*height: 100%;*/
+	width: 100%;
+}
+.front{
+	z-index: 10;
+}
+
+/************************** Penthouse specific *************************/
+
+.penthouseText{
+	text-align: center;
+	position: absolute;
+	bottom: 4.9rem;
+	width: 100%;
+}
+.penthouseText h1{
+	font-size: 2.5rem;
+	padding-bottom: 2rem;
+}
+.penthouseText p{
+	font-size: 1.35rem;
+}
+.logo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(99,12,9,0.6);
+}
+
+/************************** Details specific *************************/
+
+.floatArticle{
+	width: calc(100%/12);
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.detailsNav{
+	position: absolute;
+	top:  14%;
+	left: 5%;
+}
+.navMenu>li{
+	float: left;
+	font-size: 1.7rem;
+	width: 1.4rem;
+}
+.detailsBack{
+	position: absolute;
+	bottom: 45%;
+	left: 2%;
+
+}
+.detailsForward{
+	position: absolute;
+	bottom: 45%;
+	right: 2%;
+}
+.detailsTitle{
+	position: absolute;
+	top: 10%;
+	left: 5%;
+}
+.smallText{
+	font-size: 0.9rem;
+	font-weight: lighter;
+	line-height: 1.5rem;
+}
+.toggle{
+	font-size: 1rem;
+	line-height: 1.5rem;
+	position: absolute;
+	position: relative;
+}
+.ceramics{
+	top: 38%;
+	width: 16%;
+	left: 15%;
+}
+.square{
+	font-size: 0.9rem;
+	background: rgba(0,0,0,0.6)
+}
+.bottomToggle{
+	padding: 6% 23% 21% 12%;
+}
+.topToggle{
+	padding: 21% 23% 7% 12%;	
+}
+.topLeftToggle{
+	padding: 27% 14% 6% 10%;
+}
+.bottomRightToggle{
+	padding: 6% 14% 27% 10%;
+	text-align: right;
+}
+.toggleImg{
+	position: absolute;
+	width: 2.1rem;
+	transition : transform 0.5s cubic-bezier(.76,1.9,1,.9);
+
+}
+.toggleImgTop{
+	top: 6%;
+	right: 5%;
+}
+.toggleImgBottom{
+	bottom: 6%;
+	right: 5%;
+}
+.toggleImgBottomRight{
+	bottom: 6%;
+	left: 5%;
+}
+.toggleImgTopLeft{
+	top: 6%;
+	left: 5%;
+}
+.living{
+	left: 30%;
+	top: 27%;
+	width: 20%;
+}
+.fire{
+	top: 41%;
+	left: 36%;
+	width: 15rem;
+}
+.master{
+	top: 27%;
+	left: 16%;
+	width: 19%;
+}
+.bath{
+	top: 44%;
+	left: 26%;
+	width: 24%;
+}
+.bed2{
+	top: 51%;
+	left: 10%;
+	width: 18%;
+}
+.bed3{
+	top: 2%;
+	left: 30%;
+	width: 15%;
+}
+.terrass{
+	left: 39.7%;
+	top: 15%;
+	width: 17%;
+}
+.toggleText{
+	font-size: 0.9rem;
+	transition : opacity 1s ease-in;
+
+}
+/************************** Conclusion specific *************************/
+
+.conclusionArticle{
+	padding: 0 20%;
+	position: absolute;
+	bottom: 20%;
+
+}
+.conclusionText{
+	text-align: center;
+	font-size: 2.2rem;
+	line-height: 3rem;
+	font-family: caviar_dreamsbold;
+	padding-bottom: 2.5rem;
+}
+.conclusionAuthor{
+	text-align: center;
+	font-weight: bold;
+}
+
+.logoConclusion{
+	position: absolute;
+	top: 10%;
+	left: 40%;
+	width: 20%;
+}
+
+
+/*******************************************************************************************************************************************************
+******************************* FOR JAVASCRIPT *****************************
+*******************************************************************************************************************************************************/
+
+/**********************************************
+ * Fleche Bas 
+ *********************************************/
+
+#mainContainer{
+	transition : transform 0.5s ease-in;
+}
+.clickDown0{
+	transform: translateY(calc(-100% * 0/ 12));
+}
+.clickDown1{
+	transform: translateY(calc(-100% * 1/ 12));
+}
+.clickDown2{
+	transform: translateY(calc(-100% * 2/ 12));
+}
+.clickDown3{
+	transform: translateY(calc(-100% * 3/ 12));
+}
+.clickDown4{
+	transform: translateY(calc(-100% * 4/ 12));
+}
+.clickDown5{
+	transform: translateY(calc(-100% * 5/ 12));
+}
+.clickDown6{
+	transform: translateY(calc(-100% * 6/ 12));
+}
+.clickDown7{
+	transform: translateY(calc(-100% * 7/ 12));
+}
+.clickDown8{
+	transform: translateY(calc(-100% * 8/ 12));
+}
+.clickDown9{
+	transform: translateY(calc(-100% * 9/ 12));
+}
+.clickDown10{
+	transform: translateY(calc(-100% * 10/ 12));
+}
+.clickDown11{
+	transform: translateY(calc(-100% * 11/ 12));
+}
+
+/**********************************/
+
+.hide{
+	display: none;
+}
+
+
+/**********************************************
+ * Fleches L & R Details section 
+ *********************************************/
+
+#largeContainer{
+	transition : transform 0.6s cubic-bezier(.64,.22,.49,.92);
+}
+
+.clickSide0{
+	transform: translateX(calc(-100% * 0/ 12));
+}
+.clickSide1{
+	transform: translateX(calc(-100% * 1/ 12));
+}
+.clickSide2{
+	transform: translateX(calc(-100% * 2/ 12));
+}
+.clickSide3{
+	transform: translateX(calc(-100% * 3/ 12));
+}
+.clickSide4{
+	transform: translateX(calc(-100% * 4/ 12));
+}
+.clickSide5{
+	transform: translateX(calc(-100% * 5/ 12));
+}
+.clickSide6{
+	transform: translateX(calc(-100% * 6/ 12));
+}
+.clickSide7{
+	transform: translateX(calc(-100% * 7/ 12));
+}
+.clickSide8{
+	transform: translateX(calc(-100% * 8/ 12));
+}
+.clickSide9{
+	transform: translateX(calc(-100% * 9/ 12));
+}
+.clickSide10{
+	transform: translateX(calc(-100% * 10/ 12));
+}
+.clickSide11{
+	transform: translateX(calc(-100% * 11/ 12));
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+Exercice PHP/SQL 2
+Créer une page permettant d'afficher sous format HTML les 10 plus jeunes étudiants de la promotion. L'affichage se fera dans une table HTML, et comportera le nom des colonnes récupérés de la base de données.
+
+Bonus : modifier votre page afin de récupérer depuis l'url le nombre d'étudiants à afficher.
+
+Modifié le: jeudi 12 juin 2014, 16:11

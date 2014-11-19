@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy no-touch postmessage hashchange rgba borderradius opacity video svg no-chrome firefox no-ua_mobile no-ua_tablet no-ua_desktop no-ua_tv no-ua_bot no-ua_windowsphone no-ua_windows8 no-ua_blackberry no-ua_google_preview_bot no-psvita no-ua_ios_webview sessionstorage no-flash no-hls video-inline utf8-play no-mobile no-tablet no-ios no-android"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+        <title>Yuki, le chien qui parle</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+    <style>
+    html,
+body {
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+}
+body
+{
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Disable hugly Android highlight */
+}
+
+/* Load error CSS */
+.load-error-container {
+    display: table;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.load-error-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.load-error-content > h2 {
+    margin: 20px 10px;
+}
+.load-error-content > p {
+    margin: 0 30px;
+}
+/* END load error CSS */
+
+/* Loader related CSS*/
+
+/* both loaders */
+.loader
+{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+}
+
+/* animations boost : forces hardware acceleration by apply identity 3d transform */
+.force-transform {
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/* iOS Loader */
+.ios-loader .ios-loader-bar
+{
+  width: 10%;
+  height: 26%;
+  background: #fff;
+  position: absolute;
+  left: 44.5%;
+  top: 37%;
+
+  border-radius: 50px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  opacity: 0;
+}
+@-webkit-keyframes fade { from {opacity: 1;} to {opacity: 0;} }
+@-moz-keyframes    fade { from {opacity: 1;} to {opacity: 0;} }
+@-ms-keyframes     fade { from {opacity: 1;} to {opacity: 0;} }
+@-o-keyframes      fade { from {opacity: 1;} to {opacity: 0;} }
+@keyframes         fade { from {opacity: 1;} to {opacity: 0;} }
+
+.ff {background-position: center center; background-repeat: no-repeat; width: 100%; height: 100%; position: absolute; top: 0; left: 0; overflow: hidden}
+.loading-css {background-image:url(http://static1.dmcdn.net/images/black-loading.gif); background-color: #000}
+
+/* Android Loader */
+.android-loader-outer, .android-loader-inner, .android-loader:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+/* Mask */
+ .android-loader:after {
+    content:" ";
+    margin: 10%;    /* stroke width */
+    border-radius: 100%;
+    background: none;    /* container background */
+}
+/* Spinning gradients */
+ .android-loader-outer, .android-loader-inner {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+    -webkit-mask-box-image: url(http://static1.dmcdn.net/images/black-circle.svg);
+    -moz-mask-box-image: url(http://static1.dmcdn.net/images/black-circle.svg);
+    -ms-mask-box-image: url(http://static1.dmcdn.net/images/black-circle.svg);
+    -o-mask-box-image: url(http://static1.dmcdn.net/images/black-circle.svg);
+    mask-box-image: url(http://static1.dmcdn.net/images/black-circle.svg);
+}
+.android-loader-outer {
+    -webkit-animation-name: rotate-outer;
+    -moz-animation-name: rotate-outer;
+    -ms-animation-name: rotate-outer;
+    -o-animation-name: rotate-outer;
+    animation-name: rotate-outer;
+}
+.android-loader-inner {
+    -webkit-animation-name: rotate-inner;
+    -moz-animation-name: rotate-inner;
+    -ms-animation-name: rotate-inner;
+    -o-animation-name: rotate-inner;
+    animation-name: rotate-inner;
+}
+/* Halfs */
+ .android-loader-outer:before, .android-loader-inner:before, .android-loader-outer:after, .android-loader-inner:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    content:" ";
+}
+/* Left half */
+ .android-loader-outer:before, .android-loader-inner:before {
+    left: 0;
+    right: 50%;
+    border-radius: 72px 0 0 72px;    /* diameter */
+}
+/* Right half */
+ .android-loader-outer:after, .android-loader-inner:after {
+    left: 50%;
+    right: 0;
+    border-radius: 0 72px 72px 0;    /* diameter */
+}
+/* Half gradients */
+ .android-loader-outer:before {
+    background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 0.0), hsla(0, 0%, 100%, 0.5));
+    background-image: -moz-linear-gradient(top, hsla(0, 0%, 100%, 0.0), hsla(0, 0%, 100%, 0.5));
+    background-image: -ms-linear-gradient(top, hsla(0, 0%, 100%, 0.0), hsla(0, 0%, 100%, 0.5));
+    background-image: -o-linear-gradient(top, hsla(0, 0%, 100%, 0.0), hsla(0, 0%, 100%, 0.5));
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.0), hsla(0, 0%, 100%, 0.5));
+}
+.android-loader-outer:after {
+    background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 1.0), hsla(0, 0%, 100%, 0.5));
+    background-image: -moz-linear-gradient(top, hsla(0, 0%, 100%, 1.0), hsla(0, 0%, 100%, 0.5));
+    background-image: -ms-linear-gradient(top, hsla(0, 0%, 100%, 1.0), hsla(0, 0%, 100%, 0.5));
+    background-image: -o-linear-gradient(top, hsla(0, 0%, 100%, 1.0), hsla(0, 0%, 100%, 0.5));
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 1.0), hsla(0, 0%, 100%, 0.5));
+}
+.android-loader-inner:before {
+    background-image: -webkit-linear-gradient(top, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: -moz-linear-gradient(top, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: -ms-linear-gradient(top, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: -o-linear-gradient(top, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 75%, 0.5));
+}
+.android-loader-inner:after {
+    background-image: -webkit-linear-gradient(top, hsla(0, 0%, 50%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: -moz-linear-gradient(top, hsla(0, 0%, 50%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: -ms-linear-gradient(top, hsla(0, 0%, 50%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: -o-linear-gradient(top, hsla(0, 0%, 50%, 0.5), hsla(0, 0%, 75%, 0.5));
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 50%, 0.5), hsla(0, 0%, 75%, 0.5));
+}
+/* Spinning animations */
+ @keyframes rotate-outer {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(1080deg);
+        -moz-transform: rotate(1080deg);
+        transform: rotate(1080deg);
+    }
+}
+@-webkit-keyframes rotate-outer {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(1080deg);
+    }
+}
+@keyframes rotate-inner {
+    0% {
+        -webkit-transform: rotate(720deg);
+        -moz-transform: rotate(720deg);
+        transform: rotate(720deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes rotate-inner {
+    0% {
+        -webkit-transform: rotate(720deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+/* End Loader related CSS */
+    
+#startscreen .bar .background
+{
+    background-color: rgba(23,29,27,.25);
+}
+#controls .bar .background,
+#startscreen .bar.hover .background,
+#startscreen .bar:hover .background
+{
+    background-color: rgba(23,29,27,.6);
+}
+
+.bar .play .inner
+{
+    background-color: #171d1b;
+}
+.bar .play .inner .play-icon
+{
+    color: #f7fffd;
+}
+.bar .play:hover .inner .play-icon
+{
+    color: #ffcc33;
+}
+#player.started #controls .bar .play .inner .icon,
+#player.started #controls .bar .play .inner .icon2
+{
+    background-color: #f7fffd;
+}
+#player.started #controls .bar .play:hover .inner .icon,
+#player.started #controls .bar .play:hover .inner .icon2
+{
+    background-color: #ffcc33;
+}
+
+#startscreen .info div,
+#startscreen .info a
+{
+    color: #f7fffd;
+}
+#startscreen .info a:hover
+{
+    color: #ffcc33;
+}
+
+.bar .progress-bar .progress
+{
+    background-color: #ffcc33;
+    border-color: #ffcc33
+}
+.bar .progress-bar .buffer
+{
+    background-color: rgba(247,255,253, 0.3);
+}
+.bar .progress-bar .handle .inner
+{
+    border-color: #f7fffd;
+    border-top-color: #f7fffd;
+    border-left-color: #c5cdcb;
+    border-right-color: #c5cdcb;
+    border-bottom-color: #939b99;
+    background-color: #f7fffd;
+    background: -webkit-gradient(radial, 10 12, 6, 10 12, 12, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.2))) #f7fffd; /* old webkit syntax */
+    background: -webkit-radial-gradient(10px 12px, circle, rgba(0,0,0,0) 6px, rgba(0,0,0,0.2) 12px) #f7fffd; /* standard compliant webkit */
+    background: -moz-radial-gradient(10px 12px, circle, rgba(0,0,0,0) 6px, rgba(0,0,0,0.2) 12px) #f7fffd; /* standard compliant moz */
+    background: radial-gradient(10px 12px, circle, rgba(0,0,0,0) 6px, rgba(0,0,0,0.2) 12px) #f7fffd; /* standard */
+}
+
+#controls .bar .progress-bar .handle-hole
+{
+    background-color: #ffcc33;
+}
+
+#controls .bar .progress-bar .indicator .inner
+{
+    background-color: #171d1b;
+    color: #f7fffd;
+}
+#controls .bar .progress-bar .indicator .inner .arrow
+{
+    border-top-color: #171d1b !important;
+}
+
+/* Geo-locked error message override */
+#error .error-DM007 a
+{
+    color: #ffcc33;
+}
+
+.bar .duration
+{
+    color: #f7fffd;
+}
+
+.btn
+{
+  color: #f7fffd;
+  background: rgba(23,29,27, 0.4);
+}
+.btn-selected,
+.no-touch .btn:hover, .no-touch .btn:focus, .no-touch .btn:active
+{
+  color: #ffcc33;
+  background: rgba(23,29,27, 0.7);
+}
+    
+/* Custom Font Definition */
+@font-face {
+    font-family: 'Dailymotion';
+    src: url('/css/fonts/Dailymotion.eot');
+    src: url('/css/fonts/Dailymotion.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/Dailymotion.woff') format('woff'),
+         url('/css/fonts/Dailymotion.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Fullscreen Button */
+
+.bar .fullscreen
+{
+   background-image: url(/images/playerhtml5/fullscreen_on.png);
+}
+.bar .fullscreen:hover
+{
+   background-image: url(/images/playerhtml5/fullscreen_off.png);
+}
+    </style>
+        <link rel="stylesheet" href="xm0ttj_yuki-le-chien-qui-parle_animals_data/player-87b36a9a.css">
+            <link rel="canonical" href="http://www.dailymotion.com/video/xm0ttj_yuki-le-chien-qui-parle_animals">
+    </head>
+<body>
+    <script src="le%20chien%20qui%20parle%20-%20Vid%C3%A9o%20Dailymotion_fichiers/analytics.js" async=""></script><script>
+    
+// requestAnimationFrame polyfill
+// see:
+// * http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
+// * http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+(function() {
+    var lastTime = 0;
+    var vendors = ['ms', 'moz', 'webkit', 'o'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+        window.cancelAnimationFrame = window[vendors[x]+
+          'CancelAnimationFrame'] || window[vendors[x]+
+          'CancelRequestAnimationFrame'];
+    }
+
+    if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+              timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+
+    if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+}());
+
+(function loaderClosure(global, forcedFallback){
+
+    // jshint eqnull:true
+    if (forcedFallback == null) forcedFallback = false;
+
+    var LOADER_ID = 'loader',
+        NB_BARS = 8,
+        ANGLE = 360 / NB_BARS,
+        STEPS = 1000 / NB_BARS, // 1sec animation
+        loader = document.getElementById(LOADER_ID);
+
+    // The loader needs to start as fast as possible
+    // => we don't want to wait for Modernizr to only check 2 properties
+    var m = (function modernizrLight()
+    {
+        var cssomPrefixes = ['Webkit','Moz', 'O', 'ms'];
+        var st = document.createElement('div').style;
+        var ua = navigator.userAgent;
+
+        function checkProp(property, prefixed)
+        {
+            var ucProp  = property.charAt(0).toUpperCase() + property.slice(1),
+                props   = (property + ' ' + cssomPrefixes.join(ucProp + ' ') + ucProp).split(' ');
+
+            for ( var i in props )
+            {
+                var prop = props[i];
+                if ( st[prop] !== undefined ) return prefixed === true ? prop : true;
+            }
+            return false;
+        }
+        return {
+            csstransforms: checkProp('transform'),
+            cssanimations: checkProp('animationName'),
+            cssmask: checkProp('mask'),
+            android: ua.indexOf('Android') !== -1,
+            chrome: ua.indexOf('Chrome') !== -1,
+            prefixed: function(prop)
+            {
+                return checkProp(prop, true);
+            }
+        };
+    })();
+
+    function getLoader()
+    {
+        if (!loader)
+        {
+            loader = document.createElement('div');
+            loader.id = LOADER_ID;
+            loader.className = 'loader';
+
+            // force fallback via query parameter
+            // see : DAILY-30716
+            if (forcedFallback)
+            {
+                loader.className = "loading-css ff";
+            }
+            // The following should be tested with (m.android && m.cssmask && m.cssanimations && m.csstransforms)
+            // but Android stock browser pass the test without handling css masks correctly (false positive)
+            // see : DAILY-30299
+            else if (m.chrome && m.android)
+            {
+                loader.className = loader.className + ' android-loader';
+
+                var outer = document.createElement('div');
+                outer.className = 'android-loader-outer';
+
+                var inner = document.createElement('div');
+                inner.className = 'android-loader-inner';
+
+                outer = loader.appendChild(outer);
+                inner = loader.appendChild(inner);
+            }
+            // fallback on iOS style loader
+            else if (m.csstransforms)
+            {
+                // Disabling CSS animation if not supported
+                // android stock browser support animation but doesn't renders correctly
+                // for now (Android 4.1.2)
+                var cssanimations = m.cssanimations && !m.android;
+
+                loader.className = loader.className + ' ios-loader';
+                var bars = [];
+                for (var i = NB_BARS - 1; i >= 0; i--)
+                {
+                    var bar = document.createElement('div'),
+                        s = bar.style;
+                    bar.className = 'ios-loader-bar';
+
+                    s[m.prefixed('transform')] = 'rotate(-' + (i * ANGLE) + 'deg) translate(0, -142%)';
+                    if (m.cssanimations)
+                    {
+                        s[m.prefixed('animation')] = (cssanimations ? 'fade ' : '') +
+                            '1s linear -'+Math.floor(i*1000/NB_BARS)/1000+'s infinite';
+                    }
+                    // console.log('building bar animation :', i, m.prefixed('animation'), s[m.prefixed('animation')]);
+                    loader.appendChild(bar);
+                    bars.unshift(bar);
+                }
+
+                // CSS animations support: nothing to do
+                // otherwise run requestAnimationFrame animation
+                if (!cssanimations)
+                {
+                    var lastStep = 0;
+                    loader.start = function()
+                    {
+                        loader.startTime = (window.performance && window.performance.now) ? performance.now() : // FF | Chrome
+                                           window.mozAnimationStartTime ? window.mozAnimationStartTime :        // old FF
+                                           Date.now();                                                          // Default
+
+                        return requestAnimationFrame(loader.update);
+                    };
+                    loader.stop = function()
+                    {
+                        cancelAnimationFrame(loader.animationId);
+                        delete loader.animationId;
+                    };
+                    loader.update = function(timestamp)
+                    {
+                        var progress = timestamp - loader.startTime;
+                        var step = Math.round(progress/STEPS)%NB_BARS;
+
+                        if (step != lastStep)
+                        {
+                            for (var i = 0; i < NB_BARS; i++) bars[i].style.opacity = (1 / ((i + step)%NB_BARS));
+                            lastStep = step;
+                        }
+                        loader.animationId = requestAnimationFrame(loader.update);
+                    };
+                }
+            }
+            else
+            {
+                loader.className = "loading-css ff";
+            }
+            document.body.appendChild(loader);
+        }
+        return loader;
+    }
+
+    global.startLoader = function()
+    {
+        loader = getLoader();
+        if (loader.start && !loader.animationId) loader.start();
+        loader.style.display = 'block';
+        loader.style['z-index'] = '500';
+    };
+    global.stopLoader = function()
+    {
+        if (!loader) return;
+
+        if (loader.stop && loader.animationId) loader.stop();
+        loader.style.display = 'none';
+        loader.style['z-index'] = '-1';
+    };
+})(window/* jshint ignore:start */
+,  false /* jshint ignore:end */);
+    startLoader();
+    ENV = 'prod';
+    </script><div style="display: none;" class="loader ios-loader" id="loader"><div style="transform: rotate(-315deg) translate(0px, -142%); animation: 1s linear -0.875s normal none infinite fade;" class="ios-loader-bar"></div><div style="transform: rotate(-270deg) translate(0px, -142%); animation: 1s linear -0.75s normal none infinite fade;" class="ios-loader-bar"></div><div style="transform: rotate(-225deg) translate(0px, -142%); animation: 1s linear -0.625s normal none infinite fade;" class="ios-loader-bar"></div><div style="transform: rotate(-180deg) translate(0px, -142%); animation: 1s linear -0.5s normal none infinite fade;" class="ios-loader-bar"></div><div style="transform: rotate(-135deg) translate(0px, -142%); animation: 1s linear -0.375s normal none infinite fade;" class="ios-loader-bar"></div><div style="transform: rotate(-90deg) translate(0px, -142%); animation: 1s linear -0.25s normal none infinite fade;" class="ios-loader-bar"></div><div style="transform: rotate(-45deg) translate(0px, -142%); animation: 1s linear -0.125s normal none infinite fade;" class="ios-loader-bar"></div><div style="transform: rotate(0deg) translate(0px, -142%); animation: 1s linear 0s normal none infinite fade;" class="ios-loader-bar"></div></div>
+    <!--[if lte IE 10]>
+    <script src="http://static1.dmcdn.net/js/component/player/vendor/polyfill-c77bcd6a.js"></script>
+    <![endif]-->
+        <script src="xm0ttj_yuki-le-chien-qui-parle_animals_data/player-eb7a896c.js"></script>
+        <script src="xm0ttj_yuki-le-chien-qui-parle_animals_data/jquery.js"></script>
+    <div class="min-width-160px min-width-250px min-width-350px paused hideinfo" id="player"><div class="ff"><img src="xm0ttj_yuki-le-chien-qui-parle_animals_data/AYv-J.jpg" id="thumb" style="position: absolute; display: block; width: 100%; opacity: 1; top: -58.5px; left: 0px; height: auto;"></div><div id="error" class="ff"><div class=""><h2 class="error-title">Vous devez mettre à jour la version de votre Adobe Flash Player pour regarder cette vidéo.</h2><span class="error-message"><a href="http://get.adobe.com/flashplayer/" target="_blank">Téléchargez-le sur Adobe</a></span></div></div></div>
+    <div id="out"></div>
+    <script>
+    try
+    {
+        
+        var info = {"access_error":null,"ads":true,"advertising_content":false,"audience_url":null,"available_formats":["ld","sd"],"channel":"animals","created_time":1319906427,"duration":309,"embed_url":"http:\/\/www.dailymotion.com\/embed\/video\/xm0ttj","explicit":false,"id":"xm0ttj","isrc":null,"language":"fr","mode":"vod","onair":false,"owner.analytics_services":[],"owner.id":"x1pscd","owner.parent":null,"owner.screenname":"noriko75","owner.type":"ugc","owner.url":"http:\/\/www.dailymotion.com\/noriko75","owner.username":"noriko75","paywall":false,"private":false,"sharing_urls":{"facebookURL":"http:\/\/www.dailymotion.com\/sharer?vid=xm0ttj&uid=&service=facebook&redirect=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Fvideo%252Fxm0ttj_yuki-le-chien-qui-parle_animals","twitterURL":"http:\/\/www.dailymotion.com\/sharer?vid=xm0ttj&uid=&service=twitter&redirect=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DYuki%252C%2Ble%2Bchien%2Bqui%2Bparle%2B-%26url%3Dhttp%253A%252F%252Fwww.dailymotion.com%252Fvideo%252Fxm0ttj_yuki-le-chien-qui-parle_animals%26via%3DDailymotion"},"stream_audio_url":null,"stream_h264_hd1080_url":null,"stream_h264_hd_url":null,"stream_h264_hq_url":null,"stream_h264_ld_url":"http:\/\/www.dailymotion.com\/cdn\/H264-320x240\/video\/xm0ttj.mp4?auth=1412755291-2562-86vuo5nh-133483232f0e88a06b0138f2a78e673e","stream_h264_url":"http:\/\/www.dailymotion.com\/cdn\/H264-512x384\/video\/xm0ttj.mp4?auth=1412755291-2562-bxulllh0-83c7d4005da1fd56ffb134d709759193","stream_hls_url":"http:\/\/www.dailymotion.com\/cdn\/manifest\/video\/xm0ttj.m3u8?auth=1412755291-2562-scspkye5-0bce195eb35b91b5707b8c80f2a98230","stream_live_hls_url":null,"studio":false,"swf_url":"http:\/\/www.dailymotion.com\/swf\/video\/xm0ttj","tags":["marrant","amusant","insolite","dog","chien","funny","rigolo","animal","parle","wawa"],"thumbnail_120_url":"http:\/\/s1.dmcdn.net\/AYv-J\/x120-CyR.jpg","thumbnail_240_url":"http:\/\/s1.dmcdn.net\/AYv-J\/x240-1Hx.jpg","thumbnail_url":"http:\/\/s1.dmcdn.net\/AYv-J.jpg","title":"Yuki, le chien qui parle","type":"ugc","url":"http:\/\/www.dailymotion.com\/video\/xm0ttj_yuki-le-chien-qui-parle_animals","advertising":{"status":"ok","type":"sdk\/liverail","ac_token":1412582491,"params":{"LR_PUBLISHER_ID":21292,"LR_TITLE":"Yuki, le chien qui parle","LR_VIDEO_ID":36990199,"LR_VIDEO_URL":"http:\/\/www.dailymotion.com\/video\/xm0ttj","LR_VERTICALS":"animals","LR_VIDEO_AMID":2882749,"LR_VIDEO_DURATION":309,"LR_TAGS":"VTYPE_ugc,SMODE_vod,LANG_fr,PAGE_playerPage,PTYPE_web,VDUR_medium","LR_DM_VTYPE":"ugc","LR_DM_SMODE":"vod","LR_DM_LANG":"fr","LR_DM_VDUR":"medium","LR_DM_PAGE":"playerPage","LR_DM_PTYPE":"web","LR_ALLOWDUPLICATES":1,"LR_DESCRIPTION":"lifestyle.dailymotion.com","LR_URL":"http:\/\/www.dailymotion.com\/video\/xm0ttj_yuki-le-chien-qui-parle_animals","LR_COMPANIONS":"300:250:mc_Middle:mc_Middle:true","LR_LAYOUT_SKIN_ID":0,"LR_DM_NEXTPERF_OVERLAY_ZID":"28934","LR_DM_ADTV_CATEGORIES":"Arts & Entertainment"},"timeouts":{"load":3000,"global":10000}},"log_view_urls":{"vs":"http:\/\/www.dailymotion.com\/sense\/images\/vs\/tag.gif","comscore":"http:\/\/b.scorecardresearch.com\/b?c1=1&c2=4000005&c3=4000005&c4=060508&c5=060508&c6=xm0ttj","mediametrie":"http:\/\/prof.estat.com\/m\/web\/219019208588?n=8012301&v=3.2&r=http%3A%2F%2Fwww.dailymotion.com%2Fvideo%2Fxm0ttj_yuki-le-chien-qui-parle_animals&dom=www.dailymotion.com","internal":"http:\/\/www.dailymotion.com\/logger\/video\/access\/xm0ttj?session_id=&referer=&country=FR&user_agent=Mozilla%2F5.0+%28X11%3B+Ubuntu%3B+Linux+x86_64%3B+rv%3A32.0%29+Gecko%2F20100101+Firefox%2F32.0&key=811vwur0m30m7kw2knd0rw0&v=54327630&i=500c5e5c&h=3beb879a0a4192f6988272f70314914a","loggerv3":"http:\/\/logger-04.vty.dailymotion.com\/dm\/desktop-linux\/embed_player\/u\/play?t=DAA60923DE99776&country=FR&pid=54324c5b3ee03&vl=fr&sv=fr&video_id=36990199&channel_id=7&class=ugc&mode=vod&owner_id=2882749&s=486ab6eba0df7f6bc94312498fd732e60m7kw2knd0rw0","progress@\/10%":"http:\/\/logger-04.vty.dailymotion.com\/dm\/desktop-linux\/embed_player\/a\/progress?t=DAA60923DE99776&country=FR&pid=54324c5b3ee03&vl=fr&sv=fr&video_id=36990199&channel_id=7&class=ugc&mode=vod&owner_id=2882749&pos=%position%&time=%time%&length=309","history":"http:\/\/www.dailymotion.com\/history\/log\/user\/noriko75\/video\/xm0ttj?action=start&","history@80%|10m":"http:\/\/www.dailymotion.com\/history\/log\/user\/noriko75\/video\/xm0ttj?action=complete&","behavior@40%|3m":"http:\/\/www.dailymotion.com\/behavior\/%session%\/xm0ttj?"}},
+            fields = "access_error,ads,advertising_content,audience_url,available_formats,channel,created_time,duration,embed_url,explicit,id,isrc,language,mode,onair,owner.analytics_services,owner.id,owner.parent,owner.screenname,owner.type,owner.url,owner.username,paywall,private,sharing_urls,stream_audio_url,stream_h264_hd1080_url,stream_h264_hd_url,stream_h264_hq_url,stream_h264_ld_url,stream_h264_url,stream_hls_url,stream_live_hls_url,studio,swf_url,tags,thumbnail_120_url,thumbnail_240_url,thumbnail_url,title,type,url,advertising,log_view_urls";
+
+                    var internalPlugins = {
+                'related' : [
+                    'http://static1.dmcdn.net/js/component/player/player_related-334f0807.js',
+                    'http://static1.dmcdn.net/css/component/player/player_related-5fcd2ec0.css'
+                ],
+                'hashchange' : 'http://static1.dmcdn.net/js/component/player/vendor/jquery-hashchange-752f3db1.js',
+                'gestures'   : 'http://static1.dmcdn.net/js/component/player/vendor/jquery-gestures-ff339322.js',
+                'audience'   : 'http://static1.dmcdn.net/js/component/player/vendor/jquery-audience-7238a38a.js',
+                's_code'     : 'http://static1.dmcdn.net/js/component/player/vendor/dailymotion_scode_mobile-cd1da98c.js',
+                'xiti'       : 'http://static1.dmcdn.net/js/component/player/vendor/ATPlugDM-f12e8116.js',
+                'estat'      : 'http://static1.dmcdn.net/js/component/player/vendor/mu_4.0.36-af59da88.js'
+            };
+            var plugins = {"hapyak":"\/\/hapyak.dmcdn.net\/js\/hapyak.js"};
+            $.extend(plugins, internalPlugins)
+            DM.config('plugins', plugins);
+        
+        DM.config('assets',  {"logo_svg":"http:\/\/static1.dmcdn.net\/images\/logo.svg","logo_png":"http:\/\/static1.dmcdn.net\/images\/logo_player_60.png","liveshow_logo_svg":"http:\/\/static1.dmcdn.net\/images\/logo_liveshow.svg","loadingImg":"http:\/\/static1.dmcdn.net\/images\/black-loading.gif","circleSVG":"http:\/\/static1.dmcdn.net\/images\/black-circle.svg","font_eot":"\/css\/fonts\/Dailymotion.eot","font_woff":"\/css\/fonts\/Dailymotion.woff","font_ttf":"\/css\/fonts\/Dailymotion.ttf","fullscreen_on":"\/images\/playerhtml5\/fullscreen_on.png","fullscreen_off":"\/images\/playerhtml5\/fullscreen_off.png"});
+        DM.config('options', {"referer":"http:\/\/www.dailymotion.com\/video\/xm0ttj_yuki-le-chien-qui-parle_animals","ip":"80.12.94.92","is_secure":false,"http_x_requested_with":"","device_type":"desktop","cookie_root_domain":".dailymotion.com","s_server_time":"10:01-Monday","env":"prod","userEnv":{"version":"fr","cc":"FR","as":"AS3215"},"sdk_liverail":{"swf":"http:\/\/vox-static.liverail.com\/swf\/v4\/admanager.swf","js":"http:\/\/cdn-static.liverail.com\/js\/LiveRail.AdManager-1.0.js"},"is_partner_player":false,"ui":{"background":"171d1b","foreground":"f7fffd","highlight":"ffcc33","foregroundRGB":"247,255,253","backgroundRGB":"23,29,27","foregroundDark1":"c5cdcb","foregroundDark2":"939b99"},"hls_default_quality":380,"gifloader":false});
+        DM.config('labels',  {"flash_warning":["Vous devez mettre \u00e0 jour la version de votre Adobe Flash Player pour regarder cette vid\u00e9o.","<a href=\"http:\/\/get.adobe.com\/flashplayer\/\" target=\"_blank\">T\u00e9l\u00e9chargez-le sur Adobe<\/a>"],"partner_player_warning":["Vid\u00e9o non disponible","Cette vid\u00e9o n'a pas \u00e9t\u00e9 mise \u00e0 disposition sur votre appareil par le propri\u00e9taire."],"ads":{"video-countdown":"Publicit\u00e9 - Votre vid\u00e9o dans %d secondes","close":"Fermer","instreamErrorMessage":"D\u00e9sol\u00e9, il semble y avoir un probl\u00e8me. Nous travaillons pour le r\u00e9soudre au plus vite.","instreamErrorPlay":"Cliquer ici pour visionner la vid\u00e9o"},"load_error":["D\u00e9sol\u00e9, un probl\u00e8me est survenu...","Rafraichissez cette page ou r\u00e9essayez plus tard."]});
+        
+        window.player = new DailymotionPlayer(info, $('#player'), fields);
+
+    }
+    catch (e)
+    {
+        if (console) console.error(e.stack);
+        document.write(
+            '<div class="load-error-container">' +
+                '<div class="load-error-content">' +
+                    '<h2>Désolé, un problème est survenu...</h2>' +
+                    '<p>Rafraichissez cette page ou réessayez plus tard.</p>' +
+                '</div>' +
+            '</div>');
+        window.stopLoader();
+                (new Image).src = 'http://www.dailymotion.com/track/html.startupfail';
+            }
+    </script>
+
+
+</body></html>

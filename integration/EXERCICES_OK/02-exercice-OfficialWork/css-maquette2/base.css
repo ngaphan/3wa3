@@ -1,0 +1,67 @@
+
+/*•	Base : balise simple, tout ce qui est Typographie, pr que ça soit cohérent/concordant ds ttes les pages.( body, a,p,span,h,img,table…………….)*/
+
+body
+{	
+	font-family: 'Oswald', sans-serif;	
+}
+
+header,footer
+{
+	text-align:center;
+}
+
+h1
+{	
+	font-size:4.375rem;	
+	line-height:5.375rem;
+	margin:2rem 0;	/*pousser h1 av d'autre bloc qui est en dessous*/
+}
+
+h2
+{	
+	font-size:2rem;
+	text-align:left;
+	line-height:3rem;
+	margin:0 0 1rem 0;	/*pousser h2 av d'autre bloc qui est en dessous*/
+}
+
+h3
+{	
+	font-size:1.75rem;
+	text-align:left;
+	line-height:3rem;
+	margin:0 0 1rem 0;	/*pousser h3 av d'autre bloc qui est en dessous*/
+}	
+
+h5
+
+{			
+	font-size:1rem;
+	text-align:center;
+	line-height:2rem;
+	margin:0 0 1rem 0;/*pousser h5 av d'autre bloc qui est en dessous */
+}
+
+p
+{	
+	font-size:1rem;		
+	line-height:1.4rem;
+	
+}
+
+img
+{
+	width: 100%;/*obligatoire! obligatoire! meme si on n'appelle pas directement la balise <img> ds ts les codes*/
+}
+
+
+
+
+
+
+
+
+
+
+

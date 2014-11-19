@@ -1,0 +1,12 @@
+Exo 3 POO
+On souhaite modéliser plusieurs espèces animales ayant des particularités différentes.
+
+Créer une classe Animal représentant une espèce d'animal. Y intégrer les propriétés suivante : (nom, vitesse, poids, points de vie (100)) ainsi que les getters et setters associés et une méthode __toString() permettant d'afficher le nom de l'animal.
+Créer une classe Bird et Fish héritant de la class Animal. Les oiseaux ont une nouvelle fonction fly(), les poissons swim().
+Modéliser une classe Eagle.
+Modéliser les classes Shark, Dolphin et Whales.
+Lorsqu'un animal grandit, sa vitesse et son poids  augmentent. Ecrivez donc la fonction growUp(). Par défaut, on ajoutera 10% de sa propre vitesse et 20% de son propre poids.
+Une baleine grandit beaucoup plus vite que les autres (50%) mais sa vitesse ne s'augmente que de 2%.
+Les requins et les aigles ont la capacité à attaquer. Modéliser cela et ajouter le fonctionnement pour ces animaux.
+Chaque animal pourra attaquer un autre animal, seulement s'il possède la méthode attaquer. Evidemment cet effet, réduira les points de vie de l'autre animal.
+Modifié le: vendredi 31 octobre 2014, 15:06

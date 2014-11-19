@@ -1,0 +1,180 @@
+body{
+	width: :100%;/*prend tt largeur,faut son parent 100%ossi*/
+	height: 100%
+}
+
+.sect{
+
+	margin: 5rem 30rem;
+
+	perspective:20rem;
+	width: :100%;
+	/*prend tt largeur,faut son parent body 00%ossi
+	height: 100%;*/
+	perspective-origin:center center;/*center,bottom,left*/
+}
+
+
+img{
+	transform:	scale3d(0.5,0.8,-1) 
+				translate3d(0,0,5rem)
+				 ;
+}
+
+img{
+	
+	transform-origin: center center -100rem ;
+	transform:rotate3d(0,1,0,45deg) ;
+}
+
+
+************
+
+degradés
+
+html{
+
+	width:100%;
+	height: 100%;
+}
+
+body{
+
+	width:100%;
+	height: 100%;
+	background: linear-gradient(
+		30deg,
+		red 30% ,
+		orange 50%,
+		blue ,
+		green,
+		yellow
+	);
+	/*background-image:url(../background/bg)*/ 
+}
+
+****************
+
+html{
+
+	width:100%;
+	height: 100%;
+}
+
+body{
+
+	width:100%;
+	height: 100%;
+	background: linear-gradient(
+		45deg,
+		blue 30% ,
+		blue 50% ,
+		orange 50%,
+		orange 70%
+		
+	);
+
+
+	/*background-image:url(../background/bg)*/ 
+}
+
+**************
+
+html{
+
+	width:100%;
+	height: 100%;
+}
+
+body{
+
+	width:100%;
+	height: 100%;
+	background: linear-gradient(
+
+		rgba(169,234,254,1) 25%,
+		rgba(0,255,255, 1) 300%
+
+		);
+
+
+	
+}
+
+*************************************************************
+	*******************repeating-linear-gradient************
+	*********************************************************
+
+html{
+
+	width:100%;
+	height: 100%;
+}
+
+body{
+
+	width:100%;
+	height: 100%;
+	margin:0 auto;
+
+
+	background:
+
+		repeating-linear-gradient(
+
+		rgba(121,248,248,0.5) 50%,
+		rgba(254,254,254,0.5)),
+		
+		
+		url(background/bg76.gif);
+	
+}
+
+	*********************************************************
+	******************************radial-gradient************
+	*********************************************************
+
+
+html{
+
+	width:100%;
+	height: 100%;
+}
+
+body{
+
+	width:100%;
+	height: 100%;
+	
+
+
+	background:
+
+		radial-gradient(
+
+
+		at top left, 
+
+		rgba(121,248,248,0.5) 20%,
+		rgba(254,254,254,0.5) 50%
+
+		),
+		
+		
+		url(background/bg76.gif);
+	
+}
+
+
+
+.sect{
+
+	width:20%;
+	height:20rem;
+	margin:8rem auto;
+
+}
+
+****************
+
+}

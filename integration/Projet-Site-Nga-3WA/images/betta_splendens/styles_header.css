@@ -1,0 +1,52 @@
+/* Header */
+header
+{
+width:100%;
+height:80px;
+}
+
+
+#titre_principal ,#logo
+{
+display: inline-block;
+position:absolute;
+}
+
+div#logo 
+{
+left:80px;
+}
+
+div#fond_header
+{
+width:100%;
+background-image: linear-gradient(#AFEEEE,transparent);
+box-shadow:0.5px 0.5px 10px #00FFFF;
+}
+
+header h1
+{
+font:  2em 'Georgia narrow',sans-serif;
+color:#3CB371;
+text-shadow:2px 2px 2px grey;
+margin-left:110px;
+}
+
+header h2
+{
+font:bold italic 1.1em 'arial narrow',sans-serif;
+color:#808000;
+margin-left:200px;	
+}
+
+
+clickable image
+<!DOCTYPE html>
+<html>
+<body>
+
+<button type="button" onclick="alert('Hello world!')"><img src="tycon.png"/></button>
+ 
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+Exercice PHP : Exercice TODO list
+On vous propose de gérer une TODO list (liste de choses à faire).
+
+Pour ce faire vous devrez pouvoir stocker :
+
+le titre
+la description
+la date
+la priorité
+Vous devez proposer une page pour ajouter une nouvelle tâche, une pour lister toutes les tâches, et une autre pour en supprimer.
+
+Pour les plus rapides : ajouter une page de modification, puis une page pour copier une ligne.
+
+Modifié le: vendredi 26 septembre 2014, 18:54

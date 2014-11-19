@@ -1,0 +1,136 @@
+
+
+HTML4
+
+
+
+
+formualire : moyen de gérer le site
+des qu'on a 1 pt  champ à saisir -> fo 1 formularie
+balise principal <form>
+clicker sur valider ->envoyer au serveur
+
+attr action: indiquer qui esr la page qui reçoit/récupere le formulare
+attr method : GET/POST:methode  de réception /d'envoi  du formulaire
+get : les donner dans (url)(la bare d'address)
+post:les donner passe pas dans (url), on ne voit pas , C sécurité
+
+ts ce qqui est entre les balise form sera envoyé
+
+ts les  champ saisi obligatoire avoir 
+
+_1 attr "name" s'est fait pr php, en réalisté  php reçoit le "name".sinon on a rien à récupérer, les nom doit êter minuscule
+_ id/class s'est fait pr "css/js"
+
+_list déroulant: balise <select> , comme <ul> ds html; ds cet list -> il y a des option -> balise<option> =<li> entrer dans la list. fo mettre attr "value " ds <option>, car php va récupérer que la "value".
+
+chaque champ de saisir doit être dans 1 block<p>
+
+laisser 1ère option vide  sinon l'internaute pense que c'est obligatoire car il ne voi pas d'autre options à choisir
+
+pr que php detecte 1 erreur "non choix"
+pr la case vide->value="". pas d'espace rien du tt entre"".
+
+
+faire la selection multiple ds la liste ???
+->
+
+intitulé du champs : avant selectt -> balise<label>
+
+champs de saisir multiligne-><textarea></textarea>, entre ces 2 balises, sil y a 1 espace, 1 point ,... pr le php c'est les caractères, il va recevoir ts-> vaut mieux coller les 2 balises pr etre sur de ne rien avoir dedans
+
+pr validator: -> attr qui sert à donner la taille du champs:
+* row="10"(nbr de lignes/cols="100" , cols correspond au nbr de caractère,
+->mieux: laisser vide ou "0";
+* maxlength="100" : longeur du text=nbr caractère
+
+_<input> = champs de saisi-> faut 1 type :text;
+<input> auto fermant , tj name à coté
+
+champs email/pwd
+-><input type ="password" name="pwd" />
+
+bouton radio-> s'est fait pr selectionner 1 seul valeur -> pas de décochage( defaut)
+-> <input type="radio" name="choix" valeur="oui/non/pasbeaucoup/alafolie"> -> chaque buoton -> 1 balise
+
+IMPORTANT : TS LES BALISE DE CES BOUTON DE LA MEME QUESTION DOIT AVOIR LE MEME NOM;
+
+case à cocher-> peut cocher +ieurs 
+			-> décrochage possible
+			->name identiq de type array(car plusieur valeur)
+			->type"checkbox"
+
+<input type="checkbox" name="color[]" valeur="red/yellow/blue/>
+
+présélectionner 
+
+-> attr html->que  pr les champs de sélection ->ds balise option -> metre selected-< pr prérempli/présélectioné
+
+
+ATTENTION:
+PR REFRACHIR LA PAGE PR LES FORMULAIRE -> CLICK DANS LA BARRE D'ADRESS(URL) PUIS ENTER; PAS LE FLÈCHE RONDE comme on a souvent recgarger la page
+
+pr bouton radio/case à cocher -> attr checked ds balise input
+
+Presaisie -> attr "value" .si on donne 1 value, ce text ca prérempli le champs ds balise <input>
+
+type="file" -> bouton à parcourir
+<input type="file" -<php recupre valeur binaire , name puis tranformer.
+
+type="submit" -> il va appeler l'attr "action" du formulaire
+
+<input type="submit" name=""
+ value="OK" /> -> value OK permet de changer le text préecrit par defaut"Envoyer" / changer le text ecrit ds le bouton
+
+
+ *************************
+************************
+
+HTML5******************
+
+CHAMPS TEMPOREL , que pr chrome, FF marche pas
+
+ds <input type="date"..../> ça donne 1 calendrier av la flèche pr défiler
+
+*datetime-> date +heur
+*month
+*week
+*time -> heure
+
+site:"caniuse" -> tapper le nom du type ou attr pr voir si on peut utiliser cet attr;
+
+les type numérique
+<input type="number" -> ça donne 1 champs numeric et le pt flèche pr choisir le chiffre 
+
+
+<input type="range" / range= slider
+-> ça donne 1 barre, on faire glisser pr choisir la plage numeric
+
+
+ls attr html à metre ds balise <input>
+
+//si on a 0 à 100
+
+<input value="0"> -> le cuseur metre directement à 0 
+<input min="0"> -> valeurmin init= 0 ;
+<input max="100"> -> valeurmax init= 0 ;
+<inputstep="20"> -> il saute 5 fois pr arriver à 100 ;
+
+le fait de mettre min /max n'écris pas sur html.Donc faut écrire quand meme dans la page html ses 2 valeur min max
+
+*type="color" -> On a 1 Tshirt initial de color " #4a193a" on cliick sur blue et ça va changer la couleur du T-shirt
+
+-> ça ns done 1 barre de couleur default = noir, on clixk sur cet barre, ça donne 1 fenetre couleur, on lccki sur 1 couleur ou 1 zone couleur çaa donne la valeur hexadecimal, -> copier coller dans value="" dans <input>
+
+
+* QUE PR MOBILE: -> PR AFFICHIER 1 CLAVIER DE CHIFFRE (NUMERIQ) OU 1 CLAVIER DÉDIÉ( EX : 1 bar d'adresse url) ou affiche une c hamps recherche; ou email donc :
+
+type="url";//faut http://..........
+type="search";// affiche 1 loupe pr chercher(pr IOS=iPhone)
+type="tel";
+type="email"; // ça vérifie automatic la syntaxe de l'email, vérifi si email existe, block la submission si syntaxe pas bonne ou addresse n'esiste pas
+
+
+sur l'ordi bureau on voir rien, pr tester , tapper directement sur url
+*input type url/tel/email .... puis aller ds Images pr voir comment ça donne comme clavier
+

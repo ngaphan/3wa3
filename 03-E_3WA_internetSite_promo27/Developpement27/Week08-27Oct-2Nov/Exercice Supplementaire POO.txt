@@ -1,0 +1,17 @@
+Exercice Supplémentaire POO
+
+Nous allons créer la structure POO permettant de gérer une animalerie en ligne.
+
+Tous ce qui est en vente sur le site est identifié par un nom et un prix HT.
+
+Un animal possède en plus une date de naissance et un poids (en kg).
+
+Chaque nourriture comporte également sa marque, son type (pâtée ou graine), sa quantité (en g) et sa date de péremption.
+
+1    Créer une classe Animal, correspondant à un animal en vente.
+2    Créer une classe Food, correspondant à de la nourriture en vente.
+3    Ajouter une fonction getPrice() permettant de renvoyer le prix TTC d'un animal ou d'une nourriture.
+4    Ajouter une méthode feed( Food ) qui permet de nourrir un animal. Cette méthode doit faire grossir l'animal de la moitié de la quantité qu'il mange.
+5    Donnez à manger à vos animaux !
+
+Modifié le: jeudi 3 juillet 2014, 16:46

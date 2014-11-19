@@ -1,0 +1,62 @@
+
+/*•	Theme : tout ce qui est visuel ou couleur: couleur du text, background, bordure,ombre,bg-img,*/
+
+
+body
+{
+	background:url(../img-maquette2/main-bg.jpg);
+}
+
+h1
+{	
+	color: #054175;
+}
+
+h2,h3,h5
+{	
+	color:#1F0000;
+}
+
+p
+{	
+	color:#000009;
+}
+
+#navig
+{
+	background:#064C8A;
+}
+
+#img-site
+{	
+	border-color:#D4D4D4;	
+}
+
+section
+{			
+	border-color: #D4D4D4;		
+}
+
+.menu > li > a
+{
+	color:white;
+}
+
+
+.sub-menu > li > a 
+{
+	color:rgb(45,36,30);	
+	background:rgba(201,160,220,0.2);
+	
+}
+
+.article-btn,.sect3-btn
+{	
+	background:#064C8A;
+	color:white;
+}
+
+
+
+
+

@@ -1,0 +1,13 @@
+Exercice POO 6
+
+Créer une classe RandomTools dans le namespace troiswa\dev23\tools. Cette classe va nous permettre de générer des nombres aléatoires.
+
+    Créer la classe RandomTools.
+    Ajouter deux propriétés $iMin et $iMax, permettant de modifier les limites du nombre à générer.
+    Ajouter les accesseurs et mutateurs et réduire la visibilité des propriétés de la classe.
+    Créer la fonction generate() qui génèrera le nombre aléatoire compris entre $iMin et $iMax. Vous pouvez utiliser la fonction rand().
+    Créer une fonction getLastGenerated() qui renvoie la dernière valeur générée. Si aucune valeur n'a été générée, la fonction doit renvoyer null.
+    Créer une fonction getAllGenerated() qui renvoie la liste de tous les nombres générés depuis le dernier changement de borne.
+    Créer une fonction betterGenerate() prenant en paramètre la quantité de nombre à générer, puis calcule le nombre médian obtenu.
+
+Modifié le: mardi 1 juillet 2014, 14:49

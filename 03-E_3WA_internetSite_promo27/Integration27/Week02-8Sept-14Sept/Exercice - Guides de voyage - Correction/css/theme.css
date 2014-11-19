@@ -1,0 +1,126 @@
+h1, h3{
+	color: rgba(255, 255, 255, 1);
+}
+
+h2{
+	color: rgba(28, 28, 28, 1);
+}
+
+.row-dark{
+	background: rgba(28, 28, 28, 1);
+}
+
+.row-light{
+	background: rgba(255, 255, 255, 1);
+}
+
+.row-header{
+	background-image:
+		url(../img/index-02.png),
+		url(../img/index-01.jpg);
+}
+
+.row-pre-footer{
+	background-image: url(../img/index-07.jpg);
+}
+
+.title-row-dark{
+	color: rgba(100, 181, 162, 1);
+}
+
+.title-row-img{
+	color: rgba(255, 255, 255, 1);
+}
+
+.title-underline-row-light::after{
+	background: rgba(28, 28, 28, 1);
+}
+
+.title-underline-row-img::after{
+	background: rgba(255, 255, 255, 1);
+}
+
+.primary-nav > li > a{
+	color: rgba(255, 255, 255, 1);
+}
+
+.primary-nav > li > a:hover{
+	color: rgba(28, 28, 28, 1);
+	background: rgba(255, 255, 255, 1);
+}
+
+.header-intro{
+	color: rgba(255, 255, 255, 1);
+}
+
+.city{
+	border-color: rgba(28, 28, 28, 0.5);
+}
+
+.city-name{
+	color: rgba(255, 255, 255, 1);
+}
+
+.city-nyc{
+	background-image: url(../img/index-03.jpg);
+}
+
+.city-paris{
+	background-image: url(../img/index-04.jpg);
+}
+
+.city-portland{
+	background-image: url(../img/index-05.jpg);
+}
+
+.city-san-francisco{
+	background-image: url(../img/index-06.jpg);
+}
+
+.btn-dark{
+	color: rgba(28, 28, 28, 1);
+	border-color: rgba(28, 28, 28, 1);
+}
+
+.btn-dark:hover{
+	color: rgba(255, 255, 255, 1);
+	background: rgba(28, 28, 28, 1);
+}
+
+.btn-light{
+	color: rgba(255, 255, 255, 1);
+	border-color: rgba(255, 255, 255, 1);
+}
+
+.btn-light:hover{
+	color: rgba(28, 28, 28, 1);
+	background: rgba(255, 255, 255, 1);
+}
+
+.commercial-argument::before{
+	color: rgba(255, 255, 255, 1);
+}
+
+.commercial-argument-text{
+	color: rgba(255, 255, 255, 1);
+}
+
+.text-citation{
+	color: rgba(28, 28, 28, 1);
+}
+
+.text-citation-author{
+	color: rgba(28, 28, 28, 0.3);
+}
+
+.pre-footer-text{
+	color: rgba(255, 255, 255, 1);
+}
+
+.secondary-nav > a{
+	color: rgba(28, 28, 28, 0.3);
+}
+
+.secondary-nav > a:hover{
+	color: rgba(28, 28, 28, 1);
+}

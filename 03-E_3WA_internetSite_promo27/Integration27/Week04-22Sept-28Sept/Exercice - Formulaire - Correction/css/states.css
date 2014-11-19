@@ -1,0 +1,13 @@
+/*
+
+	form
+
+***************************************/
+
+.form-submit:hover{
+	cursor: pointer;
+}
+
+.form-input:focus + .form-icon::before{
+	transform: scale(1.5);
+}

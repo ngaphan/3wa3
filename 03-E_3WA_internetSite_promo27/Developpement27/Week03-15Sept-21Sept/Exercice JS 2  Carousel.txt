@@ -1,0 +1,17 @@
+Exercice JS 2 : Carousel
+Partie 1
+En vous basant du projet carousel, afficher un slider d'images défilant lorsque l'on clique sur des boutons "précédent" et "suivant".
+
+Partie 2
+Afficher un bouton permettant d'afficher une image aléatoire.
+
+Afficher un bouton permettant de faire défiler toutes les images. Voir la fonction window.setInterval().
+
+Afficher un bouton permettant d'arrêter le défilement automatique. Voir la fonction window.clearInterval().
+
+Partie 3
+Mettre les boutons dans une barre et permettre de masquer/afficher la barre lorsque l'on clique sur un bouton.
+
+Permettre d'afficher l'image suivante/précédente lorsque la souris passe sur le bouton "suivant"/"précédent".
+
+Modifié le: mercredi 21 mai 2014, 15:34

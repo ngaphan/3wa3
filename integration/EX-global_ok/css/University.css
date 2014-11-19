@@ -1,0 +1,15 @@
+
+html{
+	width: 100% ;
+}
+
+body{
+	
+	width: 100% ;
+	background: url(img/beyond.jpg);
+	overflow: hidden;
+}
+video , img, audio , embed
+{
+	width: 100% ;
+}

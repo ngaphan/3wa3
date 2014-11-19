@@ -1,0 +1,22 @@
+
+body{
+		
+	background: url(../img/beyond.jpg);
+}
+
+body .beyond{
+		
+	background: none;
+}
+
+h1{	
+	color: white;	
+}
+
+h2{	
+	color: #274558;
+}
+
+h3{	
+	color: #274558;
+}

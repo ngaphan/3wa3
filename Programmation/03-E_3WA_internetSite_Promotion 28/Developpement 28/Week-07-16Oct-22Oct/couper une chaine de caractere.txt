@@ -1,0 +1,10 @@
+Couper une chaine de caractère
+function getLittleDescription($texte, $nbchar = 50)
+
+{
+
+return (strlen($texte) > $nbchar ? substr(substr($texte,0,$nbchar),0,strrpos(substr($texte,0,$nbchar)," "))."..." : $texte);
+
+}
+
+Modifié le: mercredi 22 octobre 2014, 16:43

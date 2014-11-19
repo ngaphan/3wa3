@@ -1,0 +1,7 @@
+
+/*•	States : fixer des composants visuels , donner 1 style : close, open, hidden,visible,collapse…(créer le classes : is-hidden /is-open/ is-visible /is-collapse………….)*/
+
+.is-active
+{
+	background:#05457D;
+}

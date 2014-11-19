@@ -1,0 +1,8 @@
+JS
+	- navigation par la molette
+	- navigation avec menu
+
+HTML/CSS
+	- HTML : grand bloc avec toutes les rubriques / l'écran n'affiche qu'une rubrique
+	- transitions sur les rubriques
+	- transitions sur les textes (qui apparaissent après la rubrique)

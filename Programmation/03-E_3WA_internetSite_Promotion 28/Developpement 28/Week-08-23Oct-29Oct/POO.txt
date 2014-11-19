@@ -1,0 +1,27 @@
+POO
+1. Créer une classe Student représentant un étudiant avec les attributs suivants :
+
+nom
+date de naissance
+adresse
+Créer deux étudiants.
+
+1.2 Affiche le nom, l'adresse et la date de naissance de chaque étudiants
+
+1.3 Créer une méthode getInfo qui renvoie : Je suis l'élève x avec pour date de naissance x et pour adresse x
+
+2. On souhaite maintenant ajouter différentes notes aux étudiants (sans se soucier des matières).
+
+Ajouter une propriété "notes" qui contiendra la liste de toutes les notes d'un étudiant, il doit être possible d'ajouter une seule note, et de récupérer la liste de toutes les notes.
+
+2.2 Rajouter la possibilité d'ajouter une note ou d'ajouter plusieurs notes dans la même fonction
+
+3. Ajouter une fonction getAverage() retournant la moyenne de ses notes.
+
+4. Ajouter des fonctions permettant de récupérer la plus petite et la plus haute note.
+
+5. Créer une fonction permettant de comparer la moyenne de deux étudiants. Cette fonction retourne la phrase suivante : ex: L'étudiant x a avec une moyenne de y surpasse l'étudiant x avec une moyenne de y
+
+6. Ajouter un constructeur pour créer directement un student sans passer par les setters
+
+Modifié le: vendredi 31 octobre 2014, 09:36

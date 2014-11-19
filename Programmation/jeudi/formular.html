@@ -1,0 +1,72 @@
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1" />
+		<title>test</title>
+		<!--<link rel="stylesheet" href="css/reset.css"/>-->
+		<link rel="stylesheet" href="formular.css"/>
+		<script src="utilities-nga.js"></script>
+	</head>
+
+	<body>
+
+		<h1 name="title">Carnet d'adresse</h1>
+		<hr><br>
+			<a name="nav" href="#" id="navi1">Ajouter un contact</a>
+			<a name="nav" href="#" id="navi2">Effacer le carnet d'adresse
+			</a>
+
+
+		<form  id="formNewContact" class="hide" >			
+			
+
+				<p>
+				<label name="">Civilite :</label>
+				</p>
+				
+				<p>
+					<select name="civility">
+						<option value=""></option>
+						<option value="Madame">Madame</option>
+						<option value="Monsieur">Monsieur</option>
+					</select>
+				</p>
+
+
+				
+				<p>
+					<label name="">Nom :</label>
+				</p>			
+				<p>
+					<input type="text" name="firstName" value=""/>
+				</p>
+
+
+				<p>
+					<label>Prenom</label>
+				</p>
+				<p>
+					<input type="text" name="name" value=""/>
+				</p>
+
+				<p>
+					<label>Telephone :</label>
+				</p>
+				<p>
+					<input type="text" name="tel" value=""/>
+				</p>
+				
+
+				<p>
+					<input type="button" name="OK" value="Valider"  class="valid"/>				
+				</p>	
+			
+			
+		</form>
+
+
+	<script src="addressBook-nga.js"></script>
+	</body>
+</html>
+

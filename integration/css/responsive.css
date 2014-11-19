@@ -1,0 +1,20 @@
+@media only screen and (max-width: 63.75rem){
+	
+	body{
+
+		background:red;
+	}
+}
+
+/* c'est une règle de css , parent de sélecteur css*/
+
+
+@media only screen and (max-width: 53.75rem){
+	
+	body{
+
+		background:blue;
+	}
+}
+
+/* c'est une règle de css , parent de sélecteur css*/

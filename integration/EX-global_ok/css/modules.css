@@ -1,0 +1,238 @@
+html{
+
+	width: 100%;
+	height: 100% ;
+
+}
+
+body{
+
+	width: 100%;
+	height: 100% ;
+}
+
+video{	
+	background-size: cover ;
+}
+
+.text {
+
+	font-size: 1.8rem ;
+	padding-top: 15%;
+	text-align: center;
+	position: absolute;
+	text-transform: uppercase;
+}
+
+.forwards ,.backwards {
+
+	position: absolute;
+	font-size: 3rem ;
+	top : 45%;	
+	color: white;
+	display: block;
+	text-decoration: none;
+	background: red ;
+	padding: 0.5rem;
+}
+
+.backwards{
+
+	left: 0;
+	border-radius: 0 0.6rem 0.6rem 0 ;	
+}
+
+.forwards {
+
+	right: 0;	
+	border-radius:  0.6rem 0  0 0.6rem;
+}
+
+#contenu{
+
+	width: 100%;
+	height: 100% ;	
+	/*background-size: cover ;*/
+}
+
+.deuxlignes div{
+	width: 100%;
+	height: 50% ;
+}
+.deuxlignes div > h1{
+	padding: 10% 25%;
+}
+
+.deuxcolonnes div
+{
+	width: 50%;
+	height: 100% ; 
+	float: left;
+}
+.deuxcolonnes div > h1
+{
+	padding: 45% 10% ;
+}
+
+
+/* pour tester les layout seulement, faut supprimer ts les background
+ * si on veut mettre img en background
+
+#contenu div:nth-child(1)
+{
+	background: red;
+}
+
+#contenu div:nth-child(2)
+{
+	background: gold;
+}
+
+#contenu div:nth-child(3)
+{
+	background: orange;
+}
+
+*/
+
+.troiscolonnes div
+{
+	background-size: cover ;
+	width: 33.3333333%;
+	height: 100% ;
+	float: left;
+}
+.troiscolonnes div >h1
+{
+	padding: 45% 10% ;
+}
+
+
+.colonne-2lignes div:nth-child(1)
+{
+	background-size: cover ;
+	height: 100%;
+	float: left;
+	width: 50% ;
+}	
+.colonne-2lignes div:nth-child(1) >h1
+{
+	padding: 45% 10% ;
+}	
+
+.colonne-2lignes div:nth-child(2)
+{
+	background-size: cover ;
+	height: 50%;	
+	width: 50% ;
+	float: right;
+}
+.colonne-2lignes div:nth-child(2) >h1
+{
+	padding: 15% 15% ;
+}
+
+.colonne-2lignes div:nth-child(3)
+{
+	background-size: cover ;
+	height: 50%;
+	width: 50% ;
+	float: right;
+}
+.colonne-2lignes div:nth-child(3)>h1
+{
+	padding: 15% 15% ;
+}
+
+
+.deuxlignes-colonne div:nth-child(1)
+{
+	background-size: cover ;
+	height: 50%;
+	width: 50% ;
+	float: left;
+}
+.deuxlignes-colonne div:nth-child(1)>h1
+{
+	padding: 15% 15% ;
+}
+	
+.deuxlignes-colonne div:nth-child(2)
+{
+	background-size: cover ;
+	height: 100%;
+	width: 50% ;
+	float: right;
+}
+.deuxlignes-colonne div:nth-child(2)>h1
+{
+	padding: 45% 20% ;
+}
+.deuxlignes-colonne div:nth-child(3)
+{
+	background-size: cover ;
+	height: 50%;
+	width: 50% ;
+	float: left;
+}
+.deuxlignes-colonne div:nth-child(3)>h1
+{	
+	padding: 15% 15% ;	
+}
+
+.better , .contrary , .curious , .dream, .enjoy , .impossible ,
+.jenny ,.magic , .nights ,.ryan , .sally, .through , .wild ,.jump ,
+.justin ,.struggle
+{
+	background-size: cover ;
+}
+
+.better{
+	background: url(../img/better.jpg) no-repeat center center ;
+}
+.contrary{
+	background: url(../img/contrary.jpg) no-repeat center center ;
+} 
+.curious{
+	background: url(../img/curious.jpg) no-repeat center center ;
+} 
+.dream{
+	background: url(../img/dream.jpg) no-repeat center center ;
+} 
+.enjoy{
+	background: url(../img/enjoy.jpg) no-repeat center center ;
+} 
+.impossible{
+	background: url(../img/impossible.jpg) no-repeat center center ;
+} 
+.jenny{
+	background: url(../img/jenny.jpg) no-repeat center center ;
+} 
+.jump{
+	background: url(../img/jump.jpg) no-repeat center center ;
+} 
+.justin{
+	background: url(../img/justin.jpg) no-repeat center center ;
+} 
+.magic{
+	background: url(../img/magic.jpg) no-repeat center center ;
+} 
+.nights{
+	background: url(../img/nights.jpg) no-repeat center center ;
+} 
+.ryan{
+	background: url(../img/ryan.jpg) no-repeat center center ;
+} 
+.sally{
+	background: url(../img/sally.jpg) no-repeat center center ;
+} 
+.struggle{
+	background: url(../img/struggle.jpg) no-repeat center center ;
+} 
+.through{
+	background: url(../img/through.jpg) no-repeat center center ;
+} 
+.wild{
+	background: url(../img/wild.jpg) no-repeat center center ;
+} 
+

@@ -1,0 +1,175 @@
+@media only screen and (max-width :61.25rem){
+
+
+h1{	
+
+	font-size:2rem;	
+	padding:0.8rem 0;	
+}
+
+h2{	
+
+	font-size:1.2rem;
+	padding:0.8rem 0;	
+}
+
+h3{	
+
+	font-size:1.1rem;	
+	padding: 0 0 0.8rem 0;	
+}	
+
+p{	
+
+	font-size:0.9rem;		
+	line-height:1.3rem;
+}
+
+
+body{
+
+	width:96%;
+	margin:0 2%;
+}
+
+.line{
+
+	margin:1.4rem 0;
+}
+
+.nav{
+
+	font-size:0.9rem;
+	padding:0.9rem 0;
+}
+
+
+.header{
+
+	margin-top:0;
+	padding: 2rem 0 5rem 0;
+	background:url(../img-maquette3/index-01.jpg) no-repeat ;
+}	
+
+
+.menu li{
+
+	padding:1rem 0.6rem;
+	
+}
+.sect1-title::after{
+
+	
+	width: 9rem;
+	height: 0.2rem;
+	margin: 0.5rem auto 0 auto;
+	
+}
+.bloc-city{
+	
+	margin:0 auto 0.5rem 10.5%;
+	
+}
+.city{
+		
+	margin:0 2.8% 1.4rem 0 ;
+	padding:0.6rem 0; 
+	
+}
+.city:nth-child(2n){
+
+	margin:0 0 1.4rem 0;
+}
+.sect1-btn{
+
+	
+	border-width:0.1rem;		
+	font-size:1rem;	
+	padding:0.4rem 1.2rem;
+
+}
+
+
+.sect2{
+
+	padding-bottom:2rem;
+}
+
+
+.sect2 h3 {
+	
+	padding: 0 0 0.5rem 0 ;
+
+}
+.icon-text{
+
+	width: 100%;
+	margin: 0 5%;
+}
+.icon-left1,.icon-right,.icon-left2{
+
+	width: 100%;	
+	padding: 1rem 0 ;
+	margin: 0;
+}
+.icon-left1::before,.icon-left2::before,.icon-right::after{
+	
+	content:"";/* ou display: none;*/
+}
+.text-uppercase{
+
+	font-size:0.9rem;
+	padding:1rem 0;
+}
+
+h5{
+
+	font-size:1rem;
+	padding:1rem 0;
+}
+
+
+
+
+
+.sect4{
+
+	padding: 4rem 0 3rem 0;
+}
+
+.write>h3::after{
+
+	
+	width: 8rem;
+	height: 0.1rem;
+	margin: 1.5rem auto 0 auto;
+	
+}
+.sect4 p{
+
+	margin:1rem 0 3rem 0  ;
+}
+
+.sect4-btn{
+
+	border-width:0.1rem;		
+	font-size:1rem;
+	padding:0.4rem 1.3rem;
+
+}
+
+
+
+
+.nav-footer{
+	
+	margin:0 3% ;
+	
+}
+.links{
+
+	padding: 0.5rem 0.5rem;
+	
+}
+
+}

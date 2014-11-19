@@ -1,0 +1,9 @@
+Exercice PHP : fonctions sur les tableaux
+Fonctions d'affichage :
+Créer une fonction arrayPrint() permettant d'afficher un tableau à l'écran.
+Créer une autre fonction textPrint() permettant d'afficher du texte en HTML (dans des balises <code> par exemple).
+Créer une fonction displayTitle() permettant d'afficher une balise titre (<h1>,<h2>...). On doit pouvoir lui fournir le niveau de titre ainsi que le contenu à lui faire afficher.
+Fonctions sur les tableaux :
+Recréer la fonction implode() dans une fonction newImplode().
+Ajouter deux paramètres optionnels à votre fonction newImplode() : une chaine à placer au début, et une à mettre à la fin.
+Modifié le: lundi 2 juin 2014, 11:21

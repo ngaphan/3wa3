@@ -1,0 +1,169 @@
+.text-center{
+	text-align: center;
+}
+
+.row-content{
+	padding: 5rem 0;
+}
+
+.row-img{
+	background-repeat: no-repeat;
+}
+
+.row-header{
+	background-position:
+		bottom center,
+		top center;
+	background-size:
+		auto,
+		cover;
+}
+
+.row-pre-footer{
+	background-position: top center;
+	background-size: cover;
+}
+
+.primary-nav{
+	float: right;
+}
+
+.primary-nav > li{
+	float: left;
+}
+
+.primary-nav > li > a{
+	height: 5rem;
+	padding: 0 15%;
+	display: block;
+	font-family: 'dejavu_sansbold';
+	text-transform: uppercase;
+	line-height: 5rem;
+}
+
+.header-intro{
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.7rem;
+}
+
+.title-underline::after{
+	content: '';
+	display: block;
+	width: 16%;
+	height: 0.1875rem;
+	margin: 2.5rem 0 0 42%;
+}
+
+.city{
+	width: 48%;
+	border-width: 0.0625rem;
+	border-style: solid;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	box-sizing: border-box;
+	padding: 4rem 0;
+	float: left;
+}
+
+.city:nth-child(odd){
+	margin: 0 0 0 3.6%;
+}
+
+.city:nth-child(2n + 1){
+	margin: 0 0 2.1875rem 3.6%;
+}
+
+.city-name{
+	font-family: 'dejavu_sansextralight';
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0.5rem 0 0 0;
+}
+
+.btn{
+	display: inline-block;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	text-align: center;
+	border-width: 0.1875rem;
+	border-style: solid;
+	padding: 1rem;
+}
+
+.commercial-argument{
+	overflow: hidden;
+	margin: 0 0 4rem 0;
+}
+
+.commercial-argument::before{
+	font-family: 'icons';
+	font-size: 14rem;
+	float: left;
+}
+
+.commercial-argument:nth-child(1)::before{
+	content: 'i';
+}
+
+.commercial-argument:nth-child(2)::before{
+	content: 'j';
+}
+
+.commercial-argument:nth-child(3)::before{
+	content: 'l';
+}
+
+.commercial-argument-left::before{
+	float: right;
+}
+
+.commercial-argument-title{
+	font-size: 1.3rem;
+	text-align: left;
+	padding: 0 0 1rem 0;
+	margin: 0 0 0 55%;
+}
+
+.commercial-argument-text{
+	margin: 0 0 0 55%;
+}
+
+.commercial-argument-left > .commercial-argument-title{
+	margin: 0 55% 0 0;
+}
+
+.commercial-argument-left> .commercial-argument-text{
+	margin: 0 55% 0 0;
+}
+
+.text-citation{
+	font-family: times;
+	font-size: 1.64rem;
+	font-style: italic;
+	line-height: 2rem;
+}
+
+.text-citation-author{
+	font-family: 'dejavu_sansbold';
+	text-transform: uppercase;
+	margin: 1rem 0 0 0;
+}
+
+.pre-footer-text{
+	margin: 4rem 0;
+}
+
+.secondary-nav{
+	text-align: center;
+}
+
+.secondary-nav > a{
+	font-family: 'dejavu_sansbold';
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	margin: 0 2%;
+}

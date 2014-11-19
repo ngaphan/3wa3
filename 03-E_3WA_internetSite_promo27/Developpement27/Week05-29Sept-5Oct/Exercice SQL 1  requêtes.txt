@@ -1,0 +1,17 @@
+Exercice SQL 1 : requêtes
+Dans cet exercice, nous voulons les requêtes permettant d'afficher :
+
+les numéros et noms des départements par ordre alphabétique
+les départements dont le numéro est entre 1 et 15
+le nombre total de villes en france
+le nombre de départements en aquitaine
+le nombre de villes en france de plus de 200.000 habitants
+la superficie totale de la gironde
+le département le plus vaste en france
+la supérficie du département le plus vaste de france
+le plus vaste département d'ile de france
+la région ayant le plus de villes, sa ville la plus vaste, sa ville la plus peuplée
+les étudiants nés avant 1940
+le nombre d'étudiants de plus de 70 ans?
+la ville rassemblant le plus d'etudiants
+Modifié le: mardi 3 juin 2014, 11:54

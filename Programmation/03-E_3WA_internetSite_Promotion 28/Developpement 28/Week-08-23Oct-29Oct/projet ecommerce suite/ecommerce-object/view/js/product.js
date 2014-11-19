@@ -1,0 +1,9 @@
+$(document).ready(function()
+{
+	$('#displayformcomment').click(function(event)
+	{
+		event.preventDefault();
+		$('#divformcomment').slideDown();
+		$(this).off('click');
+	});
+});

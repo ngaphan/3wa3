@@ -1,0 +1,5 @@
+img, object , video, embed
+{
+	width: 100% ; /* la taille de leur parent, mettre ds base.css,ça fait partie d'adaptative*/
+}
+

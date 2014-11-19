@@ -1,0 +1,4 @@
+Exercice Somme (10)
+On vous demande de récupérer deux nombres saisis par l'utilisateur, puis d'en afficher la somme.
+
+Modifié le: vendredi 9 mai 2014, 15:29

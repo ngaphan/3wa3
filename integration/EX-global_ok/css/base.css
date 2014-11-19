@@ -1,0 +1,100 @@
+
+html{
+	width: 100% ;
+	height: 100% ;
+}
+
+body{
+	
+	width: 100% ;
+	background: url(../img/beyond.jpg);
+	
+	position: relative;
+}
+
+.beyondSlider{
+	
+	width: 100% ;
+	height: 100% ;	
+	position: relative;
+}
+video , img, audio , embed
+{
+	width: 100% ;
+	height: 100% ;
+	position: absolute;
+	z-index: -1 ;
+	top: 0;
+	left: 0;
+}
+
+audio{
+
+	display: none;
+}
+.beyondSlider h1{
+	font-family: helvetica;
+	font-size: 3rem ;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;	
+}
+.accueil {
+	position: relative;
+	width: 80%;
+	margin: 3rem auto ;
+	overflow: hidden;
+	border-radius: 0.8rem ;
+	border : solid gray 0.1rem;
+}
+
+h1{
+	font-family: helvetica;
+	font-size: 8rem ;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 15% 10% ;	
+	position: relative;
+}
+h1::after {
+	content: "";
+	display: block;
+	background: white ;
+	width: 0.1rem ;
+	height: 5.5rem ;
+	position: absolute;
+	top : 53.5% ;
+	left: 53%;
+}
+
+
+h2{
+	font-size: 1.8rem ;
+	color: #274558;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: helvetica;	
+	position: absolute;
+	top : 52% ;
+	left: 55%;
+
+
+}
+ h3{
+	font-size: 2rem ;	
+	text-transform: uppercase;	
+	
+}
+
+ 
+
+
+
+
+
+p {
+
+}

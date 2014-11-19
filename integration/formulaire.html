@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1" />
+		<title>test</title>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/formulaire.css"/>
+		
+
+	</head>
+
+	<body>
+
+		<form action="http://localhost/recup-formulaire.php" method="POST">
+
+
+		<p>
+			<label name="">Entrer votre nom</label>
+		</p>
+		<br>
+		<p>
+			<input type="text" name="nom" value=""/>
+		</p>
+		<br>
+		<p>
+			<label name="">Entrer votre prénom</label>
+		</p>
+		<br>
+		<p>
+			<input type="text" name="prenom" value=""/>
+		</p>
+		<br>
+
+
+		<p>
+		<label name="">Veuillez saisir votre pays</label>
+		</p>
+		<br>
+		<p>
+			<select name="pays">
+				<option value=""></option>
+				<option value="fr">France</option>
+				<option value="usa">Etat Unis</option>
+				<option value="vn">Vietnam</option>
+				<option value="ca">Canada</option>
+			</select>
+		</p>
+		<br>
+
+
+
+		<p>
+			<label name="">Commentaire :</label>
+		</p>
+		<br>
+		<p>
+	<textarea name="comment" rows="10" cols="50"></textarea>
+		</p><br>
+
+
+		
+
+		<p>
+			<label type ="text" name="question"> Aimez-vous les fraises ?</label>
+		</p>
+		<br>
+		<p>
+			<label type ="text" name="reponse">Oui </label>
+			<input type="radio" name="choix" valeur="oui"/>
+		</p>
+		<br>
+		<p>
+			<label type ="text" name="reponse">Non</label>
+			<input type="radio" name="choix" valeur="non"/>	
+		</p>
+		<br>
+		<p>
+			<label type ="text" name="reponse"> Pas beaucoup</label>
+			<input type="radio" name="choix" valeur="pasbcp"/>
+		</p>
+		<br>
+		<p>
+			<label type ="text" name="reponse"> A la folie</label>
+			<input type="radio" name="choix" valeur="A la folie"/>
+		</p>
+		<br>
+
+
+
+
+		<p>
+			<label type ="text" name="enquete">Votre couleur préférée?</label>
+		</p><br>
+
+		<p>
+			<label type ="text" name="">red </label>
+			<input type="checkbox" name="color[]" valeur="red"/>
+		</p><br>
+
+		<p>
+			<label type ="text" name="">yellow</label>
+			<input type="radio" name="choix" valeur="yellow" checked/>				
+		</p><br>
+
+		<p>
+			<label type ="text" name="question"> blue</label>
+			<input type="radio" name="color[]" valeur="blue"/>
+		</p><br>
+
+
+
+
+
+		<label type ="text" name="date">Choisir la date
+		</label><br>
+		<input type="date" name="date"/>
+		<input type="week" name="week"/>
+		<input type="month" name="month"/>
+		0
+		<input type="number" name="number"/>
+		20
+		<input type="range" name="range"/>
+		<p><br>
+
+
+
+		<p>
+			<input type="file" />			
+		</p>
+		<p>
+
+			<input type="submit" name="OK" value="Valider" />
+			<input type="button" name="OK" value="enregistrer" />
+			
+		</p>
+
+		<p>
+			<label type ="text" name="question"> color ?</label>
+			<input type="color" name="color" value="#4a193a" />
+			
+		</p>
+
+		<p>
+			<label type ="text" name="question"> email  ?</label>
+			<input type="email" name="email" value="" />
+			
+		</p>
+
+
+		<p>
+			<label type ="text" name="question"> Tel ?</label>
+			<input type="tel" name="tel" value="" placeholder="télephone" required/>
+			
+		</p>
+
+		<p>
+			<label type ="text" name="question"> search ?</label>
+			<input type="search" name="search" value="" />
+			
+		</p>
+
+		<p>
+			<label type ="text" name="question"> url ?</label>
+			<input type="url" name="search" value="" />
+			
+			
+		</p>
+
+		<p>
+			<label type ="text" name="contact"> <a href="#">Contact</a></label>
+			<input type="text" name="contact" value="" autofocus />
+			
+		</p>
+
+
+
+
+		</form>
+
+	</body>
+</html>
+

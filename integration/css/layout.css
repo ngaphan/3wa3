@@ -1,0 +1,18 @@
+#bloc-sire
+{
+	margin:2.5rem;
+}
+
+
+@media only screen and (max-width: 63.75rem){
+	
+	body{
+
+		width:96%;
+		margin: 0 2%;
+	}
+}
+
+/* Explication: ça veut dire largeur-max de notre site qui est défini fixe auparavant :63.75rem. Donc quil nous reste que faire l'adaptation pour les largeurs 
+plus petites . Alors, en dessous de 63.75 , on passe en %*/
+

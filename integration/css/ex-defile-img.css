@@ -1,0 +1,20 @@
+body{
+
+	width: 37.5rem;
+	height: 28.125rem;
+	margin 0 auto;
+}
+
+.fenetre{
+
+	width: 37.5rem;
+	height: 28.125rem;
+	overflow: hidden;
+	margin: 5rem auto;
+}
+
+.img img{
+
+	width: 100%;
+	float:left;
+}

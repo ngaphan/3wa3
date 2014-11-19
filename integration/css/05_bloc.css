@@ -1,0 +1,129 @@
+#en-tete
+{
+	height:5rem;
+	background:rgba(127,221 ,76,0.5);
+	height:6rem;
+}
+
+#menu 
+
+{
+	height:3rem;
+	background:yellow;
+	
+
+}
+
+#menu a
+{
+	display: inline-block;
+	color: blue;
+
+}
+
+#menu a:hover
+{
+	text-decoration:none;
+	color:red;
+	font-style:italic;
+
+}
+
+#pied
+{
+	background:#77B5FE;
+	height:3rem;
+	clear:both;
+}
+
+
+body
+{
+	width:60rem;
+	margin:1rem auto;
+
+
+}
+
+
+
+#principal
+{
+	width:75%;
+	/*border:solid  0.2rem blue;*/
+
+}
+
+#colonne
+{
+	width:24%;
+	float:right;
+	background:pink;
+	/*clear:both;*/
+	
+}
+
+
+
+
+.contenu
+{
+	background:#007FFF;
+	overflow:hidden;
+	margin:2rem;
+	position:relative;
+
+}
+
+.contenu p
+{
+	width:70%;
+	/*float:left;*/
+
+}
+
+.contenu img
+{
+	width:30%;
+	
+}
+
+
+.imgauche img
+{
+	float:left;
+	clear:both;
+}
+
+
+.imgdroit img
+{
+	float:right;
+	clear:both;
+}
+
+
+img
+{
+	border-radius: 1rem 2rem;
+	padding:1rem 1rem 0.5rem;
+	/*width:20%;/* par rapport à la taille de son parent*/
+	/*float:left;*/
+}
+
+
+.contenu a
+{
+	position:absolute;
+	bottom:1rem;
+	right:1rem;
+}
+
+#logo
+{
+	position:fixed;
+	top:0;
+	right:0;
+}
+
+

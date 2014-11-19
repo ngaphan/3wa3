@@ -1,0 +1,10 @@
+Exercice Forum
+
+Dans cet exercice, vous allez réaliser un forum complet en PHP.
+
+Un forum comporte plusieurs catégories regroupant des topics auquel des utilisateurs peuvent participer en y inscrivant des réponses.
+
+Dans un premier temps, vous allez modéliser la base de données de ce forum.
+
+Puis vous allez écrire le code complet permettant d'afficher tout le forum, et d'y participer.
+Modifié le: mercredi 18 juin 2014, 12:44

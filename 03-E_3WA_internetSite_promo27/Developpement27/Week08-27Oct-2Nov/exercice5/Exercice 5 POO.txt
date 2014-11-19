@@ -1,0 +1,15 @@
+Exercice POO 5
+
+On souhaite créer un outil pour gérer les chaines de caractères. Pour cela vous allez créer une classe StringUtils.
+
+    Créer un constructeur prenant un paramètre : la chaine à traiter.
+    Créer une fonction getValue() renvoyant la chaine.
+    Créer une fonction getLength() renvoyant la taille de cette chaine.
+    Créer une fonction concat() permettant de concaténer notre chaine avec une nouvelle (en paramètres).
+    Créer une fonction startsWith() qui renvoie vrai si notre chaine commence par celle donnée en paramètres.
+    Créer la fonction endsWith().
+    Créer une fonction isInside() qui permet de savoir si une chaine est à l'intérieur de la notre.
+    Créer une fonction removeLastChar() qui supprime le dernier caractère.
+    Créer une fonction removeNChar() qui supprime le n ème caractère passé en paramètre.
+
+Modifié le: lundi 30 juin 2014, 15:19

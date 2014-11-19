@@ -1,0 +1,52 @@
+body
+{
+	width:100%;
+	margin:5rem 40%;
+	background:pink;
+}
+
+.img{
+
+	opacity:0.5;
+	transition:all 1s;
+
+}
+
+figure
+{
+	
+	height:12.25rem;
+	width:16.1875rem;
+	overflow:hidden;
+	display:inline-block;
+	}
+
+.legend{
+	
+	transition:all 1s;
+	color: red;	
+	background:yellow;
+	text-align: center;
+}
+
+figure:hover .legend
+{
+	transform: translateY(-1rem);
+}
+
+figure:hover .img
+{
+	opacity:1;
+}
+
+/*
+définir les propriété de base pr chaq élément,
+On a 2éléménets à animer (img et legend), faut transition dans ses 2 éléments
+Pour cacher legend : overflow: hidden à son parent <figure> et la taille de son parent = exactement à img,donc legend est de trop, ça va cacher;
+Pour que legend et img se place l'un sous l'autre: inline-block pour son parent<figure> pr qu'il sache qu'il contient 2 enfs;
+lorsqu'on survol sur img, ici quasiment sur son parent<figure>, donc ça agir en même temps sur les 2: img et legend.Alors, faut les 2:
+	figure:hover .img;//survol parent ,agir sur img
+	figure:hover .legend;//survol parent ,agir sur legend
+Donner les propriétés qu'on veut qu'il fasse lors du survol...
+
+*/

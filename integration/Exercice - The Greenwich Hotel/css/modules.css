@@ -1,0 +1,248 @@
+
+.forwards ,.backwards , .bottom {	
+
+	height: 3rem ;
+	width: 3rem ;
+	background: url( ../img/details-nav.png) no-repeat ;	
+	position: fixed;			
+	text-decoration: none;	
+
+}	
+
+.backwards{
+
+	left: 3rem;
+	top : 45% ;	
+	opacity: 0;	
+}
+
+.forwards {
+
+	right: 3rem;
+	top : 45% ;	
+	opacity: 0 ;
+	transform : rotate(180deg) ;
+}
+
+.bottom {
+
+	bottom: 3rem ;
+	left: 47%  ;
+	transform : rotate(-90deg) ;
+	z-index :1;
+}
+
+.detail {
+
+	position: relative;
+	left: 3% ;
+	top: 3rem ;
+	padding: 0.5rem ; 
+	text-align: left;
+	width: 50%
+}
+
+.menu-gauche{
+
+	overflow: hidden;
+}
+
+.menu-gauche > li  {
+
+	float: left;
+}
+ 
+li{		
+
+	margin: 0.3rem ;		
+}
+
+a {
+
+	font-size: 1rem ;		
+	text-decoration: none;
+	color: white;
+}
+
+.menu-main{
+		
+	position: fixed;
+	top :2rem;
+	right: 4% ;	
+	z-index :1;
+}
+
+.menu-main a {
+		
+	opacity: 0;
+}
+
+.menu-main a::after {
+	content: "■";
+	float: right;
+	margin-left: 0.5rem ;
+	opacity: 1;
+}
+
+/* partie des mises en pages des classes correspondantes au click 
+ *
+ * Mise en page verticale 
+ *
+ **********************************************************************/
+ /************* Les classes communes  *********************************/
+ /********************************************************************/
+
+.logo {
+	width:11.375rem ;
+	height: 10.75rem ;
+	background: rgba(250 ,0 ,0 , 1) ;
+}
+
+#blocImages {
+
+	width: 100% ;
+ 	height: 1200% ;
+ 	transition : all 1s;
+}
+.content {
+
+ 	width: 100% ;
+ 	height: calc(100% / 12) ;
+ 	background-repeat: no-repeat ;					
+	background-size:  cover  ;
+	position: relative;
+	z-index: -1 ;
+ }
+
+h1{
+	font-family: helvetica;
+	font-size: 1.8rem ;	
+	font-weight: bold;
+	color: white ;
+	padding: 0.5rem ;
+	margin-bottom: 1.5rem ;
+}
+
+p {
+	font-size: 1.2rem ;
+	color: white;
+	line-height: 2rem ;
+}
+
+span {
+	font-weight: bold;
+}
+.playAgain {
+	position: absolute;
+	top : 48% ;
+	right: 5rem ;
+}
+.playAgain a { 
+ 	font-size: 2.5rem ;
+ }
+
+/********************************************************************/
+/*********** PARTICULARITE DE CHAQUE PAGE ***************************/
+/********************************************************************/
+
+
+
+.page0 {
+
+	background-image : 	url(../img/penthouse.jpg)  ;
+}
+.page0 .text {
+
+	text-align: center; 
+	position: absolute;
+	bottom: 6rem ;
+	left: 35%;
+
+}
+.page1 {
+
+	background-image: 	url(../img/overview.jpg) ;		
+}
+.page1 p {
+
+	text-align: left; 
+	width: 21.5% ;
+	position: absolute;
+	bottom: 7rem ;
+	right: 3rem ;
+}
+.page2 .text {
+
+	width: 30% ;
+	text-align: left; 
+	position: absolute;
+	top: 6rem ;
+	left: 3rem;
+}
+ .page2 .start{
+
+	background-image: 	url(../img/posters/tribeca-start.jpg) ;		
+}
+.page2 .end{
+
+	background-image: 	url(../img/posters/tribeca-end.jpg) ;		
+}
+.page3 {
+	background-image: 	url(../img/design.jpg) ;	
+}
+.page3 .text{
+	background-image: 	url(../img/design.jpg) ;
+	width: 22% ;
+	text-align: left; 
+	position: absolute;
+	top: 30% ;
+	left: 3rem;	
+	font-size: 2.5rem ;
+	line-height: 4rem ;
+}
+.page3 .text p{
+		
+	font-size: 1.4rem ;
+	line-height: 3rem ;
+}
+
+.showPage0 {
+	transform : translateY(0);
+}
+.showPage1 {
+	transform : translateY(calc(-100%/12));
+}
+.showPage2 {
+	transform : translateY(calc((-100%/12)*2));
+}
+.showPage3 {
+	transform : translateY(calc((-100%/12)*3));
+}
+.showPage4 {
+	transform : translateY(calc(-100%/12*4));
+}
+.showPage5 {
+	transform : translateY(calc(-100%/12*5));
+}
+.showPage6 {
+	transform : translateY(calc(-100%/12*6));
+}
+.showPage7 {
+	transform : translateY(calc(-100%/12*7));
+}
+.showPage8 {
+	transform : translateY(calc(-100%/12*8));
+}
+.showPage9 {
+	transform : translateY(calc(-100%/12*9));
+}
+.showPage10 {
+	transform : translateY(calc(-100%/12*10));
+}
+.showPage11 {
+	transform : translateY(calc((-100%/12)*11));
+}
+
+
+
+

@@ -1,0 +1,6 @@
+Exercice PHP : films à l'affiche
+Pour cet exercice, vous allez afficher les derniers films à l'affiche.
+
+Vous disposez d'une base de code (fichier zip à télécharger) comportant une structure et les fonctions à écrire.
+
+Modifié le: lundi 2 juin 2014, 12:22

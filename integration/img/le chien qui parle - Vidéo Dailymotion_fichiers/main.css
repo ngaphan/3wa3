@@ -1,0 +1,44 @@
+/* Download Button */
+#dailymotionVideoD_downloadButton {
+    position: relative;
+    padding-left: 20px;
+}
+
+#dailymotionVideoD_downloadButton img {
+    float: left;
+    position: relative;
+    right: 10px;
+}
+
+/* Drop Down Div */
+#dailymotionVideoD_dropdown_div {
+    display: none;
+    z-index: 50;
+    position: absolute;
+    width: 185px !important;
+}
+
+.dailymotionVideoD_fileSizeSpan {
+    position: relative;
+    float: right !important;
+    bottom: 10px;
+    left: 48px;
+    background-image: url("icons/loader.gif");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 5px;
+}
+
+.dailymotionVideoD_fsizes {
+    position: relative;
+    float: right !important;
+    bottom: 15px;
+    left: 48px;    
+    display: inline-block;
+    font-size: 11px;
+}
+
+#dailymotionVideoD_downloadDiv {
+    padding-bottom: 10px;
+}

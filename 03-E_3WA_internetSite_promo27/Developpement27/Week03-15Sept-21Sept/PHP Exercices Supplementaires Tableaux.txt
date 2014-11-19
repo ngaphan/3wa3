@@ -1,0 +1,100 @@
+//voici un array numérique
+$tiroir = array("clef", "monnaie", "facture", "facture", "facture");
+
+//affichez la deuxième valeur
+
+//faites un print_r de cet array
+
+
+//affichez la dernière valeur (sans compter, vous etes développeur et paresseux)
+
+
+//ajoutez un autre élément dans l'array
+
+
+//voici un array associatif
+$livre = array(
+			"titre" => "A Clash of Kings",
+			"annee" => 2000,
+			"pages" => 562,
+			"auteur" => "George R. R. Martin"
+);
+
+//faites un print_r sur cet array
+
+//ajouter l'ISBN (0-553-10803-4)
+
+//ajouter le prix (25,98)
+
+//affichez uniquement le nombre de page, en concaténant la chaine "Nombre de pages : "
+
+//affichez le titre dans un balise h3. Cette balise doit avoir une classe de "book_title".
+
+//voici un array multidimensionnel
+		$paiements = array(
+			array(
+				"montant" => 12.55,
+				"date" => "12/02/2013"
+			),
+			array(
+				"montant" => 132.11,
+				"date" => "21/11/2013"
+			),
+			array(
+				"montant" => 125.00,
+				"date" => "09/03/2013"
+			),
+			array(
+				"montant" => 128.11,
+				"date" => "11/12/2012"
+			)
+		);
+
+
+//faites un print_r, à l'intérieur de balises <pre>
+
+//affichez le montant du deuxième paiement
+
+//affichez la date du dernier paiement
+
+//ajoutez un nouveau paiement
+
+//modifiez le montant du premier paiement (nouvelle valuer : 133.42)
+
+
+//construisez un array nommé "students" comprenant les prenoms de tous les etudiants
+
+//faites un print_r sur cet array
+
+//affichez le 4e étudiant de votre array
+
+
+//modifiez, un à un, le prenom de chaque etudiant pour qu'il contienne plutôt le prenom ET le nom de famille. 
+//si vous ne le connaissez pas, soyez créatif.
+
+//créez un array vide nommé "me"
+
+//ajoutez les paires de clefs-valeurs suivantes à votre array associatif : 
+//age = votre age
+//first_name = votre prénom
+//last_name = votre nom de famille
+		
+//affichez votre age en utilisant la valeur stockée dans l'array
+
+//faites-vous vieillir de 5 ans en ajoutant 5 à votre age, dans l'array
+
+//créez un array vide nommé "mess"
+//ajoutez-y un nombre quelconque
+//ajoutez-y une valeur booléenne
+//ajoutez-y votre array students
+//ajoutez-y une clef "me" ayant pour valeur votre array "me"
+//faites un print_r de "mess"
+
+//affichez votre age à partir de cet array
+
+//affichez le nom du 2e étudiant dans l'array
+
+//modifiez la valeur booléenne
+ 
+
+Modifié le: mardi 3 juin 2014, 11:46

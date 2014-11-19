@@ -1,0 +1,13 @@
+Exercice PHP/SQL 4
+
+En reprenant la correction de l'exercice 3 (pagination des villes), ajouter les fonctionnements suivants :
+
+    possibilité de trier les villes par :
+        nom
+        code postal
+        superficie
+        population
+    ordre du tri : croissant / décroissant
+
+Votre page doit afficher le tri en cours, et les champs de votre formulaire doivent être sélectionnés en fonction de la recherche.
+Modifié le: vendredi 13 juin 2014, 16:47

@@ -1,0 +1,29 @@
+
+/************** Conteneur principal : 12 sections de height 100% **************/
+
+#mainContainer{
+	background: red;
+	height: 1200%;
+	width: 100%;
+
+}
+
+/************** Conteneur "fenetre" : 100% height à calculer ******************/
+
+#inner{
+	height: calc(100%/12); 
+	min-height: 30rem;
+	width: 100%;
+}
+#primaryNav{
+	position: fixed;
+	top:3%;
+	right: 2%;
+}
+
+/**** Conteneur principal pour l'article details : 12 sections 100% width; ****/
+
+#largeContainer{
+	height: 100%;
+	width: 1200%;
+}

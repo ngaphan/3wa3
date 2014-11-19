@@ -1,0 +1,49 @@
+
+
+.section-header
+{
+	background:url(../img/paxos01.jpg);
+	background-size:cover;
+	padding:10rem 0;
+
+}
+
+.article{
+	overflow: hidden;
+}
+
+.article-text  
+{
+	float: left;
+	width:50%;
+}
+
+
+ .gauche 
+
+{
+	width:50%;
+	float: left;	
+	
+}
+.droite 
+{
+	float: right;
+	width:50%;
+}
+
+@media only screen and (max-width: 37.5rem){
+	
+	.gauche,.droite {
+		width: 100%;
+		float:none;
+		margin: none;
+	}
+
+	.section-header{
+	
+	padding:3rem 0;
+
+}
+
+}

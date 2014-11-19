@@ -1,0 +1,18 @@
+Javascript object
+- Créer une class Library avec comme propriétés un nom, une adresse et un stock égal à un tableau vide. La class aura également deux méthodes :
+    - addBook prenant en paramètre un objet de la class Book (créé ci-dessous). Cette
+      fonction ajoute l'objet de la class Book au tableau stock.
+
+    - show permettant d'afficher les informations sur les livres
+
+- Créer un objet de la class Library en lui envoyant le nom et l'adresse
+
+- Créer une class Book avec comme propriétés un nom et une note ainsi qu'une méthode show permettant d'afficher la phrase suivante : "Le titre du livre est x avec une note de x"
+
+- Posez la question suivante : "Voulez-vous ajouter un livre ?"
+
+- Si oui : créer un objet en lui demandant un titre de livre et une note (attention, veuillez vérifier que la note soit bien un chiffre)
+
+- Posez la question : "Voulez-vous ajouter un autre livre". Tant que la personne répond oui, on lui propose d'ajouter un livre (Il y aura donc une boucle)
+
+Modifié le: mardi 7 octobre 2014, 12:38

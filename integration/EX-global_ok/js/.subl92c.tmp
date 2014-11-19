@@ -1,0 +1,231 @@
+document.addEventListener
+(
+	"DOMContentLoaded",
+	function()     
+		{
+			installEventHandler(".forwards","click",videContenu);     
+		}
+);
+
+
+var beyondsArray =[
+
+					'deuxcolonnes' ,
+					'deuxlignes' ,
+					'troiscolonnes' ,
+					'colonne-2lignes' ,
+					'deuxlignes-colonne'			
+
+] ;
+
+
+
+var beyond = getRandomInt(0,4);
+
+switch(beyond)
+{
+	case : 0 
+			
+				document.querySelector(".contenu").classList.add("deuxcolonnes");					
+				addElement() ;
+				console.log("je suis 0");
+				console.log("a new element est added");
+				break ;
+
+			
+	case: 1
+				
+				document.querySelector(".contenu").classList.add("deuxlignes");				
+				addElement() ;
+				console.log("je suis 1");
+				break ;
+				
+	case: 2
+				
+				document.querySelector(".contenu").classList.add("troiscolonnes");				
+				addElement() ;
+				console.log("je suis 2");
+				break ;
+				
+
+	case: 3
+				
+				document.querySelector(".contenu").classList.add("colonne-2lignes");				
+				addElement() ;
+				console.log("je suis 3");
+				break ;
+				
+	case: 4
+				
+				document.querySelector(".contenu").classList.add("deuxlignes-colonne");				
+				addElement() ;
+				console.log("je suis 4");
+				break ;
+				
+
+	default :
+				
+				document.querySelector(".contenu").classList.add("deuxcolonnes");				
+				addElement() ;
+				console.log("je suis 0");
+				console.log("a new element est added");
+				break ;		
+}
+
+
+var imgsArray = [
+					img/better.jpg ,
+					img/beyond.jpg ,
+					img/contrary.jpg ,
+					img/curious.jpg,	
+					img/dream.jpg,	
+					img/enjoy.jpg,	
+					img/jenny.jpg,	
+					img/jump.jpg,	
+					img/justin.jpg,	
+					img/magic.jpg,	
+					img/nights.jpg,	
+					img/ryan.jpg,	
+					img/sally.jpg,	
+					img/struggle.jpg,	
+					img/through.jpg,	
+					img/wild.jpg		
+					
+] ;
+
+
+var newImg = getRandomIntImg(0,15) ;
+
+switch(newImg)
+{
+	case: 0			
+				addElement(imgsArray[0]);	
+				break ;			
+	case: 1				
+				addElement(imgsArray[1]);
+				break ;				
+	case: 2
+				addElement(imgsArray[2]);				
+				break ;				
+	case: 3
+				addElement(imgsArray[3]);				
+				break ;				
+	case: 4
+				addElement(imgsArray[4]);				
+				break ;
+	case: 5
+				addElement(imgsArray[5]);				
+				break ;
+	case: 6
+				addElement(imgsArray[6]);				
+				break ;				
+	case: 7
+				addElement(imgsArray[7]);				
+				break ;
+	case: 8
+				addElement(imgsArray[8]);				
+				break ;			
+
+	case: 9
+				addElement(imgsArray[9]);				
+				break ;			
+	case: 10
+				addElement(imgsArray[10]);				
+				break ;
+	case: 11
+				addElement(imgsArray[11]);				
+				break ;
+	case: 12
+				addElement(imgsArray[12]);				
+				break ;
+	case: 13
+				addElement(imgsArray[13]);				
+				break ;
+	case: 14
+				addElement(imgsArray[14]);				
+				break ;
+	case: 15
+				addElement(imgsArray[15]);				
+				break ;
+
+	default :
+				addElement(imgsArray[0]);	
+				break ;									
+}
+
+var vidsArray = [
+					img/better.jpg ,
+					img/beyond.jpg ,
+					img/contrary.jpg ,
+					img/curious.jpg,	
+					img/dream.jpg,	
+					img/enjoy.jpg,	
+					img/jenny.jpg,	
+					img/jump.jpg,	
+					img/justin.jpg,	
+					img/magic.jpg,	
+					img/nights.jpg,	
+					img/ryan.jpg,	
+					img/sally.jpg,	
+					img/struggle.jpg,	
+					img/wild.jpg
+
+] ;
+
+var newVideo = getRandomIntVideo(0,14) ;
+
+switch(newVideo)
+{
+	case: 0			
+				addElement(vidsArray[0]);	
+				break ;			
+	case: 1				
+				addElement(vidsArray[1]);
+				break ;				
+	case: 2
+				addElement(vidsArray[2]);				
+				break ;				
+	case: 3
+				addElement(vidsArray[3]);				
+				break ;				
+	case: 4
+				addElement(vidsArray[4]);				
+				break ;
+	case: 5
+				addElement(vidsArray[5]);				
+				break ;
+	case: 6
+				addElement(vidsArray[6]);				
+				break ;				
+	case: 7
+				addElement(vidsArray[7]);				
+				break ;
+	case: 8
+				addElement(vidsArray[8]);				
+				break ;			
+
+	case: 9
+				addElement(vidsArray[9]);				
+				break ;			
+	case: 10
+				addElement(imgsArray[10]);				
+				break ;
+	case: 11
+				addElement(vidsArray[11]);				
+				break ;
+	case: 12
+				addElement(vidsArray[12]);				
+				break ;
+	case: 13
+				addElement(vidsArray[13]);				
+				break ;
+	case: 14
+				addElement(vidsArray[14]);				
+				break ;
+
+	default :
+				addElement(vidsArray[0]);	
+				break ;									
+}
+
+

@@ -1,0 +1,119 @@
+body
+{
+	width:50%;
+	margin: 3rem auto;
+}
+
+a
+{
+	line-height:5rem;
+	display:block;/*zone clickable s'étale sur toute espace*/
+	text-transform:uppercase;
+	font-size: 2rem;
+	padding-left: 4rem;
+	text-decoration:none;
+	position: relative;
+}
+
+
+.disco
+{
+	background:red;
+	transition: all 0.5s;
+}
+
+.bio
+{
+	background:yellow;transition: all 0.5s;
+	transition: all 0.5s;
+}
+.gallery
+{
+	background:#7FDD4C;
+	transition: all 0.5s;
+}
+
+.video
+{
+	background:#82C46C;
+	transition: all 0.5s;
+}
+
+.presse
+{
+	background:#702963;
+	transition: all 0.5s;
+}
+
+.links
+{
+	background:#BD33A4;
+	transition: all 0.5s;
+}
+
+.contact
+{
+	background:#F400A1;
+	transition: all 0.5s;
+}
+
+
+li a::before
+{
+	content:"►";
+	opacity:0;
+	/*pr cacher,mais audébut mettre 1 pr voir et cacheraprès*/
+	position:absolute;
+	left: -1rem;
+	transition:all 0.5s;
+	
+
+
+}
+
+.disco:hover 
+{
+	transform:translateX(-5rem);
+}
+
+.bio:hover 
+{
+	transform:translateX(-5rem);
+}
+
+.gallery:hover 
+{
+	transform:translateX(-5rem);
+}
+
+.video:hover 
+{
+	transform:translateX(-5rem);
+}
+
+.presse:hover 
+{
+	transform:translateX(-5rem);
+}
+
+.links:hover 
+{
+	transform:translateX(-5rem);
+}
+
+.contact:hover 
+{
+	transform:translateX(-5rem);
+}
+
+li:hover a::before
+{
+	opacity:1;
+	transform:  translateX(2rem);
+}
+
+li:hover a
+{
+	color: #AFAFAF;
+}
+

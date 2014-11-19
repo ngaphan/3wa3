@@ -1,0 +1,126 @@
+
+/*•	Modules : éléments répétitifs . Donc à partir de là, utilise que des classes*/
+
+.menu
+{
+	width:80%;/*1*/	
+	height:100%;/*2*/	
+	padding: 0 10%;/*3*/
+}	
+	/* 1/ 80% de son parent #navig (qui est =100%de la larguer du site,dans layout)
+	   2/ 100% de son parent #navig qui est=3rem
+	      ce bloc des menus étale de haut en bas du bloc navig(height:100%), c'est padding 10% de chaque côté qui fait la largeur de 80% 
+	   3/ les menus collent tout en haut(0)jusqu'en bas du #navig et laissent 10% de largeur de chaque côté du bloc navig(donc occuper que 80%)
+	*/
+
+.menu > li
+{
+	float:left; /* ça fait sortir des flux css , il y aura des choses disparraissent*/
+	width:calc(100%/6);/*n'est pas encore validé par 3WC , faut en "rem" , sinon : pas grave*/
+	position:relative;
+	height:4rem;
+}
+
+.menu > li > a
+{
+	line-height:2rem;
+	text-align: center;/* pourquoi fonctionne pas?*/
+	font-size: 1rem;
+	text-decoration:none;
+	display:block;
+	padding: 1rem 0;
+}
+	/* height de .menu =100% de son parent(#navig=3rem),donc=3rem; height de text=1rem;donc il reste 1rem, d'où padding:0.5rem 0;*/
+
+.menu > li > a:hover
+{
+	background:url(../img-maquette2/bg3.jpg);
+}
+
+.menu > li > ul
+{
+	display:none; /* cacher la liste*/
+}
+
+.menu > li:hover > ul 
+{
+	display:block; /* réapparaître la liste qu'on a désactivé */
+}	
+
+.sub-menu
+{
+	position:absolute;
+	width:100%;
+}
+
+.sub-menu >li > a /* si on veut ça s'affiche pas la meme tete de <a> parent. Donner les nouvelles propiétés*/
+{
+	font-family:Crimson;
+	line-height:1.2rem;
+	font-size:0.9rem;
+	text-decoration:none;
+	display:block;/*pour que chaque ligne prenne toute la largeur donné par son parent, ici=100%/6*/
+	
+}
+
+.sect1,.sect2,.sect3
+{		
+	border-width:0 0 0.1rem 0 ;
+	border-style:solid ;		
+	padding:3rem 0;
+}
+.sect1
+{
+	text-align:left;
+}
+
+.sect2,.sect3
+{
+	overflow:hidden;
+}
+
+.sect2 p,.sect3 p
+{
+	margin:0 0 3rem 0;
+}
+.sect-article
+{
+	width:30%;
+	float:left;
+	text-align:left;
+	margin-right:3.3333333%;
+}
+
+.article-btn
+{
+	border-radius: 0.8rem 0;
+	padding: 0.4rem;
+	font-size:1rem;	
+	text-decoration:none;
+}
+
+.col-img
+{
+	float:left;
+	width:30%;
+}
+
+.col-txt
+{
+	float:right;
+	width:64%;	
+}
+
+
+.sect3-btn
+{
+	border-radius: 1rem 0;
+	padding: 1rem;	
+	text-align:center;		
+	font-size:1.4rem;	
+	text-decoration:none;
+}
+
+
+
+

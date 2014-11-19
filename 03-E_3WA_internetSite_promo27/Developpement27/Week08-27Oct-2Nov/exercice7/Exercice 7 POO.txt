@@ -1,0 +1,11 @@
+Exercice POO 7
+
+On souhaite modéliser plusieurs espèces animales ayant des particularités différentes.
+
+    Créer une classe Animal représentant une espèce d'animal. Y intégrer une méthode __toString() permettant d'afficher le type d'animal.
+    Créer une classe Bird et Fish. Les oiseaux ont une nouvelle fonction fly(), les poissons swim().
+    Modéliser une classe Eagle.
+    Modéliser les classes Shark, Dolphin et Whales.
+    Créer une fonction randomCreate() dans la classe Animal, qui renvoie au hasard un objet Animal parmi les classes que vous avez créé.
+
+Modifié le: mardi 1 juillet 2014, 15:02

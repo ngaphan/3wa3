@@ -1,0 +1,25 @@
+body{
+	position: relative;
+	overflow: hidden;
+}
+a{
+	text-decoration: none;
+}
+h1,h2,p{
+	font-family: caviar_dreamsregular;
+}
+h1{
+	font-size: 2rem;
+	font-weight: bold;
+}
+h2{
+	font-size: 1.5rem;
+	position: absolute;
+	z-index: 10;
+	top:8%;
+	left: 5%;
+}
+p{
+	line-height: 2.5rem;
+	font-size: 1.35rem;
+}

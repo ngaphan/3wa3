@@ -1,0 +1,206 @@
+attr html :
+* autofocus : focalisation du curseur :le curseur  est deja dans la champs de recherche/ de saisie ->l'ergonomie
+-> à utiliser 1seule fois -< réservé uniquement pr la page spécifique d'un formulaire (ex:page de contact)
+
+* palceholder : affichier un message ds le champs, -> lors qu'on saisit le text va dissparaître
+
+input type= text/number/..........
+required: champs obligatoire , permet de dire un champs est obligatoire ,sinon ça affiche msg erreur -> faut quand meme vérifier du coté serveur (pas de valeur , rien à pré-remplir)
+
+value="" ,  considéré comme une saisie , une value...
+placeholder="" -> c'est juste un guide de la saisie pour l'utilisateur, mais il n'a pas de value ( comme le décor)
+
+input : type="button" -> faut que les balises <button></button> -< pr faire juste la form d'un bouton, pas d'interaction
+input : type="submit" -> pr envoyer qc
+
+****************
+ DANS CSS
+ **************
+
+comme différencier les <input type=submit> av <input type=text>
+
+ -> dans css , sélectionner la balsie input , entre les [] mettre
+ le nom de l'atttr ou la valeur de l'attr
+
+ si on peut mettre que le nom :
+
+ * input[placeholder] => choisir le input qui contient le 'placeholder' quelque soit la valeur
+
+
+ => site : curseur animé
+ 			cursor css -> http://stylescss.free.fr/cursor.php
+
+ *************
+
+ pseudo-classes css : comme :hover
+
+ :focus : curseur focalisé ds le champs de saisir
+ 			ex: click sur la loupe , le champs de saisir s'agandit pr qu'on sasir dedans
+
+ : required{
+
+ parmet de cibler le <input> qui possède l'attr required seuelment , pas d'autre <input> 
+ comme : input[required]
+}
+
+
+les inputs ne supportent pas les :before/:after
+
+pr cibler icon fauit cibler faur ::before ( cré un enfant)
+
+
+
+**********************
+2 grandes familles de CSS
+
+1 . transition : faut action de l'utilisateur ( :hover, :focus, :active)
+2 . Animation  : autonome, fonctionne toute seule
+
+faut 2 choses à faire pr l'animation :
+A. créer fichier keyframes, les point clé 
+@keyframes ( = 1 règle css) => sert à créer 1 ligne temporelle virtuelle , (car l'animation fonctionne sur un axe) qui commence de 0% à 100% .ce sont les point clé que l'animation va déclencher et continuer jusquà la fin . donner un nom de  l'animation ( s'en sert pr la prochiane fois qu'on a qu'à l'appeler par son nompas besoun de créer) => mieux créer les petit morceau de l'animation sur kes ptite élément , pr les appeller à  chaque poibt clé .
+mettre la propriété css ' animation' , c'est propriété racourci , comme tranforme ,
+
+créer fichier keyframes et link après 'reset','font', 'animation' ,'base'....
+
+B. 
+
+sur l"élément animé , mettre la propriété : animation : 8 valeur (2 premières sont obligatiore)
+1. nom de l'animation (ex : anim)
+2. durée de l'animation
+( marche pas sur chrome car css3 et html5 cest pas encore validé/ les propriété sont pas officciel) donc faut utiliser les préfix  pr fixer quel navig faut use préfix _> site : caniuse/animation pr voir qui peit use animation :
+
+on va voir : sur chrom , il y a un pt carré jaune vaec le symbol(-) _> veut  dire : faut pré"fix pr pouvoir use animation"
+
+
+webkit : chrom, opera , safari
+moz    : firefox
+ms(microsoft) :IE
+
+pr fonctionner sur tt les navig :
+a. @-webkit- , puis copier totalité de @keyframes qu'on a fait en général ,  et le metre avant la version général :
+
+@keyframes anim 
+{
+
+	0%
+	{
+		ts les propriété qu'on veut dont les valeurs sont numériqye
+		valeur initial (100% à 0% )
+	}
+
+	30%
+	{
+
+	}
+
+	100%
+	{
+		ts les propriété qu'on veut dont les valeurs sont numériqye
+		valeur final
+	}section
+}
+*/
+
+@-webkit-keyframes anim
+
+{
+
+	0%
+	{
+		transform: rotate(0deg);
+	}
+
+	30%
+	{
+
+	}
+
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+
+
+b. mettre da l"l"ment animé (meme propriété , meme valeur que propri 'animation: concrète ment
+
+	-webkit-animation:anim 1s;
+	animation: anim 1s;
+
+
+3.effet
+4. delai (par defaukt delai = 0 , càd : ça déclenche tout suite. si on met le delai, sa attend avant de declencher)
+
+//faut tout dupliquer ts les valeur dans ts le navig
+
+5. boucle :1(default) / chiffre( nbr de fois qu'il tourne) / mot clé : 'infinite'
+6.prop: animation-direction (sens de l'animation) :
+ *** default : 0% -> 100% , puis 0% -> 100%, puis 0% -> 100%.... ( valeur= normal)
+ *** si on veut :0% -> 100%, puis 100% -> 0%,( ça part de l'autre sens)( valeur= alternate)
+ *** si on veut :100% -> 0%, puis 0% -> 100%,( ça commence de 100%)( valeur= alternate-reverse)
+ *** inverser le ses du commencement de l'animation, départ de 100% à 0%, puis 100% à 0%, puis 100% à 0% (value = reverse)/contraire à default
+ ***
+ ( à la fin de l'animarion, ça reprend les propriété initiale , comme sil y a pas d'animation)
+
+ 
+
+ 
+
+ +++
+ 7. animation-fill-mode : propriété seule , peut avoir 3 valeurs :
+ a. forwards : ça garde les propriété finale(en position 100% si ça commence de 0% / et en position 0% si ça commence de 100%) ( mais)
+ b. backwards : ça reprend les propriétés initiales ( default)
+ c. both
+ +++
+
+ +++
+ animation: propriété racourci de :
+ 		animation-name ,:
+ 		animation-duration ,:
+ 		animation-easing ???, -> voir l'internet )
+ +++
+
+ 8.animation-play-state : running(par défault)/paused(areter l'animation lo'rs du survol, et reprend lors qu'on le quitte)
+ 		
+ 		***************
+
+ 		comment appeler les morceauw d'animation dans 1 meme fichier ???
+ ->  on mettre la propriété animation dans l'élément à animer comme d'hab , séparer par un (,) , met le nom de la 2è animation , puis (,) le nom de la 3è...
+
+
+
+ -> mieux metre ts les animation de la proptiété transform dans 1 meme morceau sinon les trasforms s'annule, il ne fait quie le dernier .
+
+ Ex : 
+ morceau 1 : anim
+
+ * transform : rotate 1s scale 1s (
+ 
+
+ morceau 2 : opacity 
+
+lors de l'appel :
+
+animation:
+		anim 1s ease-in-out 0.5s 4 reverse , 
+		scale 2s,
+		opacity 3s;
+
+		******************************
+
+ EXERCice :
+
+ 4img meme taille. fenetre voir qu'une seul img, les img défile devant la fenêrte et s'arette devant , puis défiller la suite ...
+
+ site : slidejs //http://www.slidesjs.com/
+
+ site : google ->chien -> images -> outils re recherche -< taille -> 600*450 -> ce sont que des photos de la meme taille qu'on défini nous meme 600*450
+
+
+ on peut metre les % pr la 'épause'
+
+
+ *************** Mardi
+
+ seule moyen de superposer les imgs = position :absolute

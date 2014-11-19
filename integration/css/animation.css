@@ -1,0 +1,89 @@
+body{
+	width: 100%;
+	-webkit-transition: all 1s;
+	
+}
+
+section{
+
+	background: red;
+	width: 60%;
+	height: 5rem;
+	margin : 10rem auto;
+	-webkit-animation:
+		scalerotate 1s ease-in-out 0.5s 4,
+		opacity 3s 4;
+		
+	animation:
+		anim 1s ease-in-out 0.5s 4 reverse , 
+		scale 2s,
+		opacity 3s;
+	
+}
+
+section:hover{
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+}
+
+
+@-webkit-keyframes scalerotate
+{
+
+	0%
+	{
+		transform: rotate(0deg) scale(2);
+	}	
+
+	100%
+	{
+		transform: rotate(360deg) scale(0.5);
+	}
+}
+
+
+@keyframes calerotate
+{
+
+	0%
+	{
+		transform: rotate(0deg) scale(2);
+	}	
+
+	100%
+	{
+		transform: rotate(360deg) scale(0.5);
+	}
+}
+
+@-webkit-keyframes opacity
+{
+
+	0%
+	{	
+		opacity :0;
+	}	
+
+	100%
+	{		
+		opacity :1;
+	}
+}
+
+
+@keyframes opacity
+{
+
+	0%
+	{	
+		opacity :0;
+	}	
+
+	100%
+	{		
+		opacity :1;
+	}
+}
+
+
+

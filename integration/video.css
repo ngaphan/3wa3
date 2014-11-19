@@ -1,0 +1,300 @@
+
+/* cours du mardi semaine2
+h1{
+	font-size: 2rem;
+	position:relative;
+	color: blue;
+	
+}
+
+
+h1::before{
+	background: pink;	
+	position:absolute;
+	top:0rem;
+	left:20% ;
+	z-index:-5;/*si c'est négative, affiche en dessous le text, si positif ; cacher txt
+}
+
+
+h1:hover::before{
+	content:"☺";
+	color:yellow;
+}
+
+
+a:hover::after{
+	content:attr(href);
+}
+
+
+.pdf::after{
+	content:url(../img/icon_pdf.gif);
+}
+
+
+*/
+
+
+/*cours lundi 15/9/14*/
+
+img
+{
+	/*transform:translateX(2rem); ok*/
+	/*transform:translateY(50%);ok*/
+	/*transform:translate(2rem,70%);*/
+	
+	/*transform-origin:(10rem 10rem);*/
+	
+}
+
+img:hover
+{
+	transform: translateX(10rem) scale(-1,1) skewX(60deg) rotate(60deg);	
+}
+*/
+
+img:hover
+{
+	transform:matrix
+		( 
+			1 0
+			0 1
+			0 0
+		);
+}
+
+*****************
+img
+{
+	transform-origin:(10rem 10rem);/*faut copier ds hover pr que ça répète cette transformation,  sinon ça annule ce quon fait ici et reprend à  0 par defautl*/
+	transition:transform 0.5s
+	cubic-bezier(.28,.68,.89,.59)
+	0.5s;
+
+}
+
+p{
+	transition:background 1s; /* 1s ça va exécuter pr ts les propriétés quon défini ds hover*/
+}
+
+p:hover
+{
+	background:red;
+	color:blue;
+}
+img:hover
+{
+	transform-origin:(10rem 10rem);
+	transform:rotate(2turn);/* je veut:rotate de telle  et telle manière*/
+}
+
+************************
+
+/*faut mettre "transition" dans l'élément qu'on veut animer, et je vais interpeller la propriété " transform" que je vais définir ses caratères dans l'évènement : hover*/
+
+img
+{
+	border-radius: 2rem;/* css normal*/
+	transform-origin:(10rem 10rem);
+	/*faut copier ds hover pr que ça répète cette transformation,  sinon ça annule ce quon fait ici et reprend à  0 par defautl*/
+	transition:
+		transform 0.5s cubic-bezier(.28,.68,.89,.59) 0.5s,
+		border-radius 1s;
+	
+}
+
+p{
+	transition:
+		background 1s, 
+		color 0.5s ease-in-out 1s,
+		opacity 3s ease 2.5s ; 
+}
+
+/* démarrer bg dans 1s,
+			color pdt 0.5s mais faut attendre bg 1s
+			opacity pdt 3s ...................2.5s(1s bg ,1.5color)
+*/
+
+p:hover
+{
+	background:red;
+	color:blue;
+	opacity:0.5;
+}
+img:hover
+{
+	
+	transform-origin:(10rem 10rem);
+	transform:rotate(2turn);
+	border-radius : 50%;
+}
+
+************************
+
+
+
+img{
+	border-radius:50%;
+	transform:translate(5rem ,5rem);
+	transition: 
+		transform 1s,
+		border-radius 2s ease 1s,
+		opacity 2s ease-in 2s;
+}
+
+img:hover
+{
+	transform:
+		translate(5rem, 5rem),
+		rotate(60deg);
+	border-radius:10%;
+	opacity:0.5;
+}
+
+**************************
+
+/* survoler parent mais agir sur l'enfant
+
+-> :hover sur parent(espace)enfant( de n'importe quel niveau);
+
+attention: on peut pas remonter . Càd: on peut pas survoler sur l'enfant et agir sur parent -> NON; peut pas non plus chercher élément frère précédent , on peut choisir frère 1 agir sur frère 2 et 3 . Mais peut pas survoler frère 3 et agir sur frère 1 . Tout ça dépend de la structure html, qui est écrit en premier , c'est parent ou frère 1 , en 2è : frère 2 ; meme si en css on a mis float par tout , mais faut voir html pr savoir qui est frère 1 , frère2*/ 
+ En css,;
+*/
+
+.sect
+{
+	width:90%;
+	height:30rem;
+	background:pink;
+}
+
+.enf1{
+
+	transition: all 1s;
+}
+
+.sect:hover .enf1
+{
+	transform :	rotate(180deg) translateX(5rem);
+}
+
+/*maintenir enf enfoncé = active
+ici que des class, si id -> #
+.enfant:active + .enfant suivant;
+
+.enf1:active + #enf2
+{
+	transform :	rotate(180deg) translateX(5rem);
+	background:yellow;
+}
+
+*/
+
+/*EX : activer sur 1er enfant et agir sur le 3e enf*/
+
+.enf1:active + #enf2 + .enf3
+{
+	transform :	rotate(180deg) translateX(5rem);
+	/* tj le dernier élément qui est impacté, donc css va sauter efn2 pr agir sur l'enf3*/
+}
+
+
+/*survol sur parent , agir sur 1er enfant:
+
+.parent:hover .enfant:first-child ;OU
+.parent:hover .enfant:nth-child(1) ;
+
+mais pour agir sur le 2è,3è enfant, on est obligé :;
+.parent:hover .enfant:nth-child(2) ;
+.parent:hover .enfant:nth-child(3) ;
+*/
+
+
+/*EX : activer sur 1er enfant et agir sur le 2e enf*/
+
+.sect
+{
+	width:96%;
+	padding: 5rem 2%;
+	height:30rem;
+	background:pink;
+}
+
+/*.enf2 
+{
+
+	transition: all 1s;
+}*/
+#enf2, .enf3
+{
+
+	transition: all 1s;
+}
+
+
+/* Choisir ts les frères suivants : à la place de +, on met ~ 
+/(AltGr+é)(espace)(balise qui contient l'élément) / */
+
+
+.enf1:active ~ div 
+{
+	transform :	rotate(180deg) translateX(5rem) scale(-1,1);
+	background:yellow;
+}
+
+*****************
+10-ex_trans
+
+body
+{
+	width:100%;
+	margin:5rem 40%;
+	background:pink;
+}
+
+.img{
+
+	opacity:0.5;
+	transition:all 1s;
+
+}
+
+figure
+{
+	
+	height:12.25rem;
+	width:16.1875rem;
+	overflow:hidden;
+	display:inline-block;
+	}
+
+.legend{
+	
+	transition:all 3s;/*+longue la durée est,- vite la vitesse est*/
+	color: red;	
+	background:yellow;
+	text-align: center;
+}
+
+figure:hover .legend350/16
+{
+	transform: translateY(-2rem) ;
+}
+
+figure:hover .img
+{
+	opacity:1;
+}
+
+/*
+définir les propriété de base pr chaq élément,
+On a 2éléménets à animer (img et legend), faut transition dans ses 2 éléments
+Pour cacher legend : overflow: hidden à son parent <figure> et la taille de son parent = exactement à img,donc legend est de trop, ça va cacher;
+Pour que legend et img se place l'un sous l'autre: inline-block pour son parent<figure> pr qu'il sache qu'il contient 2 enfs;
+lorsqu'on survol sur img, ici quasiment sur son parent<figure>, donc ça agir en même temps sur les 2: img et legend.Alors, faut les 2:
+	figure:hover .img;//survol parent ,agir sur img
+	figure:hover .legend;//survol parent ,agir sur legend
+Donner les propriétés qu'on veut qu'il fasse lors du survol...
+
+*/

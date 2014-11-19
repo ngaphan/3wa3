@@ -1,0 +1,30 @@
+Jeu du nombre aléatoire
+Dans cet exercice vous allez créer un jeu du nombre aléatoire.
+
+Les étapes sont les suivantes :
+
+Vous demandez au joueur de choisir les intervalles (min et max)
+Première étape, on lui demande de choisir le chiffre le chiffre minimum entre 0 et 100
+Deuxième étape, on lui demande de choisir le chiffre maximum compris entre le chiffre minimum et 100
+L'ordinateur choisi alors un nombre aléatoire compris dans cet intervalle : le chiffre minimum choisit et le chiffre maximum choisit
+Le joueur doit alors trouver le fameux nombre aléatoire choisit par l'ordinateur
+La partie est gagnée lorsque le joueur trouve le bon nombre
+La partie est perdue lorsque le joueur a dépassé les 10 essais
+Pour les plus rapides :
+
+Ajouter le fonctionnement du "plus" ou du "moins" : si le nombre saisi est plus grand que le nombre à trouver, alors afficher une aide "c'est moins!".
+Donner la possibilité de rejouer
+Afficher le nombre de parties jouées
+Afficher le nombre de victoires/défaites 
+Afficher la meilleure performance
+Afficher le pourcentage de victoire / défaite
+Afficher la moyenne de coups par victoire
+Aide :
+
+Fonction qui permet de choisir un nombre aléatoire
+
+function randomInteger(iMin, iMax) {
+return Math.round(Math.random() * (iMax - iMin)) + iMin;
+}
+
+Modifié le: vendredi 12 septembre 2014, 15:46

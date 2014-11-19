@@ -1,0 +1,123 @@
+/*
+1/ pour faire les transition,transform ne fonctionne que sur les block . Ce qui est de type inline, il faut mettre display:block . EX <a> est de type inline...
+
+
+2/faut mettre:;
+
+transition :all 1s dans ts les élément origin qui n'est pas encore animé , mais va être animé ,
+
+perspectiv: 3rem 2s dans ts les élément origin qui n'est pas encore subit la perspective, mais va recevoir les caractéristiques perspective pour activer la perspective de ses enfts,
+
+
+tranform-origin:pour fixer l'axe qu'il va baser pour pivoter. Default, pr les élément before, after son origin est au centre de lui. Donc si c'est 1 after, il va s'afficher à droite de l'élément parent, pr su'il base sur l'axe vertical de son parent, il doit changer son axe d'origin vers left center
+
+*/
+
+html{
+	width: 100%;
+	height: : 100%;
+}
+body{
+	width: 100%;
+	height: : 100%;
+}
+.sect{
+
+	width:3rem;
+	margin: 5rem auto;
+	perspective: -3rem 3s;
+	transition: all 1s;
+	transform:translateY(-17.5rem);
+
+	/*faut mettre sur le parent pr activer la perspective des enfants*/
+}
+
+.sect:hover{
+	transform:translateY(0);
+
+}
+
+a{
+	position:relative;
+	display: block;
+}
+
+.fi-social-facebook,
+.fi-social-twitter,
+.fi-social-tumblr,
+.fi-social-pinterest{
+	
+	font-size: 3rem;
+	text-decoration: none;
+	color: rgba(193,191,177,1);
+	padding-left: .4rem;
+	transition: all 0.3s;
+}
+.fi-share{
+
+	text-align: center;	
+	font-size: 3rem;
+	color:white;
+	text-decoration: none;
+	border-radius: 0 0 0.8rem 0.8rem;
+	background:rgba(193,191,177,1); 
+	padding: 0 .4rem;
+
+}
+.fi-social-facebook::after,
+.fi-social-twitter::after,
+.fi-social-tumblr::after,
+.fi-social-pinterest::after{
+	
+	font-size: 1.3rem;
+	padding:0.35rem 0.35rem;
+	color: black;
+	background: rgba(193,191,177,0.5);
+	border-radius: 0 0.4rem 0.4rem 0; 
+	position: absolute;
+	top: 0.5rem;
+	transition: all 1s;	
+	transform-origin:left center;
+	transform:rotate3d(0,1,0,90deg);
+
+	/*mettre des début pr qu'il se cache derière le bouton*/	
+}
+
+.fi-social-facebook::after{
+	content:"facebook";
+}
+.fi-social-twitter::after{
+	content:"twitter";
+}
+.fi-social-tumblr::after{
+	content:"tumblr";
+}
+.fi-social-pinterest::after{
+	content:"pinterest";
+}
+
+
+.fi-social-facebook:hover,
+.fi-social-twitter:hover,
+.fi-social-tumblr:hover,
+.fi-social-pinterest:hover
+{
+
+	transform: scale(1.4,1.4);
+}
+
+
+
+.fi-social-facebook:hover::after,
+.fi-social-twitter:hover::after,
+.fi-social-tumblr:hover::after,
+.fi-social-pinterest:hover::after{
+
+	transform:rotate3d(0,1,0,0deg) ;
+
+	/* y=1 -> baser sur l'axe y */
+	
+}
+
+
+

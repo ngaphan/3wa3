@@ -1,0 +1,9 @@
+Exercice SQL 3 : LIKE
+Dans la clause WHERE, nous pouvons filtrer des données en utilisant le mot clé 'LIKE'. Une description de son fonctionnement se trouve ici.
+À l'aide de ce dernier, écrire les requêtes permettant d'afficher :
+
+toutes les régions commençant par la lettre A
+toutes les villes d'Alsace se terminant par 'heim'
+le nombre de villes dans les yvelines ayant 'sin' dans leur nom
+le nombre total d'habitant des villes ne comportant pas de 'e' dans leur nom
+Modifié le: mardi 3 juin 2014, 11:56

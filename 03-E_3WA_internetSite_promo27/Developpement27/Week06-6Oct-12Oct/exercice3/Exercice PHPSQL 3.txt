@@ -1,0 +1,10 @@
+Exercice PHP/SQL 3
+Créer une page permettant d'afficher toutes les villes de France à l'aide d'une pagination (maximum 50 villes par page). 
+
+La pagination permet d'aller :
+
+sur la première page
+sur la dernière page
+sur la page précédente
+sur la page suivante
+Modifié le: jeudi 12 juin 2014, 17:11

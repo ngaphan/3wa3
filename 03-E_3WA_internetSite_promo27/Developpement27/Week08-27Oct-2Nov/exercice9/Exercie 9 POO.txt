@@ -1,0 +1,21 @@
+Exercice POO 9
+
+Nous souhaitons modéliser de façon simple, rapide (non sécurisée) les données présentes dans notre base de données "classroom".
+
+   1 Créer une fonction getAllFromTable() permettant de récupérer toutes les valeurs d'une table donnée en paramètre. Cette fonction prend un deuxième paramètre optionnel pour limiter les résultats.
+  2 Créer une classe DBObject proposant un mécanisme afin de remplir de manière dynamique n'importe quelle table de notre base de données.
+  3  Créer la classe Region.
+  4  Ajouter une fonction getAll() qui renvoie toutes les régions de France. Faire attention, à protéger votre fonction getAll() (classe DBObject).
+  5  Ajouter une fonction getFromNumber( int ) permettant de récupérer n'importe quelle région par son numéro. Cette fonction doit remplir la classe et la renvoyer.
+  6  Créer la classe Department.
+  7  Ajouter la fonction getFromNumber( int ).
+  8  Ajouter la fonction getAll().
+  9  Ajouter une fonction getAllFromRegion( Region ) récupérant tous les département à partir d'une classe Region.
+  10  Créer la classe City.
+  11  Ajouter la fonction getAll().
+  12  Ajouter la fonction getFromId(int).
+  13  Ajouter une fonction getAllFromDepartment( Department ).
+ 14   Modifier votre classe Department afin d'avoir sa région sous forme d'objet.
+ 15   Modifier votre classe City afin d'avoir son département sous forme d'objet.
+
+Modifié le: mercredi 2 juillet 2014, 15:46 le: mercredi 2 juillet 2014, 15:46

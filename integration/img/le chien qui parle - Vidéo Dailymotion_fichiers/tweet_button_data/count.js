@@ -1,0 +1,1 @@
+/**/twttr.receiveCount({"count":1,"url":"http:\/\/www.dailymotion.com\/video\/xm0ttj_yuki-le-chien-qui-parle_animals\/"});

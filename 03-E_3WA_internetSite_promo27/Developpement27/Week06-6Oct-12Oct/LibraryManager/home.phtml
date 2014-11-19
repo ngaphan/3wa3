@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Library Manager</title>
+    <script src="js/utilities.js"></script>
+</head>
+<body>
+    <section>
+        <h1>Library Manager</h1>
+
+        <table id="books_list">
+            <caption>Stock des livres</caption>
+            <thead>
+                <tr>
+                    <th>Référence</th>
+                    <th>Titre</th>
+                    <th>Auteur</th>
+                </tr>
+            </thead>
+			<tbody>
+                <?php foreach($booksArray as $bookArray): ?>
+                    <tr id="book_<?= $bookArray['book_id'] ?>">
+                        <td><?= $bookArray['book_id'] ?></td>
+                        <td class="book_title"><?= $bookArray['book_title'] ?></td>
+                        <td class="author_name"><?= $bookArray['author_name'] ?></td>
+                        <td><a href="#" data-book-id="<?= $bookArray['book_id'] ?>">Modifier</a></td>
+                        <td><a href="index.php?bookId=<?= $bookArray['book_id'] ?>&action=bookDelete">Supprimer</a></td>
+                    </tr>
+                <?php endforeach ?>
+            </tbody>
+        </table>
+
+        <form action="" method="post">
+            <input name="bookTitle" type="text">
+            <input name="authorName" type="text">
+            <input name="action" value="bookAdd" type="hidden">
+            <input value="AJOUTER" type="submit">
+        </form>
+		
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

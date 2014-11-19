@@ -1,0 +1,82 @@
+@media only screen and (max-width:62.5rem){
+
+body{
+	width:96%;
+	margin: 0 2%;
+}
+/* ce comportement s'adapte jusqu'à 1000px, donc plus petit que ça, on a pas besoin de refaire dans le nouveau point de rupture*/
+}
+
+@media only screen and (max-width:35rem){
+
+#navig
+{
+	margin:0.3rem;
+}
+
+#img-site{
+
+	display:none;
+	padding: 0;
+}
+
+.col-img
+{
+	width:30%;/* de son nouveau parent , ici 34rem*/
+}
+
+.col-txt
+{
+	width:64%;
+}
+
+h1
+{
+	font-size:3rem;
+	line-height:3.4rem;
+	margin:0.2rem;
+}
+
+h2
+{
+	font-size:1.5rem;
+	line-height:2rem;
+	margin:0.2rem;
+	text-decoration:underline;
+}
+
+h3
+{
+	font-size:1.2rem;
+	line-height:1.6rem;
+	margin:0.2rem;
+	text-decoration:underline;
+}
+
+p
+{
+	font-size:0.9rem;
+	line-height:1.2rem;
+	margin:0.2rem;
+
+}
+
+.sect3-btn
+{
+	border-radius: 0.8rem 0;
+	padding: 0.5rem;	
+	text-align:center;		
+	font-size:1rem;	
+	text-decoration:none;
+}
+
+#footer
+{	
+	height:4rem;
+	padding-top:2rem;	
+}
+}
+
+/*@media only screen and (max-width:25.65rem){*/
+
+

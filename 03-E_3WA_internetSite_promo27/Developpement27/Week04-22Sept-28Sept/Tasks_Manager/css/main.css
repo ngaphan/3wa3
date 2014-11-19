@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:700,300,500italic,300italic,400italic,500,400,700italic);
+
+body {
+	font-family: Roboto;
+	font-size: 14px;
+}
+
+h1 {
+	background-color: #3D7C99;
+	color: #00FFC6;
+	display: block;
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	padding: 6px 0 8px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+h2 {
+	background-color: #333;
+	color: #fff;
+	display: block;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 4px 0 5px 0;
+	text-align: center;
+}
+h2.urgent {
+	background-color: #FF5540;
+}
+h2.overdue {
+	background-color: #CC142B;
+}
+h3 {
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 7px;
+}
+form {
+	text-align: center;
+}
+form input,
+form textarea {
+	border: solid 1px #000;
+	margin-right: 0;
+	padding: 10px;
+	width: 460px;
+}
+p {
+	display: block;
+	height: 24px;
+	margin: 10px 0px 0px 0px;
+}
+
+.button,
+.button_small {
+	background-color: #3D7C99;
+	color: #00FFC6;
+	font-size: 15px;
+	margin-right: 10px;
+	padding: 2px 6px;
+}
+.button_classic {
+	background-color: #3D7C99;
+	color: #00FFC6;
+	font-size: 15px;
+	width: 482px;
+}
+.button_small {
+	font-size: 13px;
+}
+
+#tasks_list {
+	margin-top: 5px;
+}
+#tasks_list > article {
+	background-color: #7BB2CC;
+	padding: 10px;
+}
+#tasks_list > article span {
+	color: #fff;
+	display: block;
+	float: right;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 64px;
+	text-align: center;
+	width: 20%;
+}
+
+.top_right {
+	margin-top: -39px;
+	text-align: right;
+}
+.top_right a {
+	background-color: #fff;
+	border-radius: 50%;
+	color: #000;
+	width: 36px;
+}

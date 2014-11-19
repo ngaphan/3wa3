@@ -1,0 +1,7 @@
+
+Exercice PHP 2 : Tri des tableaux
+Créer un tableau contenant cinq fruits (minimum) avec leur prix au kilo (par exemple des bananes à 2,3€/kg, pommes à 1.99€/kg...)
+Afficher le nom de tous les fruits dans un paragraphe
+Afficher tous les fruits avec leur prix par ordre alphabétique dans une liste html
+Afficher tous les fruits triés par prix dans une liste numérotée
+Modifié le: vendredi 23 mai 2014, 15:26

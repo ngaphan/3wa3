@@ -1,0 +1,11 @@
+
+PHP 1 : Exercice Traducteur
+1. Créer une page web permettant de traduire un mot du français vers l'anglais.
+
+Le mot devra être choisi par l'utilisateur.
+
+Liste des mots à traduire : chat, chien, mer, soleil...
+
+2. Permettre d'effectuer la traduction dans un sens ou dans l'autre.
+
+Modifié le: vendredi 23 mai 2014, 10:31

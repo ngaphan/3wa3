@@ -1,0 +1,11 @@
+Exercice POO 8
+
+Dans l'entreprise Silam, on souhaite modéliser les employés et leur chef respectif. Chaque individu est identifié par son couple nom/prénom.
+Tout le monde a un chef, sauf le PDG.
+L'entreprise Silam compte sept individus : le PDG qui dirige deux chefs d'équipes ayant chacun 2 employés qualifiés.
+
+    1 Proposer une solution afin de modéliser tous les individus de l'entreprise Silam. Il doit être possible de créer des employés et des chefs.
+    2 Créer une fonction retournant tous les chefs d'un employé. Attention, le PDG n'a pas de chef...
+    3 On souhaite ajouter un matricule pour identifier les employés plus rapidement dans le parc informatique. Le PDG souhaite se voir attribuer le chiffre 100, et démarrer la numérotation de ses employés à 101. On considère que les employés sont créés par position dans la hiérarchie. Développer cette solution.
+
+Modifié le: mardi 1 juillet 2014, 14:53

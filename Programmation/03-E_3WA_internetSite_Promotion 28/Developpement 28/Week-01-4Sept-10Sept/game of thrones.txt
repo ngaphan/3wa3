@@ -1,0 +1,36 @@
+Game of thrones :p
+Création d'un jeu de combat entre un chevalier et un dragon
+
+Etapes :
+Demander à l'utilisateur le niveau de difficulté
+- facile : choisir un niveau de vie pour le dragon compris entre 150 et 200 et du chevalier entre 200 et 250
+- normal : choisir un niveau de vie pour le dragon compris entre 200 et 250 et du chevalier entre 200 et 250
+- difficile : choisir un niveau de vie pour le dragon compris entre 150 et 200 et du chevalier entre 150 et 200
+
+Demander à l'utilisateur l'armure du chevalier
+- armure de cuivre : protège normalement
+- armure de fer : divise les dégâts infligés de 1.25
+- armure magique : divise par deux les dégâts infligés
+
+
+Demander à l'utilisateur l'épée du chevalier
+- Une épée en bois nécessite deux fois plus de dégâts que la normale
+- Une épée en acier inflige des dégâts normaux
+- L'épée légendaire inflige le double de dégâts
+
+
+Le dragon inflige moins de dégâts si le niveau de difficulté est facile : entre 10 et 20 sinon entre 30 et 40
+
+Les dégâts infligés par le chevalier varient selon la difficulté du jeu.
+- facile : entre 5 et 10
+- moyen: entre 15 et 20
+- difficile: entre 25 et 30
+
+
+Le jeu fonctionne comme ceci :
+On choisit un chiffre aléatoire entre 10 et 20 pour le dragon et entre 10 et 20 pour le chevalier permettant de connaître la vitesse d'action de chacun
+Celui qui a la vitesse la plus forte attaque l'autre et lui inflige un nombre de dégâts suivant les règles du dessus
+On recommence jusqu'à la mort d'un des deux personnages
+On affiche le gagnant du combat
+
+Modifié le: jeudi 18 septembre 2014, 22:34

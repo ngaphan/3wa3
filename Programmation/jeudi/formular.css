@@ -1,0 +1,28 @@
+body{
+	width: 60%;
+	margin: 5rem auto;
+	background: url(background/bg33.jpg)
+}
+
+input,select{
+	background: #FFFF99;
+}
+
+a{
+	text-decoration: none;
+	margin:0 2rem 0 0;
+	padding:0.3rem;
+	border:  0.1rem #FF9933 solid;
+	border-radius: 0.5rem;
+	background: #CCCCFF;
+}
+
+.valid{
+	background:#66CC00;
+}
+
+
+.hide{
+	display: none;
+}
+

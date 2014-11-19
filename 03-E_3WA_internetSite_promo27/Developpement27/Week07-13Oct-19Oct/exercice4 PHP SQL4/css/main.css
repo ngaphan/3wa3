@@ -1,0 +1,9 @@
+span.badge.population {
+    background-color: #2182ff;
+    color: #fff;
+}
+
+span.badge.surface {
+    background-color: #ffcd24;
+    color: #000;
+}

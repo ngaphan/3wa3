@@ -1,0 +1,22 @@
+Exercice 4 POO
+
+1. Créer une classe Student représentant un étudiant avec les attributs suivants :
+
+    nom
+    date de naissance
+    adresse
+
+Un étudiant doit pouvoir dire qui il est (voir la fonction magique toString()).
+
+Créer deux étudiants.
+
+2. On souhaite maintenant ajouter différentes notes aux étudiants (sans se soucier des matières).
+
+Ajouter une propriété "notes" qui contiendra la liste de toutes les notes d'un étudiant, il doit être possible d'ajouter une seule note, et de récupérer la liste de toutes les notes.
+
+3. Ajouter une fonction getAverage() retournant la moyenne de ses notes.
+
+4. Créer une fonction dans la classe User permettant de comparer deux étudiants. Cette fonction renvoie un nombre et fonctionne comme strcmp.
+
+5. Ajouter des fonctions permettant de récupérer la plus petite et la plus haute note.
+Modifié le: lundi 30 juin 2014, 14:40

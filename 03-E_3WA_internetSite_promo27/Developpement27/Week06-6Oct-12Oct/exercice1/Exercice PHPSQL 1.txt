@@ -1,0 +1,7 @@
+
+Exercice PHP/SQL 1
+Créer une page permettant d'ajouter de nouveaux étudiants dans votre base de données.
+
+Le formulaire comportera les champs suivants : nom, date de naissance et identifiant de ville.
+
+Modifié le: jeudi 12 juin 2014, 16:08

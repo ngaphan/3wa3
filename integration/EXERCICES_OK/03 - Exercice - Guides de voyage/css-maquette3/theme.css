@@ -1,0 +1,122 @@
+
+/*•	Theme : tout ce qui est visuel ou couleur: couleur du text, background, bordure,ombre,bg-img,*/
+
+
+.header
+{
+	background:
+		url(../img-maquette3/index-02.png) no-repeat bottom center ,
+		url(../img-maquette3/index-01.jpg) no-repeat ;
+}	
+
+
+
+h1,h2,h3,h4,p,a
+{	
+	color: white;
+}
+
+
+
+.sect1 h3
+{
+	color:#424242;
+}
+
+
+
+.sect2 h3
+{
+	color:#63B6A4;
+}
+
+
+
+#navig,.sect2
+{
+	background: black;
+}
+
+
+.city-newyork
+{
+	background-image:
+		url(../img-maquette3/index-03.jpg)  ;	
+}
+.city-paris
+{
+	background-image:
+		url(../img-maquette3/index-04.jpg)  ;	
+}
+.city-portland
+{
+	background-image:
+		url(../img-maquette3/index-05.jpg) ;	
+}
+.city-sanfrancisco
+{
+	background-image:
+		url(../img-maquette3/index-06.jpg);
+}
+.sect1-title::after
+{
+	background:#424242;
+}
+.sect1-btn
+{
+	border-color:#424242 ;		
+	color:#414342;
+}
+
+
+
+
+.icon-left1::before,.icon-left2::before,.icon-right::after,.text-uppercase
+{	
+	color: white;
+}
+
+
+
+
+
+.blog p{
+	color:#3F4440;
+}
+.blog p::before
+{
+	color:#3F4440;
+}
+.blog p::after
+{
+	color:#3F4440
+}
+h5
+{
+	color:rgba(127,127,127,0.8);
+}
+
+
+
+
+
+.sect4
+{
+	background-image:url(../img-maquette3/index-07.jpg);
+}
+.write>h3::after{
+
+	background:white;
+}
+.sect4-btn{
+	color:white;
+}
+
+
+
+
+.links{
+	
+	color:#D3CDCD;
+	
+}

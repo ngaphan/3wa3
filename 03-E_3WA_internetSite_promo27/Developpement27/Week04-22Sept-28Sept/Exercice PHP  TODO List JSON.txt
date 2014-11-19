@@ -1,0 +1,4 @@
+Exercice PHP : TODO List JSON
+Vous allez reprendre l'exercice sur les todolist, mais en utilisant le format JSON maintenant.
+
+Modifié le: vendredi 30 mai 2014, 14:19

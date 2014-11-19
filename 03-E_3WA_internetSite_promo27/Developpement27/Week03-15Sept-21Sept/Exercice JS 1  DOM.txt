@@ -1,0 +1,8 @@
+Exercice JS 1 : DOM
+Créer une page HTML ayant un titre h1 (identifiant "title") et deux titres h2 ayant des classes différentes.
+
+Afficher dans une popup, le contenu du titre h1.
+Afficher dans plusieurs popup, toutes les classes des titres h2.
+Puis faire la même chose avec les querySelector.
+
+Modifié le: mercredi 21 mai 2014, 12:34

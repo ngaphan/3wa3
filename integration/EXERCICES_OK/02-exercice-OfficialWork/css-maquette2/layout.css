@@ -1,0 +1,34 @@
+
+/*•	Layout : utiliser les indentifiants(#) pr les grands blocs qui compose la mise en page totale de la page web( header, footer, main, nav, …)*/
+
+body
+{
+	width:62.5rem;
+	margin: 0 auto;		
+}
+
+#img-site 
+{
+	clear:both;
+	height:22.5rem;
+	border-width:0.1rem 0 0.1rem 0 ;
+	border-style:solid ;		
+	padding:3rem 0;	
+}
+
+#navig
+{
+	height:4rem;
+	width:100%;
+	border-radius:1rem 0;	
+	margin:0 0 3rem 0;
+	/*pousser le bloc nav par rapport au bloc main, si on met padding , le bloc nav va sagrandir mais tj collé av bloc main*/
+}
+
+#footer
+{
+	clear:both;
+	height:6rem;
+	padding-top:3rem;	
+}
+

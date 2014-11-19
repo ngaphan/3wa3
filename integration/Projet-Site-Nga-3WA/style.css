@@ -1,0 +1,350 @@
+﻿/* Eléments principaux de la page */
+
+body
+{	
+	background: url('images/fond_bleu.png');
+	background-color:rgba(242,251,253);
+	background-color:rgba(242,251,253,0.5);
+	text-align:center;
+    font-family: 'Arial',Trebuchet MS , sans-serif;
+    color: #181818;
+    width: 100%;
+}
+
+
+#bloc_site,footer
+{
+    width: 90%;
+    margin:  auto;
+    
+}
+
+section h1, footer h1, nav a
+{
+    font-family: 'Cambria',Arial, sans serif;
+    font-weight: normal;
+	color:#808000;
+}
+
+/* Header */
+
+header #title_site
+{
+    display: inline-block;
+	margin-left:-25px;	
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+	color:#5F9EA0;
+    font-size: 1.9em;
+    font-weight: normal;
+}
+
+#logo, header h1
+{
+    display: inline-block;
+    margin-bottom: 0px;
+	
+	
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+	color:#808000;
+    font-size: 1.1em;
+    margin-top: 0px;
+	margin-left:0px;
+    font-weight: normal;
+}
+
+/* Navigation */
+
+nav
+{
+	display: inline-block;
+    width: 700px;
+    text-align: right;
+	
+}
+
+nav ul
+{
+    list-style-type: none;
+	
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+	
+}
+
+nav a
+{	
+    font-size: 1em;
+    color: #2F4F4F;
+    padding-bottom: 3px;
+    text-decoration: none;
+	border-radius: 15px;
+}
+
+nav a:hover
+{
+    color: #0000FF;
+    border-bottom: 3px solid #D8BFD8;
+}
+
+/* Corps */
+
+article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+article
+{
+    width: 625px;
+    margin-right: 15px;
+}
+
+article p
+{
+    font-size: 0.8em;
+	text-align:jsutify;
+}
+
+#banniere_description
+{
+    position: relative;	
+    bottom: 5px; 
+	top:10px;	
+    width: 625px;   
+    font-size: 0.8em; /*police*/
+}
+
+.bouton_rouge
+{
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: url('images/fond_degraderouge.png') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 0.8em;/*police*/
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_rouge img
+{
+    border: 0;
+}
+
+aside
+{
+    position: relative;
+    width: 235px;
+    background-color: #D3D3D3;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;/*police*/
+    font-size: 0.8em;
+}
+aside h1
+{
+	text-align: center;
+}
+
+#photo_tycon
+{
+    text-align: center;
+}
+
+#photo_tycon img
+{
+    border: 1px solid #181818;
+	
+}
+
+aside img
+{
+    margin-right: 2px;
+}
+
+/* Footer */
+
+footer
+{	
+    background: url('images/ombre.png') repeat-x top;
+    padding-top: 5px;
+	margin-top:10px;	
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+	
+}
+
+footer h1
+{
+    font-size: 1.1em;
+	color:#D2691E;
+}
+
+#tweet, #mes_photos, #mes_amis
+{
+    display: inline-block;
+    vertical-align: top;
+	text-align: left;
+}
+
+#tweet
+{
+    width: 28%;	
+}
+
+#mes_photos
+{
+    width: 35%;
+}
+
+#mes_amis
+{
+    width: 31%;
+}
+
+.photos
+{
+    width: 60% ; 
+    height: 10rem;   
+   position: relative;
+
+}
+.photo5,  .photo6 ,.photo7 ,.photo8
+
+{
+	width :60% ;
+    height: 10rem;
+    position: absolute; 
+    opacity: 1; 
+    animation : opacity 4s linear infinite;       
+}
+.photo5
+{
+    animation-delay : 0s;  
+}
+.photo6
+{
+    animation-delay : 1s; 
+}
+.photo7
+{
+    animation-delay : 2s; 
+}
+.photo8
+{
+   animation-delay : 3s;  
+}
+
+#mes_amis ul
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    width: 48%;
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 2px;
+}
+
+#mes_amis a
+{
+    text-decoration: none;
+    color: #760001;
+}
+
+.CV-auteur a
+{
+    text-decoration: none;
+}
+
+.hide
+{
+    display: none;
+}
+
+.menu
+{
+    /* structure */
+    padding-left: 0;
+
+    /* presentation */
+    list-style-type: none;
+}
+.menu > ul>li
+{
+    display: inline-block;
+    padding: 0.5em 0.25em;
+}
+
+.standard-form
+{
+}
+.standard-form label
+{
+    /* structure */
+    display: inline-block;
+    width: 8em;
+
+    /* presentation */
+    color: #00968B;
+    text-align: right;
+}
+.standard-form ul
+{
+    /* structure */
+    padding-left: 0;
+
+    /* presentation */
+    list-style-type: none;
+}
+
+/* Correctifs pour les vieilles versions d'Internet Explorer */
+
+/* Pour activer un positionnement type inline-block sur les vieilles versions d'IE */
+
+.old_ie #titre_principal, .old_ie #logo, .old_ie header h1, .old_ie nav, .old_ie nav li, .old_ie .bouton_rouge, .old_ie article, .old_ie aside, .old_ie #tweet, .old_ie #mes_photos, .old_ie #mes_amis, .old_ie #mes_amis ul
+{
+    display: inline;
+    zoom: 1;
+}
+
+/* Quelques ajustements pour les vieilles versions d'IE */
+
+.old_ie section h1, .ie8 section h1
+{
+    font-size: 1.1em;
+}
+
+.old_ie footer div, .ie8 footer div
+{
+    margin-top: 30px;
+}
+
+@keyframes opacity
+{
+   0%       { transform: opacity(0); }
+   5%,25%   { transform: opacity(1); }
+   30%,100% { transform: opacity(0); }
+}

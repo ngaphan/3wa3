@@ -1,0 +1,59 @@
+@media only screen and (max-width:62.5rem){
+
+body{
+
+	width:96%;
+	margin: 0 2%;
+}
+/* ce comportement s'adapte jusqu'à 1000px, donc plus petit que ça, on a pas besoin de refaire dans le nouveau point de rupture*/
+}
+
+@media only screen and (max-width:32rem){
+
+#img-site
+{ 
+	display:none;
+}
+
+.col-img
+{	
+	width:30%;/* de son nouveau parent*/
+}
+.col-txt
+{	
+	width:65%;	
+}
+}
+
+/*si on donne au nouveau point de rupture une nouveau comportement qui dure pas long temps , c'est pas top car faut redéfinir les nouveaux comportements.*/ 
+
+@media only screen and (max-width:1rem){
+
+h2
+{	
+	font-size:1.2rem;
+}
+
+.sect3-btn{
+	font-size:1rem;
+}
+
+h1
+{	
+	font-size:1.6rem;
+}
+
+#header,#footer
+{
+	height:5%;
+}
+}
+
+@media only screen and (max-width:1rem){
+
+h2
+{	
+	font-size:1.1rem;
+}
+}
+/* on s'arrête à ce pt de rupture car c'est déjà tres ptit = iPhonr1****/

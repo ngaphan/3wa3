@@ -1,0 +1,62 @@
+body{
+	width: 60%;
+	margin: 3rem auto;
+}
+
+input[type="text"]{
+
+ 	background: yellow;
+ }
+
+ a[href="#"]{
+
+ 	//cursor: wait;//le bouton tourne sans cess
+ 	cursor: pointor;//le bouton tourne sans cess
+ 
+ }
+
+ input[type="text"]{
+
+ 	background: #00FFCC;
+ 	transition :all 1s;
+ }
+
+ input[type="text"]:focus
+ {
+
+ 	background: #00FF66;
+
+ 	
+ }
+
+ input:required{
+ 	border:solid 2rem blue;
+ }
+ /* exactement la meme chose que :
+  * input[required]
+  * {
+  * 	border:solid 2rem blue;
+   * }
+   */
+
+
+   // je fais 1 focus sur un élément qui possède l'attr required
+
+   input:required:focus
+   {
+ 	border:solid 1rem red;
+ }
+
+
+ 
+
+ textarea{
+ 	resize : both;
+ 	/* default , l'utilisateur peut modifier la size du chmaps ds les  2 axes x,y*/
+
+ 	/*resize : horizontal; peut modifier que x*/
+ 	/*resize : vertical;/* peut modifier que y*/
+ 	/*resize : none;
+ 	/* désactiver le redimentionement = càd peut pas modifier*/
+
+ }

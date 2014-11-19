@@ -1,0 +1,26 @@
+Demande client
+Réalisation d'un forum en PHP.
+
+Un forum comporte plusieurs catégories regroupant des topics auquel des utilisateurs peuvent participer en y inscrivant des réponses. On va partir du principe qu'un topic ne peut être que dans une seule catégorie.
+
+Dans un premier temps, vous allez modéliser la base de données de ce forum sous PhpMyAdmin.
+Une table pour les catégories
+Une table pour les topics avec un lien vers sa catégorie
+Une table pour les réponses aux topics (lien avec le topic).
+
+Puis vous allez écrire le code complet permettant d'afficher tout le forum, et d'y participer. Il faudra donc créer un formulaire.
+
+Le forum s'organise en 4 page :
+Une page d'accueil qui liste les catégories
+Une page qui liste les topics de la catégorie
+Une page qui liste les réponses du topic selectionné avec un formulaire
+Une page pour faire l'enregistrement de la réponse via le formulaire
+
+Essayez de respecter au mieux l'architecture que l'on connait pour le moment. Travaillez en groupe. N'hésitez pas à utiliser le tableau pour réunir vos idées et discutez le plus possible (du forum bien sûr ^^) avant de vous lancer dans le développement.
+Je compte sur vous, vous pouvez le faire et je viendrai vous épauler pendant les pauses. Courage !
+
+N'hésitez pas également à vous répartir les tâches. Toi tu fais la page d'accueil, moi je fais la page des topics etc.
+
+Et comme je le dis souvent : c'est génial !
+
+Modifié le: mercredi 22 octobre 2014, 09:42

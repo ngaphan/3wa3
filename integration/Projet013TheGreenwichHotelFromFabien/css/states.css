@@ -1,0 +1,88 @@
+.menu>a>li:hover{
+	opacity: 1;
+}
+.menu>a:hover::before{
+	color: rgba(250,250,250,1);
+}
+.navMenu>li>a:hover{
+	color:white;
+}
+
+@-webkit-keyframes flecheAnim{
+	0%{
+		transform : translateY(0), rotate(90deg);
+		opacity: 0.7;
+	}	
+	100%{
+		transform : translateY(0.5rem) rotate(90deg);;
+		opacity: 1;
+	}
+
+}
+
+.flecheAnim {
+	-webkit-animation : flecheAnim 0.7s alternate infinite;
+}
+
+.toggleImg:hover{
+	cursor: pointer;
+}
+.hideToggle{
+	opacity: 0;
+}
+.toggleRotate{
+	transform: rotate(45deg);
+}
+
+@-webkit-keyframes appear{
+	0%{
+		opacity: 0;
+	}	
+	100%{
+		opacity: 1;
+	}
+
+}
+.conclusionText span{
+	transition : opacity 1s ease-in;
+	opacity: 0;
+}
+.conclusionText>span{
+	-webkit-animation : appear 0.5s ease-in;
+}
+.conclusionText>span:nth-child(2){
+	-webkit-animation : appear 0.5s ease-in 0.5s;
+}
+.conclusionText>span:nth-child(3){
+	-webkit-animation : appear 0.5s ease-in 1s;
+}
+.conclusionText>span:nth-child(4){
+	-webkit-animation : appear 0.5s ease-in 1.5s;
+}
+.conclusionText>span:nth-child(5){
+	-webkit-animation : appear 0.5s ease-in 2s;
+}
+.conclusionText>span:nth-child(6){
+	-webkit-animation : appear 0.5s ease-in 2.5s;
+}
+.conclusionText>span:nth-child(7){
+	-webkit-animation : appear 0.5s ease-in 3s;
+}
+.conclusionText>span:nth-child(8){
+	-webkit-animation : appear 0.5s ease-in 3.5s;
+}
+.conclusionText>span:nth-child(9){
+	-webkit-animation : appear 0.5s ease-in 4s;
+}
+.conclusionText>span:nth-child(10){
+	-webkit-animation : appear 0.5s ease-in 4.5s;
+}
+.conclusionText>span:nth-child(11){
+	-webkit-animation : appear 0.5s ease-in 5s;
+}
+.conclusionText>span:nth-child(12){
+	-webkit-animation : appear 0.5s ease-in 5.5s;
+}
+.conclusionText>span:nth-child(13){
+	-webkit-animation : appear 0.5s ease-in 6s;
+}

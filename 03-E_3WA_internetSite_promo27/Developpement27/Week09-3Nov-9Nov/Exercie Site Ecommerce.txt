@@ -1,0 +1,15 @@
+Exercice Site Ecommerce
+
+Réaliser un site e-commerce complet de vente de produits. On vous demande de prendre en compte des produits regroupés dans des catégories. Attention : un produit peut être dans plusieurs catégories!
+
+Vous n'avez pas besoin de gérer de sous-catégories. Chaque produit est noté par les utilisateurs, tout utilisateur connecté pourra donner son avis sur un produit (note + commentaire).
+
+Votre site comportera les pages suivantes :
+
+1    page d'accueil, listant les derniers produits ajoutés
+2    page catégorie : affichant la liste de tous les produits
+3    page produit : toutes les infos d'un produit + liste des commentaires des utilsateurs
+4    page connexion / inscription
+
+Demandes du client : tout devra donc être fait en MVC, en POO et en utilisant PDO pour gérer les accès base de données. Nous ne voulons pas de webservices en raison des différents problèmes de sécurité. Evidemment, le site sera responsive !
+Modifié le: mardi 8 juillet 2014, 09:50

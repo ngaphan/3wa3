@@ -1,0 +1,28 @@
+body{
+	background: rgba(190, 214, 238, 1);
+}
+
+h1, h2{
+	color: rgba(255, 255, 255, 1);
+}
+
+h3, h4{
+	color: rgba(0, 46, 90, 1);
+	border-color: rgba(229, 236, 244, 1);
+}
+
+p, a{
+	color: rgba(126, 125, 121, 1);
+}
+
+#location{
+	background: rgba(255, 255, 255, 1);
+}
+
+.location-name{
+	background: url(../img/paxos01.jpg) no-repeat;
+}
+
+.article{
+	border-color: rgba(229, 236, 244, 1);
+}

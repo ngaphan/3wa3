@@ -1,0 +1,7 @@
+Exercice JS 2 : Wikipedia
+Récupérer une page Wikipedia et l'enregistrer sur votre poste. A l'aide des fonctions du DOM, afficher :
+
+le nombre de balise <p>
+le nombre de balise <p> directement dans une balise <div>
+modifier le titre <h1> en lui ajoutant la date du jour à la fin
+Modifié le: mercredi 21 mai 2014, 12:33

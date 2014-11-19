@@ -1,0 +1,18 @@
+
+/*•	Layout : utiliser les indentifiants(#) pr les grands blocs qui compose la mise en page totale de la page web( header, footer, main, nav, …)*/
+
+body{
+
+	width:100%;
+	margin: 0 auto;		
+}
+
+
+
+#navig{
+
+	width:100%;
+}
+
+
+

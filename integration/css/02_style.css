@@ -1,0 +1,42 @@
+body
+{
+	background:rgba(121,248,255,0.5);
+
+}
+p
+
+{	
+	font-family: Arial;
+	font-size:1.3rem;
+	font-weight:normal;
+	line-height:1.6rem;
+	text-align: left;
+	text-indent:3rem;
+	letter-spacing:0.2rem;
+
+}
+
+span p
+{
+	/*font-style:italic; desactivé car on a dans titi*/
+
+}
+
+h1 span
+{
+	background:yellow;
+}
+
+h2 span
+{
+	color:red;
+}
+
+#titi
+{
+	font-weight:bold;
+	font-style:italic;
+	color:red;
+	font-size:1.1rem;
+	text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,1);
+}

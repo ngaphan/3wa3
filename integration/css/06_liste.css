@@ -1,0 +1,84 @@
+/*ol li
+{
+	list-style:circle upper-alpha;
+}
+ul li
+{
+	list-style:hebrew upper-alpha;
+}*/
+
+#site-nav 
+{
+	width:61.25rem;
+	margin:0 auto;/* 0 pour haut et bas , auto pour les 2 côtés*/
+	
+	
+}
+
+.menu > li
+{
+	float:left; /* ça fait sortir des flux css , il y aura des choses disparraissent*/
+	width:calc(100%/5);
+	position:relative;
+}
+.menu
+{
+	overflow:none;
+}
+.menu >li > a
+
+{
+line-height:8rem;
+text-align: center;/* pourquoi fonctionne pas?*/
+font-family: arial;
+font-size: 2rem;
+font-style: italic;
+background:yellow;
+text-decoration:none;
+color:blue;
+display:block;/**/
+height:8rem;
+border:solid red 0.2rem;
+
+}
+
+.menu > li > a:hover
+{
+	color:green;
+	font-weight:bold;
+	text-decoration:underline;
+	border:dashed blue 0.5rem;
+	background:url(../img/titi3.jpg);
+
+
+}
+
+.menu > li > ul
+{
+	display:none; /* cacher la liste*/
+}
+
+.menu > li:hover > ul 
+{
+	display:block; /* réapparaître la liste qu'on a désactivé */
+}	
+
+.sous-menu >li > a /* si on veut ça s'affiche pas la meme tete de <a> parent. Donner les nouvelles propiétés*/
+{
+	color:purple;
+	line-height:2rem;
+	background:pink;
+	display:block;/*pour que chaque ligne prenne toute la largeur donné par son parent, ici*/
+	
+}
+
+.sous-menu
+{
+	position:absolute;
+	width:100%;
+}
+
+h1
+{
+	clear:both;
+}

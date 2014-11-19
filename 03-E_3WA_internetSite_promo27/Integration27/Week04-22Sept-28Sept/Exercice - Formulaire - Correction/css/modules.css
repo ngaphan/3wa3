@@ -1,0 +1,76 @@
+/*
+
+	form
+
+***************************************/
+
+.form{
+	padding: 2rem;
+	position: relative;
+}
+
+.form::before {
+	content: '▬';
+	display: block;
+	font-size: 2rem;
+	position: absolute;
+	bottom: -1rem;
+	left: 2rem;
+}
+
+.form > p{
+	overflow: hidden;
+	margin: 0 0 1.5rem 0;
+}
+
+.form-icon{
+	display: block;
+	width: 15%;
+	height: 3.125rem;
+	font-size: 2rem;
+	text-align: center;
+	transition: all 0.5s;
+	padding: 1rem 0 0 0;
+	float: left;
+}
+
+.form-icon::before{
+	transition: all 0.5s;
+}
+
+.form-input{
+	height: 4.1rem;
+	font-size: 1.5rem;
+	padding: 0 3%;
+	float: right;
+}
+
+.form-input-sm{
+	width: 15%;
+}
+
+.form-input-md{
+	width: 64%;
+}
+
+.form-input-lg{
+	width: 79%;
+}
+
+.form-submit{
+	height: 4.1rem;
+	padding: 0;
+	float: right;
+}
+
+.form-title{
+	font-size: 3rem;
+	text-transform: uppercase;
+	margin: 2rem 0 0 2rem;
+	float: left;
+}
+
+.form-forgot {
+	margin: 3.7rem 0 0 0;
+	float: right;
+}

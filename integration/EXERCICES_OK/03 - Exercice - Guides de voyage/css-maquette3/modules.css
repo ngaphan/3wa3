@@ -1,0 +1,257 @@
+.line{
+
+	width:100%;
+	margin:4rem 0;
+}
+
+.nav{
+
+	font-size:1rem;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+	padding:1.2rem 0;
+}
+
+
+.header{
+
+	margin-top:0;
+	padding: 3rem 0px 20rem;
+	width:100%;
+	background-size: auto auto,cover;
+}
+
+
+.menu{
+	
+	overflow:hidden;
+}
+
+.menu li{
+
+	padding:2rem 1rem;
+	float:right;
+}
+
+
+.sect1-title{
+
+	position: relative;
+}
+
+.sect1-title::after{
+
+	content:"";/*laisser vide pour remplir par le bg-color à la place du symbol*/
+	width: 10rem;
+	height: 0.3rem;
+	margin: 1rem auto 0 auto;
+	display: block;/*after a pr type "inline",donc ici pr forcer qu'il descendre sous le titre*/
+}
+
+
+
+
+.bloc-city{
+
+	overflow: hidden;
+	margin:0 auto 3rem 10.5%;
+	width:80%;
+}
+.city{
+
+	background-repeat: no-repeat;
+	background-size: cover;	
+	width:47.2%;	
+	margin:0 2.8% 1.8rem 0 ;
+	padding:1rem 0; /*pr agrandir l'image*/
+	float:left;
+}
+.city:nth-child(2n){
+
+	margin:0 0 1.8rem 0;
+}
+.sect1-btn{
+
+	border-style:solid;
+	border-width:0.2rem;		
+	font-size:1.5rem;
+	text-decoration: none;
+	text-transform:uppercase;
+	padding:0.6rem 1.8rem;
+	font-weight:bold;
+}
+
+
+
+
+
+.sect2{
+
+	padding-bottom:5rem;
+}
+.sect2 h3 {
+
+	text-align: left;
+	padding: 0 0 2rem 0 ;
+
+}
+.sect2 p{
+
+	text-align: left;
+}
+.icon-text{
+
+	width: 50%;
+	margin: 0 25%;
+}
+.icon-left1,.icon-right,.icon-left2{
+
+	width: 60%;	
+	position: relative;
+	padding: 5rem 0 5rem 0;
+}
+.icon-left1,.icon-left2{
+
+	margin-left: 45%;
+}
+.icon-left1::before,.icon-left2::before{	
+
+	font-family: 'icomoonregular';
+	font-size: 14rem;
+	position: absolute;
+	top:17rem;
+	left: -19rem;
+}
+.icon-left1::before{
+
+	content:"i";
+}
+.icon-left2::before{
+
+	content:"l";
+}
+.icon-right::after{
+
+	content:"j";
+	font-family: 'icomoonregular';
+	font-size: 14rem;
+	position: absolute;
+	top:18rem;
+	left: 28rem;
+}
+
+.text-uppercase{
+
+	font-size:1rem;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+	padding:1.2rem 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+h5{
+
+	font-size:1.1rem;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+	padding:1.2rem 0;
+}
+
+
+
+
+
+
+
+
+.blog{
+
+	width:70%;
+	margin:5% auto;
+}
+.blog p::before{
+
+	content:"“";
+}
+.blog p::after{
+
+	content:"”";
+}
+
+
+
+
+
+
+
+
+.sect4{
+
+	background-repeat:no-repeat;
+	background-size: cover;
+	padding: 8rem 0 6rem 0;
+}
+.write{
+
+	width:40%;
+	padding:0 23% 0 37%;		
+}
+.write>h3::after{
+
+	content:"";/*laisser vide pour remplir par le bg-color à la place du symbol*/
+	width: 10rem;
+	height: 0.2rem;
+	margin: 2rem auto 0 auto;
+	display: block;/*after a pr type "inline",donc ici pr forcer qu'il descendre sous le titre*/
+
+}
+.sect4 p{
+
+	margin:2rem 0 5rem 0  ;
+}
+
+.sect4-btn{
+
+	border-style:solid;
+	border-width:0.2rem;		
+	font-size:1.5rem;
+	text-decoration: none;
+	text-transform:uppercase;
+	padding:0.6rem 1.8rem;
+	font-weight:bold;
+
+}
+
+
+.nav-footer{
+	
+	margin:0 25% ;
+	overflow: hidden;
+}
+
+.links{
+
+	float:left;
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	font-weight:bold;
+
+}
+
+
+
+	
+
+	
+	
+	 
+
+

@@ -1,0 +1,25 @@
+.container{
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.container-large{
+	width: 62rem;
+}
+
+.container-small{
+	width: 44rem;
+}
+
+#site-primary-nav{
+	overflow: hidden;
+	margin: 0 2% 0 0;
+}
+
+#site-header{
+	padding: 5.3rem 0 22rem 0;
+}
+
+#site-pre-footer{
+	padding: 13rem 0;
+}

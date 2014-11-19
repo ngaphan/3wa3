@@ -1,0 +1,29 @@
+table
+{
+	border-collapse:collapse;
+}
+
+
+th,td
+{
+	border:0.1rem red solid;
+}
+
+
+tr
+{
+	border-top: 0.2rem blue dotted;
+	border-bottom: 0.3rem purple solid;
+	border-left: 0.3rem yellow dashed;
+	border-right:0.3rem black solid;
+}
+
+tr:nth-child(2n+1) /* par defaut "n" commence par 0*/
+{
+	background:yellow;
+}
+
+td:nth-child(2)
+{
+	background:green;
+}

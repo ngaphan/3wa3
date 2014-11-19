@@ -1,0 +1,22 @@
+Exercice POO 10
+
+On souhaite modéliser plusieurs espèces animales ayant des particularités différentes.
+
+ 1   Créer un type Flyable non instanciable ayant une méthode pour voler.
+ 2   Modéliser une classe Eagle.
+ 3   Créer un type Swimmable ayant une méthode pour nager.
+ 4   Modéliser les classes Shark, Whale et Dolphin.
+ 5   Modéliser une classe représentant un poisson volant.
+ 6   Ajouter une classe Animal ayant les propriétés suivantes (nom, vitesse, poids, points de vie (100)).
+    Attention, il ne doit pas être possible de créer d'objet de la classe Animal, mais directement des Eagle, Shark...
+ 7   Lorsqu'un animal grandit, sa vitesse et son poids  augmentent. Ecrivez donc la fonction growUp(). Par défaut, on ajoutera 10% de sa propre vitesse et 20% de son propre poids.
+ 7   Une baleine grandit beaucoup plus vite que les autres (50%) mais sa vitesse ne s'augmente que de 2%.
+ 9   Les requins et les aigles ont la capacité à attaquer. Modéliser cela et ajouter le fonctionnement pour ces animaux.
+
+
+ 10   Bonus : modéliser un site web complet, permettant d'afficher tous vos animaux.
+ 12   Bonus 2 : brancher votre application à une base de données.
+ 13   Bonus 3 : chaque animal pourra attaquer un autre animal, seulement s'il possède la méthode attaquer. Evidemment cet effet, réduira les points de vie de l'autre animal.
+    Bonus 4 : les animaux capables de voler devront avoir un bouton les faisant disparaître vers le haut. Au bout de quelques secondes, selon l'animal, il se replace et peux de nouveaux effectuer des actions. Proposer un mécanisme similaire, pour les animaux sachant nager.
+
+Modifié le: vendredi 4 juillet 2014, 08:35

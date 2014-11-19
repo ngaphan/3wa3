@@ -1,0 +1,95 @@
+Base POO PHP
+Bases de la POO
+Ce chapitre présente les bases de la programmation orientée objet.
+
+1. Classe / Objet
+1.1. DÉFINITION
+
+En POO, une classe est un ensemble de propriétés permettant de créer des objets. Elle comporte à la fois des attributs et des méthodes. Toutes les méthodes ont accès aux attributs et peuvent les modifier.
+
+Un objet est une instance de classe.
+
+1.2. SQUELETTE D'UNE CLASSE
+
+Pour cet exemple, nous créons une classe Point comportant deux attributs : x et y. Cette classe possède une méthode « calc » qui renvoie la multiplication de ses valeurs x et y.
+
+class Point
+{
+ public $x;
+ public $y;
+
+ public function calc(){
+   return $this->x * $this->y;
+ }
+}
+Note : nous utilisons le mot-clé « $this » pour faire référence à un attribut de classe. Ici « $this.x » fait référence à l'attribut de type int x dans la classe Point.
+
+1.3. CRÉER UN NOUVEL OBJET
+
+La création d'un nouvel objet se fait via le mot-clé "new”.
+
+$oPoint = new Point();
+Pour accéder aux propriétés ou méthodes d'un objet, on utilise l'opérateur flèche '->'.
+
+$oPoint->x = 5;
+$oPoint->y = 10;
+echo $oPoint->calc();
+2. Constructeur 
+Un constructeur décrit le prototype de création d'un objet. Il explique au développeur ce qu'il doit donner comme arguments pour l'initialiser.
+
+Sa syntaxe est la suivante : il s'agit d'une fonction ayant pour nom __construct() mais sans type de retour.
+
+class Point
+{
+ public $x;
+ public $y;
+
+ public function __construct($x, $y) {
+   $this->x = $x;
+   $this->y = $y;
+ }
+}
+Il est impossible d'avoir deux constructeurs pour une même classe.
+
+Toute classe possède un constructeur par défaut vide.
+
+3. Accessibilité
+
+Afin de protéger certaines parties de code (classe, attribut, méthodes...), nous utilisons différents niveaux d'accès.
+
+3.1. LES NIVEAUX D'ACCÈS
+
+Il existe trois niveaux d'accès :
+
+public : accessible partout ;
+private : uniquement accessible à l'intérieur de la classe ;
+protected : accessible à l'intérieur de la classe et à ses classes filles.
+3.2. ACCESSEUR
+
+Un accesseur est une fonction publique permettant de renvoyer une valeur non accessible de la classe.
+
+class Point
+{
+ private $x;
+
+ public function getX() {
+   return $this->x;
+ }
+3.3. MUTATEUR
+
+Le mutateur, contrairement à l'accesseur, permet de modifier une valeur.
+
+public function setX($x) {
+ if ($x < 0) {
+  $this->x = 0;
+ } else {
+  $this->x = $x;
+ }
+}
+Ainsi, en limitant les accès aux attributs de la classe, nous pouvons contrôler complètement les valeurs saisies par l'utilisateur.
+
+4.4. ENCAPSULATION
+
+L'encapsulation est l'idée de protéger certaines informations d'un objet (attributs, méthodes). Ainsi, l'objet ne pourra qu'utiliser des méthodes sûres et contrôlées sans risquer de nuire au programme.
+
+Modifié le: jeudi 30 octobre 2014, 14:47

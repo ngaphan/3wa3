@@ -1,0 +1,1 @@
+crtg_content = ''; (function(){document.cookie = 'co_fr=' + escape(crtg_content) + '; path=/; expires=Wed, 05 Nov 2014 10:01:30 GMT; domain=dailymotion.com';})();

@@ -1,0 +1,4 @@
+Exercice Mot le plus long
+Rechercher et afficher la chaîne de caractères avec le plus grand nombre de caractères dans un tableau de chaînes de caractères fournies, le tout dynamiquement.
+
+Modifié le: mercredi 14 mai 2014, 09:29

@@ -1,0 +1,8 @@
+Exercice Prix TTC (7)
+Dans cet exercice, vous allez afficher à partir d'un prix TTC saisi par l'utilisateur :
+
+le montant hors taxe
+le montant de la TVA
+L'affichage se fera dans une liste, créée dynamiquement.
+
+Modifié le: vendredi 9 mai 2014, 15:29

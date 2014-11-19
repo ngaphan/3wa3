@@ -1,0 +1,1 @@
+var asiPlacements = {"Cs0XXD":{},"lMoxcA":{},"u7hqK2":{},"NDu9xl":{},"Yzgfk7":{}}, asiAdserver = "pd5-imp.revsci.net"; asiPqTag = true;

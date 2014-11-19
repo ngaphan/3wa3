@@ -1,0 +1,22 @@
+body{
+	width: :100%;/*prend tt largeur,faut son parent 100%ossi*/
+	height: 100%
+}
+
+.sect{
+
+	margin: 5rem 30rem;
+
+	perspective:20rem;
+	width: :100%;
+	/*prend tt largeur,faut son parent body 00%ossi
+	height: 100%;*/
+	perspective-origin:center center;/*center,bottom,left*/
+}
+
+
+img{
+	transform:	scale3d(0.5,0.8,-1) 
+				translate3d(0,0,5rem)
+				 ;
+}

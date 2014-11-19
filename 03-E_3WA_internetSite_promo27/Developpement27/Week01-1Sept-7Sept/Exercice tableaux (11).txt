@@ -1,0 +1,6 @@
+Exercice tableaux (11)
+On vous demande de stocker tous les jours de la semaine dans un tableau.
+
+Votre page devra afficher le premier et le dernier jour.
+
+Modifié le: vendredi 9 mai 2014, 16:24

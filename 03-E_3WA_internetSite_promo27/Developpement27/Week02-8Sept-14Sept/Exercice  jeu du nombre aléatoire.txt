@@ -1,0 +1,21 @@
+ Exercice : jeu du nombre aléatoire
+Dans cet exercice vous allez créer un jeu du nombre aléatoire.
+
+Les étapes sont les suivantes :
+
+Vous demandez au joueur de choisir les intervalles (min et max)
+L'ordinateur choisi alors un nombre aléatoire compris dans cet intervalle
+Le joueur doit alors trouver le fameux nombre aléatoire
+La partie est gagnée lorsque le joueur trouve le bon nombre
+La partie est perdue lorsque le joueur a dépassé les 10 essais
+Pour les plus rapides :
+
+Ajouter le fonctionnement du "plus" ou du "moins" : si le nombre saisi est plus grand que le nombre à trouver, alors afficher une aide "c'est moins!".
+Donner la possibilité de rejouer
+Afficher le nombre de parties jouées
+Afficher le nombre de victoires/défaites 
+Afficher la meilleure performance
+Afficher le pourcentage de victoire / défaite
+Afficher la moyenne de coups par victoire
+...
+Modifié le: jeudi 15 mai 2014, 16:48

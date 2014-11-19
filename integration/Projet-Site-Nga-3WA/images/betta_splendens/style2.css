@@ -1,0 +1,130 @@
+/* Eléments principaux de la page */
+
+body
+{	
+	background: url('images/fond_bleu.png');
+	background-color:rgba(242,251,253);
+	background-color:rgba(242,251,253,0.5);	
+    font-family: 'Arial',Trebuchet MS , sans-serif;
+    color: #181818;
+    width: 100%;
+    margin-left: 0 auto ;
+}
+
+#bloc_site , footer
+{
+    width: 80%;
+    margin: 0 auto;
+	
+	
+}
+
+section h1, footer h1, nav a
+{
+    font-family: 'Cambria',Arial, sans serif;
+    font-weight: normal;
+	color:#808000;
+}
+
+/* Header */
+
+header #title_site 
+{
+    display: inline-block;
+		
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+	color:#5F9EA0;
+    font-size: 1.9em;
+    font-weight: normal;
+    text-align:center;
+}
+
+#logo, header h1 , header nav
+{
+    display: inline-block;
+	margin-left:0px;
+	
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+	color:#808000;
+    font-size: 1.1em;
+    margin-top: 0px;
+	margin-left:20px;
+    font-weight: normal;
+}
+
+/* Navigation */
+
+nav
+{
+	display: inline-block;
+    width: 800px;
+    text-align: right;
+	
+}
+
+nav ul
+{
+    list-style-type: none;
+	
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 0px;
+	
+}
+
+.liens-gauche
+{
+    width : 30%;
+
+}
+.txt-droit
+{
+    width : 70%;
+    margin-top :0 ;
+    margin-left: 30%;
+}
+
+
+nav a:hover
+{
+    color: #FF0000;
+    
+}
+
+
+
+
+
+/* Correctifs pour les vieilles versions d'Internet Explorer */
+
+/* Pour activer un positionnement type inline-block sur les vieilles versions d'IE */
+
+.old_ie #titre_principal, .old_ie #logo, .old_ie header h1, .old_ie nav, .old_ie nav li, .old_ie .bouton_rouge, .old_ie article, .old_ie aside, .old_ie #tweet, .old_ie #mes_photos, .old_ie #mes_amis, .old_ie #mes_amis ul
+{
+    display: inline;
+    zoom: 1;
+}
+
+/* Quelques ajustements pour les vieilles versions d'IE */
+
+.old_ie section h1, .ie8 section h1
+{
+    font-size: 1.1em;
+}
+
+.old_ie footer div, .ie8 footer div
+{
+    margin-top: 30px;
+}
+}

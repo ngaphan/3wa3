@@ -1,0 +1,62 @@
+
+/*•	Base : balise simple, tout ce qui est Typographie, pr que ça soit cohérent/concordant ds ttes les pages.( body, a,p,span,h,img,table…………….)*/
+
+body{	
+
+	font-family: 'aleoregular';	
+	text-align:center;
+}
+
+
+
+h1{	
+
+	font-size:2.75rem;	
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:center;
+	padding:2rem 0;	
+}
+
+h2{	
+
+	font-size:1.75rem;
+	text-align:center;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding:1.7rem 0;	
+}
+
+h3{	
+
+	font-size:1.5rem;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;	
+	padding: 0 0px 3rem 0px;	
+}	
+
+p{	
+
+	font-size:1.2rem;		
+	line-height:1.8rem;
+}
+
+p:first-letter{	
+	
+	text-transform:uppercase;/*1er lettre uppercase*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

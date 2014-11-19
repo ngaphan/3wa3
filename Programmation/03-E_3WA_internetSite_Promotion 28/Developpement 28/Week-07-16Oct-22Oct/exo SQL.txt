@@ -1,0 +1,202 @@
+Exo SQL
+Ressource : http://sql.sh/
+
+Créer une BDD classroom avec une table student avec un id, un prenom, un nom, une date_naissance, une adresse, un gender
+
+0- Ajouter depuis PhpMyAdmin des élèves
+
+1- Afficher toutes les informations des élèves
+
+SELECT * FROM student
+
+
+
+2- Afficher uniquement le nom de tous les élèves
+
+SELECT firstname FROM student
+
+
+
+3- Afficher les élèves qui n'ont pas renseigné leur adresse
+
+SELECT * FROM student WHERE address = ''
+
+SELECT * FROM student WHERE address IS NULL
+
+
+
+4- Afficher tous les garçons
+
+SELECT * FROM student WHERE gender = 1
+
+
+
+5- Afficher le nombre d'élève
+
+SELECT COUNT(*) FROM student
+
+
+
+6- Afficher le nombre de fille et le nombre de garçon
+
+SELECT COUNT(*) FROM student GROUP BY gender
+
+
+
+7- Afficher tous les élèves ayant un prénom commençant par la lettre "L"
+
+SELECT * FROM student WHERE firstname LIKE "L%"
+
+
+
+8- Afficher les élèves nés après 1990 (1990 compris)
+
+SELECT * FROM student WHERE birthday >= "1990-01-01"
+
+SELECT * FROM student WHERE YEAR(birthday) >= 1990
+
+
+
+9- Afficher l'âge des élèves
+
+SELECT YEAR( current_date , birthday)
+
+FROM student
+
+SELECT YEAR( DATE_SUB( NOW() , INTERVAL TO_DAYS(birthday) DAY) )
+
+FROM student
+
+
+
+10- Afficher les élèves par ordre alphabétique
+
+SELECT * FROM student ORDER BY firstname ASC
+
+
+
+11- Trier les élèves par ordre alphabétique et n'afficher que le premier élève
+
+SELECT * FROM student ORDER BY firstname ASC LIMIT 1
+
+
+
+Créer une table matière avec un id et un nom
+
+Créer une table note avec un id, une valeur, une date_note, un id_student et un id_matiere
+
+
+
+12- Ajouter une matière en SQL et des notes
+
+INSERT INTO  `classroom`.`matiere` (`nom`) VALUES ('Nodejs');
+
+
+
+13- Mettre à jour une matière en SQL en modifiant son nom
+
+UPDATE  `classroom`.`matiere` SET  `nom` =  'PHPs' WHERE  `matiere`.`id` =1;
+
+
+
+14- Liste des notes supérieures ou égales à 10
+
+SELECT * FROM note WHERE valeur >= 10
+
+
+
+15- Liste des notes comprises entre 10 et 15
+
+SELECT * FROM note WHERE valeur >= 10 AND valeur <= 15
+
+
+
+16- Liste des notes de l'élève ayant l'id 1
+
+SELECT * FROM note WHERE id_student = 1
+
+
+
+17- La matière ayant le plus de note
+
+SELECT id_matiere, COUNT(id_matiere) as nb FROM note GROUP BY id_matiere ORDER BY nb DESC LIMIT 1
+
+
+
+18- Nom et prénom des étudiants qui ont obtenu au moins une note égale à 20
+
+SELECT firstname, lastname, valeur
+
+FROM student s
+
+INNER JOIN note n ON n.id_student = s.id
+
+WHERE valeur = 20
+
+
+
+
+
+19- Moyennes des notes de chaque étudiant (indiquer le nom et le prénom)
+
+SELECT s.id, firstname, lastname, avg(valeur)
+
+FROM student s
+
+INNER JOIN note n ON n.id_student = s.id
+
+GROUP BY s.id
+
+
+
+
+
+20- Moyennes des notes de chaque étudiant (indiquer le nom et le prénom), classées de la meilleure à la moins bonne
+
+SELECT s.id, firstname, lastname, avg(valeur) as moyenne
+
+FROM student s
+
+INNER JOIN note n ON n.id_student = s.id
+
+GROUP BY s.id
+
+ORDER BY moyenne
+
+
+
+21- Moyennes des notes pour les matières
+
+SELECT m.id, m.nom, avg(valeur) as moyenne
+
+FROM matiere m
+
+INNER JOIN note n ON n.id_matiere = m.id
+
+GROUP BY m.id
+
+
+
+22- Liste des notes en précisant pour chacune le nom et le prénom de l'étudiant qui l'a obtenue
+
+SELECT firstname, lastname, valeur
+
+FROM student s
+
+INNER JOIN note n ON n.id_student = s.id
+
+
+
+
+
+23- Liste des notes en précisant pour chacune le nom et le prénom de l'étudiant qui l'a obtenue et de la matière concernée
+
+SELECT firstname, lastname, valeur, nom
+
+FROM student s
+
+INNER JOIN note n ON n.id_student = s.id
+
+INNER JOIN matiere m ON n.id_matiere = m.id
+
+Modifié le: mercredi 22 octobre 2014, 09:40
