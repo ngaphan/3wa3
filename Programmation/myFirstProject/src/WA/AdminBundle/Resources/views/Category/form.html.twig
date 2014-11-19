@@ -1,0 +1,12 @@
+{% extends "WAAdminBundle::layout.html.twig" %}
+{% block title %}
+    {{ parent() }}
+    - FORM
+
+{% endblock  %}
+
+{%  block contents %}
+    <h1>FORMULAIRE DE SAISIE CATEGORIE</h1>
+    {{ form(categoryForm) }}
+
+{% endblock %}

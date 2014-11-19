@@ -1,0 +1,44 @@
+{% extends "WAAdminBundle::layout.html.twig" %}
+{% block title %}
+    {{ parent() }}
+    - DashBoard
+{% endblock  %}
+
+{%  block contents %}
+    <hr>
+    <h3><a href="{{ path('wa_ab_article_add') }}">Ajouter un article</a></h3>
+    <hr>
+    <table>
+        <thead>
+
+            <th>Id</th>
+            <th>Titre</th>
+            <th>Date</th>
+            <th>Categorie</th>
+S
+        </thead>
+S
+        <tbody>
+        {% for article in articlesList %}
+        <tr>
+             <td>{{ article.articleId }}</td>
+             <td>{{ article.articleTitle }}</td>
+             <td>{{ article.articleDate|date('d/m/Y')}}</td>
+             <td>{{ article.category.categoryName}}</td>
+
+
+            <td><a href="{{ path('wa_ab_article_edit', { 'articleId': article.articleId }) }}">Modifier</a></td>
+            <td><a href="{{ path('wa_ab_article_delete', { 'articleId': article.articleId }) }}">Supprimer</a></td>
+
+        </tr>
+        {% else %}
+
+            <tr></tr><td colspan="3"> aucun article</td></tr>
+        </tbody>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+{% endblock %}
+

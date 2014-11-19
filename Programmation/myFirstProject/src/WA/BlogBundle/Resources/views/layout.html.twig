@@ -1,0 +1,22 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+    Mon magasin
+{% endblock  %}
+
+{%  block body %}
+    <h1>Bienvenue dans le  magasin chez Annette !  </h1>
+    <nav>
+        <ul>
+            <li><a href="{{ path('wa_ab_dashboard') }}" >Accueil</a></li>
+            <li><a href="{{ path('wa_bb_articles') }}" >Liste Articles</a></li>
+            <li><a href="{{ path('wa_ab_article_add')  }}" >Ajouter un Article</a></li>
+
+            <li><a href="{{ path('wa_bb_contact') }}" >Contact</a></li>
+        </ul>
+    </nav>
+
+    {% block contents  %} {% endblock %}
+
+{% endblock %}
+

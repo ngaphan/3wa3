@@ -1,0 +1,22 @@
+{% extends "WABlogBundle::layout.html.twig" %}
+{% block title %}
+    {{ parent() }}
+    - Liste
+{% endblock  %}
+
+{%  block contents %}
+    <h1>Liste des articles de mon joli magasin chez Annette  </h1>
+    <ul>
+        {% for article in articlesList %}
+            <li>{{ article.articleTitle }}   référence  {{ article.articleId }}
+
+            <a href="{{ path('wa_ab_article_delete' ,{'articleId': article.articleId }) }}" >Supprimer l'Article</a>
+            <a href="{{ path('wa_bb_article' ,{'articleId': article.articleId }) }}" >Visualiser l'Article</a>
+
+
+        {% else %}
+            <li><h2>Plus rien en stock .... revenez une autre fois :) </h2></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+

@@ -1,0 +1,39 @@
+wa_ab_dashboard:
+    path:     /admin
+    defaults: { _controller: WAAdminBundle:Page:dashboard }
+
+wa_ab_article_add:
+    path:     /admin/article/add
+    defaults: { _controller: WAAdminBundle:Article:add  }
+
+wa_ab_article_delete:
+    path:     /admin/article/delete/{articleId}
+    defaults: { _controller: WAAdminBundle:Article:delete  }
+    requirements:
+                articleId: \d+
+
+wa_ab_article_edit:
+    path:     /admin/article/edit/{articleId}
+    defaults: { _controller: WAAdminBundle:Article:edit  }
+    requirements:
+                    articleId: \d+
+
+wa_ab_categories:
+    path:     /admin/categories
+    defaults: { _controller: WAAdminBundle:Category:list  }
+
+wa_ab_category_add:
+    path:     /admin/category/add
+    defaults: { _controller: WAAdminBundle:Category:add  }
+
+wa_ab_category_delete:
+    path:     /admin/category/delete/{categoryId}
+    defaults: { _controller: WAAdminBundle:Category:delete  }
+    requirements:
+                articleId: \d+
+
+wa_ab_category_edit:
+    path:     /admin/category/edit/{categoryId}
+    defaults: { _controller: WAAdminBundle:Category:edit  }
+    requirements:
+                    articleId: \d+

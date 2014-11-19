@@ -1,0 +1,17 @@
+wa_bb_homepage:
+    path:     /
+    defaults: { _controller: WABlogBundle:Page:index }
+
+wa_bb_articles:
+    path:     /articles
+    defaults: { _controller: WABlogBundle:Article:list }
+
+wa_bb_article:
+    path:     /article/{articleId}
+    defaults: { _controller: WABlogBundle:Article:show }
+    requirements:
+            articleId: \d+
+wa_bb_contact:
+    path:     /contact
+    defaults: { _controller: WABlogBundle:Page:contact }
+

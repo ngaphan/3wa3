@@ -1,0 +1,39 @@
+{% extends "WAAdminBundle::layout.html.twig" %}
+{% block title %}
+    {{ parent() }}
+    - DashBoard
+{% endblock  %}
+
+{%  block contents %}
+    <hr>
+    <h3><a href="{{ path('wa_ab_category_add') }}">Ajouter une categorie</a></h3>
+    <hr>
+    <table>
+        <thead>
+
+            <th>Id</th>
+            <th>Name</th>
+
+        </thead>
+
+        <tbody>
+        {% for category in categoryList %}
+        <tr>
+             <td>{{ category.categoryId }}</td>
+             <td>{{ category.categoryName }}</td>
+
+            <td><a href="{{ path('wa_ab_category_edit', { 'categoryId': category.categoryId }) }}">Modifier</a></td>
+            <td><a href="{{ path('wa_ab_category_delete', { 'categoryId': category.categoryId }) }}">Supprimer</a></td>
+
+        </tr>
+        {% else %}
+
+            <tr></tr><td colspan="3"> aucun categorie</td></tr>
+        </tbody>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+{% endblock %}
+

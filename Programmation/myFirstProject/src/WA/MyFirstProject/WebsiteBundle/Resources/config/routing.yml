@@ -1,0 +1,3 @@
+hello_mon_petit_chat:
+    path:    /hello/le-chat
+    defaults: {_controller: WAMyFirstProjectWebsiteBundle:Main:hello}

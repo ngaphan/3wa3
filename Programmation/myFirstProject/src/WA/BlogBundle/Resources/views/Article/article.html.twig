@@ -1,0 +1,19 @@
+{% extends "WABlogBundle::layout.html.twig" %}
+{% block title %}
+    {{ parent() }}
+    - Detail
+{% endblock  %}
+
+{%  block contents %}
+    <h1> Bonjour, voici un récapitulatif de votre choix :  </h1>
+
+        <h2> Article référence :  {{ article.articleId }} </h2>
+        <h3>                Titre {{ article.articleTitle  }}
+
+                        date d'achat {{ article.articleDate |date('d-m-Y') }}
+
+        </h3>
+
+{% endblock %}
+
+

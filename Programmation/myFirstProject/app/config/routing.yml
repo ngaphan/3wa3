@@ -1,0 +1,12 @@
+wa_admin:
+    resource: "@WAAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+wa_blog:
+    resource: "@WABlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
+wa_my_first_project_website:
+    resource: "@WAMyFirstProjectWebsiteBundle/Resources/config/routing.yml"
+    prefix:   /
+

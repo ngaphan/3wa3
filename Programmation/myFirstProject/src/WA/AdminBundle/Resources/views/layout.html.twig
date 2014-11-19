@@ -1,0 +1,20 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+    Mon magasin
+{% endblock  %}
+
+{%  block body %}
+    <h1>Administration du magasin  </h1>
+    <nav>
+        <ul>
+            <li><a href="{{ path('wa_ab_dashboard') }}" >Tableau de Bord</a></li>
+            <li><a href="{{ path('wa_ab_categories') }}" >Categorie</a></li>
+
+        </ul>
+    </nav>
+
+    {% block contents  %} {% endblock %}
+
+{% endblock %}
+
